@@ -291,8 +291,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel MenuPanel;
         private System.Windows.Forms.Panel UnitConverter_Submenu_Panel;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Speed_Converter_Btn;
@@ -306,6 +304,7 @@
         private System.Windows.Forms.Button Thread_Btn;
         private System.Windows.Forms.Button ReferenceMenu_Btn;
         private System.Windows.Forms.Panel ChildForm_Panel;
+        private System.Windows.Forms.Panel MenuPanel;
     }
 }
 
