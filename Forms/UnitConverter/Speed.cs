@@ -13,12 +13,9 @@ namespace Forms.UnitConverter
         public Speed()
         {
             InitializeComponent();
+            tableLayoutPanel_Keyboard.Visible = false;
         }
 
-        
-       
-        
-        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -28,6 +25,28 @@ namespace Forms.UnitConverter
             //sets visibiliti of Menu panel on MainForm
              Form1.ActiveForm.Controls["MenuPanel"].Visible = true;
 
+        }
+
+        private void comboBox_FromUnit_Click(object sender, EventArgs e)
+        {
+            label_FromUnit.Visible = false;
+        }
+
+        private void comboBox_ToUnit_Click(object sender, EventArgs e)
+        {
+            label_ToUnit.Visible = false;
+        }
+
+        private void button_KeyboardMenu_Click(object sender, EventArgs e)
+        {
+            if (tableLayoutPanel_Keyboard.Visible == true)
+            {
+                tableLayoutPanel_Keyboard.Visible = false;
+            }
+            else
+            {
+            tableLayoutPanel_Keyboard.Visible = true;
+            }
         }
     }
 }

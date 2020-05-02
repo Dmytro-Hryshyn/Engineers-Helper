@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Converter\IConverter.cs" />
+    <Compile Include="Controls\Converter\SpeedConverter.cs" />
     <Compile Include="Controls\SubMenuContol.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
