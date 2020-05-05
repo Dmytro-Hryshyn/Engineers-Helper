@@ -93,9 +93,9 @@
             "Metre per second",
             "Kilometre per hour",
             "Knot"});
-            this.comboBox_FromUnit.Location = new System.Drawing.Point(181, 256);
+            this.comboBox_FromUnit.Location = new System.Drawing.Point(158, 256);
             this.comboBox_FromUnit.Name = "comboBox_FromUnit";
-            this.comboBox_FromUnit.Size = new System.Drawing.Size(192, 33);
+            this.comboBox_FromUnit.Size = new System.Drawing.Size(220, 33);
             this.comboBox_FromUnit.TabIndex = 1;
             this.comboBox_FromUnit.Click += new System.EventHandler(this.comboBox_FromUnit_Click);
             // 
@@ -105,7 +105,7 @@
             this.label_FromUnit.AutoSize = true;
             this.label_FromUnit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_FromUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_FromUnit.Location = new System.Drawing.Point(225, 168);
+            this.label_FromUnit.Location = new System.Drawing.Point(165, 261);
             this.label_FromUnit.Name = "label_FromUnit";
             this.label_FromUnit.Size = new System.Drawing.Size(105, 23);
             this.label_FromUnit.TabIndex = 3;
@@ -117,7 +117,7 @@
             this.label_ToUnit.AutoSize = true;
             this.label_ToUnit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ToUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_ToUnit.Location = new System.Drawing.Point(651, 168);
+            this.label_ToUnit.Location = new System.Drawing.Point(601, 261);
             this.label_ToUnit.Name = "label_ToUnit";
             this.label_ToUnit.Size = new System.Drawing.Size(78, 23);
             this.label_ToUnit.TabIndex = 4;
@@ -131,7 +131,7 @@
             this.button_Convert.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Convert.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Convert.Image = ((System.Drawing.Image)(resources.GetObject("button_Convert.Image")));
-            this.button_Convert.Location = new System.Drawing.Point(355, 389);
+            this.button_Convert.Location = new System.Drawing.Point(351, 389);
             this.button_Convert.Name = "button_Convert";
             this.button_Convert.Size = new System.Drawing.Size(141, 50);
             this.button_Convert.TabIndex = 5;
@@ -149,7 +149,7 @@
             this.button_Clear.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Clear.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Clear.Image = ((System.Drawing.Image)(resources.GetObject("button_Clear.Image")));
-            this.button_Clear.Location = new System.Drawing.Point(502, 389);
+            this.button_Clear.Location = new System.Drawing.Point(498, 389);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.button_Clear.Size = new System.Drawing.Size(141, 50);
@@ -181,7 +181,7 @@
             "Knot"});
             this.comboBox_ToUnit.Location = new System.Drawing.Point(594, 256);
             this.comboBox_ToUnit.Name = "comboBox_ToUnit";
-            this.comboBox_ToUnit.Size = new System.Drawing.Size(192, 33);
+            this.comboBox_ToUnit.Size = new System.Drawing.Size(220, 33);
             this.comboBox_ToUnit.TabIndex = 7;
             this.comboBox_ToUnit.Click += new System.EventHandler(this.comboBox_ToUnit_Click);
             // 
@@ -192,13 +192,15 @@
             this.textBox_FromUnit.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_FromUnit.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_FromUnit.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox_FromUnit.Location = new System.Drawing.Point(181, 203);
+            this.textBox_FromUnit.Location = new System.Drawing.Point(158, 203);
             this.textBox_FromUnit.MaxLength = 6;
             this.textBox_FromUnit.Name = "textBox_FromUnit";
             this.textBox_FromUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox_FromUnit.Size = new System.Drawing.Size(192, 33);
+            this.textBox_FromUnit.Size = new System.Drawing.Size(220, 33);
             this.textBox_FromUnit.TabIndex = 8;
             this.textBox_FromUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_FromUnit.TextChanged += new System.EventHandler(this.textBox_FromUnit_TextChanged);
+            this.textBox_FromUnit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_FromUnit_KeyPress);
             // 
             // textBox_ToUnit
             // 
@@ -210,8 +212,9 @@
             this.textBox_ToUnit.Location = new System.Drawing.Point(594, 203);
             this.textBox_ToUnit.MaxLength = 6;
             this.textBox_ToUnit.Name = "textBox_ToUnit";
+            this.textBox_ToUnit.ReadOnly = true;
             this.textBox_ToUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox_ToUnit.Size = new System.Drawing.Size(192, 33);
+            this.textBox_ToUnit.Size = new System.Drawing.Size(220, 33);
             this.textBox_ToUnit.TabIndex = 9;
             this.textBox_ToUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -219,7 +222,7 @@
             // 
             this.pictureBox_Logo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Logo.Image")));
-            this.pictureBox_Logo.Location = new System.Drawing.Point(443, 203);
+            this.pictureBox_Logo.Location = new System.Drawing.Point(437, 203);
             this.pictureBox_Logo.Name = "pictureBox_Logo";
             this.pictureBox_Logo.Size = new System.Drawing.Size(117, 72);
             this.pictureBox_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,7 +231,7 @@
             // 
             // button_KeyboardMenu
             // 
-            this.button_KeyboardMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button_KeyboardMenu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_KeyboardMenu.FlatAppearance.BorderSize = 0;
             this.button_KeyboardMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_KeyboardMenu.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -243,7 +246,7 @@
             // tableLayoutPanel_Keyboard
             // 
             this.tableLayoutPanel_Keyboard.AllowDrop = true;
-            this.tableLayoutPanel_Keyboard.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel_Keyboard.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tableLayoutPanel_Keyboard.ColumnCount = 7;
             this.tableLayoutPanel_Keyboard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel_Keyboard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -267,7 +270,7 @@
             this.tableLayoutPanel_Keyboard.Controls.Add(this.button_Backspace, 5, 0);
             this.tableLayoutPanel_Keyboard.Controls.Add(this.button1_Dot, 6, 0);
             this.tableLayoutPanel_Keyboard.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel_Keyboard.Location = new System.Drawing.Point(223, 493);
+            this.tableLayoutPanel_Keyboard.Location = new System.Drawing.Point(225, 466);
             this.tableLayoutPanel_Keyboard.Margin = new System.Windows.Forms.Padding(50, 3, 50, 3);
             this.tableLayoutPanel_Keyboard.Name = "tableLayoutPanel_Keyboard";
             this.tableLayoutPanel_Keyboard.RowCount = 2;

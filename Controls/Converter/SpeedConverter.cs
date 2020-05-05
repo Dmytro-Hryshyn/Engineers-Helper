@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Forms.UnitConverter;
+using System;
+using System.Collections;
 
 namespace ModernUiDesign
 {
-
 
     public class SpeedConverter : IConverter
     {
@@ -21,11 +22,6 @@ namespace ModernUiDesign
             ToUnitName = toUnitName;
             ResultString = FromUnitName + "_" + toUnitName;
         }
-
-        // Mile per hour
-        // Feet per second
-        // Kilometre per hour
-        // Knot
 
         public string GetUnswer()
         {
@@ -60,20 +56,17 @@ namespace ModernUiDesign
             speedTable.Add("Knot_Metre per second", FromUnitValue / 1.944m);
             speedTable.Add("Knot_Kilometre per hour", FromUnitValue * 1.852m);
 
-
-            //Chek is hash table contains a key
             if (speedTable.ContainsKey(ResultString))
             {
                 return speedTable[ResultString].ToString();
             }
             else
             {
+                Action<string> errorMess = Speed.DisplayError;
+                errorMess("Error. Try enother value");
                 return "0";
             }
 
-
         }
-
     }
-
 }

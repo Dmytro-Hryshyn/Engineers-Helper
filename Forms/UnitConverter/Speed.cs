@@ -1,6 +1,7 @@
 ﻿using ModernUiDesign;
 using System;
 using System.Windows.Forms;
+
 namespace Forms.UnitConverter
 {
 
@@ -13,7 +14,11 @@ namespace Forms.UnitConverter
             InitializeComponent();
             tableLayoutPanel_Keyboard.Visible = false;
         }
-            
+
+        public static void DisplayError(string errorMess)
+        {
+            MessageBox.Show(errorMess,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -148,8 +153,30 @@ namespace Forms.UnitConverter
 
         private void Calculate()
         {
-            SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
-            textBox_ToUnit.Text = speedConverter.GetUnswer();
+            if (textBox_FromUnit.Text != string.Empty)
+            {
+                SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
+                textBox_ToUnit.Text = speedConverter.GetUnswer();
+            }
+
+            else return;
+        }
+
+        private void textBox_FromUnit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&(e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_FromUnit_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
