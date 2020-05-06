@@ -1,5 +1,7 @@
 ﻿using Forms.UnitConverter;
 using ModernUiDesign.Controls;
+
+using System;
 using System.Windows.Forms;
 
 namespace ModernUiDesign
@@ -17,6 +19,12 @@ namespace ModernUiDesign
             Speed_Converter_Btn.Click += (sender, EventArgs) =>
             {
                 unitConverterSubcontol.OpenChildForm(new Speed(), ChildForm_Panel);
+                MenuPanel.Visible = false;
+            };
+
+            Lenth_Converter_Btn.Click += (s, a) =>
+            {
+                unitConverterSubcontol.OpenChildForm(new Lenth(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
             SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);

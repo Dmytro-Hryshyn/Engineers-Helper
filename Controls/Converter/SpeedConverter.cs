@@ -7,6 +7,7 @@ namespace ModernUiDesign
 
     public class SpeedConverter : IConverter
     {
+       
         public decimal FromUnitValue { get; private set; }
 
         public string FromUnitName { get; private set; }

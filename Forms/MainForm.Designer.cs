@@ -38,7 +38,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Lenth_Converter_Btn = new System.Windows.Forms.Button();
             this.Speed_Converter_Btn = new System.Windows.Forms.Button();
             this.UnitConverter_Menu_Btn = new System.Windows.Forms.Button();
             this.LogoPanel = new System.Windows.Forms.Panel();
@@ -132,7 +132,7 @@
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button4);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button3);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button1);
-            this.UnitConverter_Submenu_Panel.Controls.Add(this.button2);
+            this.UnitConverter_Submenu_Panel.Controls.Add(this.Lenth_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Speed_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.UnitConverter_Submenu_Panel.Location = new System.Drawing.Point(0, 126);
@@ -197,24 +197,24 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Lenth_Converter_Btn
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 50);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(250, 50);
-            this.button2.TabIndex = 3;
-            this.button2.Text = " Lenth";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Lenth_Converter_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Lenth_Converter_Btn.FlatAppearance.BorderSize = 0;
+            this.Lenth_Converter_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Lenth_Converter_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lenth_Converter_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Lenth_Converter_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Lenth_Converter_Btn.Image")));
+            this.Lenth_Converter_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Lenth_Converter_Btn.Location = new System.Drawing.Point(0, 50);
+            this.Lenth_Converter_Btn.Name = "Lenth_Converter_Btn";
+            this.Lenth_Converter_Btn.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Lenth_Converter_Btn.Size = new System.Drawing.Size(250, 50);
+            this.Lenth_Converter_Btn.TabIndex = 3;
+            this.Lenth_Converter_Btn.Text = " Lenth";
+            this.Lenth_Converter_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Lenth_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Lenth_Converter_Btn.UseVisualStyleBackColor = true;
             // 
             // Speed_Converter_Btn
             // 
@@ -292,7 +292,7 @@
 
         #endregion
         private System.Windows.Forms.Panel UnitConverter_Submenu_Panel;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Lenth_Converter_Btn;
         private System.Windows.Forms.Button Speed_Converter_Btn;
         private System.Windows.Forms.Button UnitConverter_Menu_Btn;
         private System.Windows.Forms.Panel LogoPanel;

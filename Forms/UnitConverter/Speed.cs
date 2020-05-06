@@ -174,9 +174,6 @@ namespace Forms.UnitConverter
             }
         }
 
-        private void textBox_FromUnit_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

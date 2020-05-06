@@ -105,7 +105,7 @@
             this.label_FromUnit.AutoSize = true;
             this.label_FromUnit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_FromUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_FromUnit.Location = new System.Drawing.Point(165, 261);
+            this.label_FromUnit.Location = new System.Drawing.Point(216, 166);
             this.label_FromUnit.Name = "label_FromUnit";
             this.label_FromUnit.Size = new System.Drawing.Size(105, 23);
             this.label_FromUnit.TabIndex = 3;
@@ -117,7 +117,7 @@
             this.label_ToUnit.AutoSize = true;
             this.label_ToUnit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ToUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_ToUnit.Location = new System.Drawing.Point(601, 261);
+            this.label_ToUnit.Location = new System.Drawing.Point(665, 166);
             this.label_ToUnit.Name = "label_ToUnit";
             this.label_ToUnit.Size = new System.Drawing.Size(78, 23);
             this.label_ToUnit.TabIndex = 4;
@@ -199,7 +199,6 @@
             this.textBox_FromUnit.Size = new System.Drawing.Size(220, 33);
             this.textBox_FromUnit.TabIndex = 8;
             this.textBox_FromUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_FromUnit.TextChanged += new System.EventHandler(this.textBox_FromUnit_TextChanged);
             this.textBox_FromUnit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_FromUnit_KeyPress);
             // 
             // textBox_ToUnit
@@ -523,14 +522,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox_FromUnit;
-        private System.Windows.Forms.Label label_FromUnit;
-        private System.Windows.Forms.Label label_ToUnit;
-        private System.Windows.Forms.Button button_Convert;
         private System.Windows.Forms.Button button_Clear;
-        private System.Windows.Forms.ComboBox comboBox_ToUnit;
-        private System.Windows.Forms.TextBox textBox_FromUnit;
-        private System.Windows.Forms.TextBox textBox_ToUnit;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
         private System.Windows.Forms.Button button_KeyboardMenu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Keyboard;
@@ -548,5 +540,12 @@
         private System.Windows.Forms.Button button_CE;
         private System.Windows.Forms.Button button_Enter;
         private System.Windows.Forms.Button button1_Dot;
+        protected System.Windows.Forms.ComboBox comboBox_FromUnit;
+        protected System.Windows.Forms.Button button_Convert;
+        protected System.Windows.Forms.ComboBox comboBox_ToUnit;
+        protected System.Windows.Forms.TextBox textBox_FromUnit;
+        protected System.Windows.Forms.TextBox textBox_ToUnit;
+        protected System.Windows.Forms.Label label_FromUnit;
+        protected System.Windows.Forms.Label label_ToUnit;
     }
 }
