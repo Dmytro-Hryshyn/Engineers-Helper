@@ -24,7 +24,7 @@ namespace ModernUiDesign
             ResultString = FromUnitName + "-" + toUnitName;
         }
 
-        enum SpeedUnits
+      public  enum SpeedUnits
         {
             Mile_per_hour,
             Kilometre_per_hour,
@@ -78,9 +78,8 @@ namespace ModernUiDesign
 
             else
             {
-                Action<string> errorMess = Speed.DisplayError;
-                errorMess("Error. Try enother value");
-                return "0";
+
+                return "Error..";
             }
 
         }

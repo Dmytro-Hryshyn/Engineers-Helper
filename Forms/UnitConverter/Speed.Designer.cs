@@ -87,12 +87,6 @@
             this.comboBox_FromUnit.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_FromUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox_FromUnit.FormattingEnabled = true;
-            this.comboBox_FromUnit.Items.AddRange(new object[] {
-            "Mile per hour",
-            "Feet per second",
-            "Metre per second",
-            "Kilometre per hour",
-            "Knot"});
             this.comboBox_FromUnit.Location = new System.Drawing.Point(158, 256);
             this.comboBox_FromUnit.Name = "comboBox_FromUnit";
             this.comboBox_FromUnit.Size = new System.Drawing.Size(220, 33);
@@ -173,12 +167,6 @@
             this.comboBox_ToUnit.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_ToUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox_ToUnit.FormattingEnabled = true;
-            this.comboBox_ToUnit.Items.AddRange(new object[] {
-            "Mile per hour",
-            "Feet per second",
-            "Metre per second",
-            "Kilometre per hour",
-            "Knot"});
             this.comboBox_ToUnit.Location = new System.Drawing.Point(594, 256);
             this.comboBox_ToUnit.Name = "comboBox_ToUnit";
             this.comboBox_ToUnit.Size = new System.Drawing.Size(220, 33);
