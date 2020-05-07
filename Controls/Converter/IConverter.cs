@@ -13,6 +13,8 @@ namespace ModernUiDesign
         string ResultString { get; }
 
          string GetUnswer();
-       
+
+       //todo: Add delegate to this method
+
     }
 }

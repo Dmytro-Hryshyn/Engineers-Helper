@@ -1,7 +1,4 @@
-﻿using Forms.UnitConverter;
-using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
 
 namespace ModernUiDesign
 {
@@ -11,10 +8,10 @@ namespace ModernUiDesign
         {
             InitializeComponent();
             SetComboBoxes();
-           
-        }
 
-        
+        }
+       
+
         private void SetComboBoxes()
         {
             comboBox_FromUnit.Items.Clear();
@@ -32,6 +29,6 @@ namespace ModernUiDesign
                                                                     comboBox_ToUnit.SelectedItem.ToString());
             textBox_ToUnit.Text = lenthConverter.GetUnswer();
         }
-         
+
     }
 }
