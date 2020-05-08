@@ -32,7 +32,10 @@ namespace ModernUiDesign
             {
                 return lenthTable[ResultString].ToString();
             }
-            return string.Empty;
+
+
+
+            return "Error..";
 
         }
 

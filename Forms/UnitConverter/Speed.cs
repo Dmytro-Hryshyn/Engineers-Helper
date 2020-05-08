@@ -8,14 +8,15 @@ namespace Forms.UnitConverter
 
     public partial class Speed : Form
     {
-
         public Speed()
         {
             InitializeComponent();
+            SetComboBox();
             tableLayoutPanel_Keyboard.Visible = false;
         }
+  
 
-        public static void DisplayError(string errorMess)
+        private static void  DisplayError(string errorMess)
         {
             MessageBox.Show(errorMess,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
         }
@@ -158,7 +159,11 @@ namespace Forms.UnitConverter
                 SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
                 textBox_ToUnit.Text = speedConverter.GetUnswer();
             }
-
+             if (textBox_ToUnit.Text=="Error..")
+            {
+                textBox_ToUnit.Text = string.Empty;
+                DisplayError("Error. Try enother Unit");
+            }
             else return;
         }
 
@@ -174,6 +179,10 @@ namespace Forms.UnitConverter
             }
         }
 
-       
+        private void SetComboBox()
+        {
+            comboBox_FromUnit.DataSource = Enum.GetValues(typeof(SpeedConverter.SpeedUnits));
+            comboBox_ToUnit.DataSource = Enum.GetValues(typeof(SpeedConverter.SpeedUnits));
+        }
     }
 }
