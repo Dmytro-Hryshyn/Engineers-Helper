@@ -69,18 +69,17 @@ namespace ModernUiDesign
             speedTable.Add($"{SpeedUnits.Knot}-{SpeedUnits.Kilometre_per_hour}",             FromUnitValue * 1.852m);
 
 
-
-
             if (speedTable.ContainsKey(ResultString))
             {
-                return speedTable[ResultString].ToString();
+               return speedTable[ResultString].ToString();
             }
-
             else
             {
-
-                return "Error..";
+                return "0.error";
             }
+
+          
+                     
 
         }
     }

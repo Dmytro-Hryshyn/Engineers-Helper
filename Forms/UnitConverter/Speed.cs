@@ -152,14 +152,14 @@ namespace Forms.UnitConverter
             Calculate();
         }
 
-        private void Calculate()
+        public virtual void Calculate()
         {
             if (textBox_FromUnit.Text != string.Empty)
             {
                 SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
                 textBox_ToUnit.Text = speedConverter.GetUnswer();
             }
-             if (textBox_ToUnit.Text=="Error..")
+             if (textBox_ToUnit.Text=="0.error")
             {
                 textBox_ToUnit.Text = string.Empty;
                 DisplayError("Error. Try enother Unit");

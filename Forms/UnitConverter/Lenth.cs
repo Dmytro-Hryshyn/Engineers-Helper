@@ -18,7 +18,7 @@ namespace ModernUiDesign
         private static void DisplayError(string textError)
         {
             MessageBox.Show(textError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        } //ErrorHendler
+        } 
 
         private void SetComboBoxes()
         {
@@ -29,13 +29,32 @@ namespace ModernUiDesign
             comboBox_ToUnit.SelectedIndex = 1;
         }
 
-        private void button_Convert_Click(object sender, EventArgs e)
+        private   void button_Convert_Click(object sender, EventArgs e)
         {
-            LenthConverter lenthConverter = new LenthConverter(decimal.Parse(textBox_FromUnit.Text),
-                                                                comboBox_FromUnit.SelectedItem.ToString(),
-                                                                    comboBox_ToUnit.SelectedItem.ToString());
-            textBox_ToUnit.Text = lenthConverter.GetUnswer();
+            Calculate();
+            
         }
 
+        public override void Calculate()
+        {
+            if (textBox_FromUnit.Text==string.Empty)
+            {
+                return;
+            }
+            
+           else if (textBox_ToUnit.Text=="0.error")
+            {
+                textBox_ToUnit.Text = string.Empty;
+                DisplayError("Eror. Try to select another unit");
+            }
+
+            else
+            {
+                LenthConverter lenthConverter = new LenthConverter(decimal.Parse(textBox_FromUnit.Text),
+                                                                comboBox_FromUnit.SelectedItem.ToString(),
+                                                                    comboBox_ToUnit.SelectedItem.ToString());
+                textBox_ToUnit.Text = lenthConverter.GetUnswer();
+            }
+        }
     }
 }

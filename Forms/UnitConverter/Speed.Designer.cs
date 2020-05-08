@@ -529,11 +529,11 @@
         private System.Windows.Forms.Button button_Enter;
         private System.Windows.Forms.Button button1_Dot;
         protected System.Windows.Forms.ComboBox comboBox_FromUnit;
-        protected System.Windows.Forms.Button button_Convert;
         protected System.Windows.Forms.ComboBox comboBox_ToUnit;
         protected System.Windows.Forms.TextBox textBox_FromUnit;
         protected System.Windows.Forms.TextBox textBox_ToUnit;
         protected System.Windows.Forms.Label label_FromUnit;
         protected System.Windows.Forms.Label label_ToUnit;
+        protected System.Windows.Forms.Button button_Convert;
     }
 }
