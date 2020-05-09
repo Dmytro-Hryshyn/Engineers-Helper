@@ -5,10 +5,10 @@ namespace ModernUiDesign
 {
     
 
-    public partial class Lenth : Forms.UnitConverter.Speed
+    public partial class Length : Forms.UnitConverter.Speed
     {
         
-        public Lenth()
+        public Length()
         {
             InitializeComponent();
             SetComboBoxes();
@@ -23,8 +23,8 @@ namespace ModernUiDesign
         private void SetComboBoxes()
         {
            
-            comboBox_FromUnit.DataSource = Enum.GetValues(typeof(LenthConverter.LenthUnits));
-            comboBox_ToUnit.DataSource = Enum.GetValues(typeof(LenthConverter.LenthUnits));
+            comboBox_FromUnit.DataSource = Enum.GetValues(typeof(LengthConverter.LengthUnits));
+            comboBox_ToUnit.DataSource = Enum.GetValues(typeof(LengthConverter.LengthUnits));
             comboBox_FromUnit.SelectedIndex = 0;
             comboBox_ToUnit.SelectedIndex = 1;
         }
@@ -50,7 +50,7 @@ namespace ModernUiDesign
 
             else
             {
-                LenthConverter lenthConverter = new LenthConverter(decimal.Parse(textBox_FromUnit.Text),
+                LengthConverter lenthConverter = new LengthConverter(decimal.Parse(textBox_FromUnit.Text),
                                                                 comboBox_FromUnit.SelectedItem.ToString(),
                                                                     comboBox_ToUnit.SelectedItem.ToString());
                 textBox_ToUnit.Text = lenthConverter.GetUnswer();

@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\Converter\IConverter.cs" />
-    <Compile Include="Controls\Converter\LenthConverter.cs" />
+    <Compile Include="Controls\Converter\LengthConverter.cs" />
     <Compile Include="Controls\Converter\SpeedConverter.cs" />
     <Compile Include="Controls\SubMenuContol.cs" />
     <Compile Include="Forms\MainForm.cs">
@@ -63,19 +63,19 @@
     <Compile Include="Forms\UnitConverter\Speed.Designer.cs">
       <DependentUpon>Speed.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UnitConverter\Lenth.cs">
+    <Compile Include="Forms\UnitConverter\Length.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UnitConverter\Lenth.Designer.cs">
-      <DependentUpon>Lenth.cs</DependentUpon>
+    <Compile Include="Forms\UnitConverter\Length.Designer.cs">
+      <DependentUpon>Length.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UnitConverter\Lenth.resx">
-      <DependentUpon>Lenth.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UnitConverter\Length.resx">
+      <DependentUpon>Length.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UnitConverter\Speed.resx">
       <DependentUpon>Speed.cs</DependentUpon>

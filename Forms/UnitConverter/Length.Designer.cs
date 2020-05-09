@@ -1,6 +1,6 @@
 ﻿namespace ModernUiDesign
 {
-    partial class Lenth
+    partial class Length
     {
         /// <summary>
         /// Required designer variable.

@@ -22,9 +22,9 @@ namespace ModernUiDesign
                 MenuPanel.Visible = false;
             };
 
-            Lenth_Converter_Btn.Click += (s, a) =>
+            Length_Converter_Btn.Click += (s, a) =>
             {
-                unitConverterSubcontol.OpenChildForm(new Lenth(), ChildForm_Panel);
+                unitConverterSubcontol.OpenChildForm(new Length(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
             SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);
