@@ -14,7 +14,7 @@ namespace ModernUiDesign
 
          string GetUnswer();
        
-       //todo: Add delegate to this method
+      
 
     }
 }
