@@ -1,6 +1,6 @@
-﻿namespace ModernUiDesign
+﻿namespace ModernUiDesign.Forms.UnitConverter
 {
-    partial class Length
+    partial class Angle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // textBox_FromUnit
-            // 
-            this.textBox_FromUnit.AutoCompleteCustomSource.AddRange(new string[] {
-            "Millemter"});
-            // 
-            // button_Convert
-            // 
-            this.button_Convert.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button_Convert.Click += new System.EventHandler(this.button_Convert_Click);
-            // 
-            // Length
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(959, 622);
-            this.Name = "Length";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            
         }
 
         #endregion

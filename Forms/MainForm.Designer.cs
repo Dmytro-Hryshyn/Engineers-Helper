@@ -35,7 +35,7 @@
             this.ReferenceMenu_Btn = new System.Windows.Forms.Button();
             this.HelpMenu_Btn = new System.Windows.Forms.Button();
             this.UnitConverter_Submenu_Panel = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Angle_Converter_Btn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Length_Converter_Btn = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@
             // 
             this.UnitConverter_Submenu_Panel.AutoSize = true;
             this.UnitConverter_Submenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.UnitConverter_Submenu_Panel.Controls.Add(this.button4);
+            this.UnitConverter_Submenu_Panel.Controls.Add(this.Angle_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button3);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button1);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Length_Converter_Btn);
@@ -140,24 +140,24 @@
             this.UnitConverter_Submenu_Panel.Size = new System.Drawing.Size(250, 250);
             this.UnitConverter_Submenu_Panel.TabIndex = 1;
             // 
-            // button4
+            // Angle_Converter_Btn
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 200);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 50);
-            this.button4.TabIndex = 6;
-            this.button4.Text = " Angle";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.Angle_Converter_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Angle_Converter_Btn.FlatAppearance.BorderSize = 0;
+            this.Angle_Converter_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Angle_Converter_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Angle_Converter_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Angle_Converter_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Angle_Converter_Btn.Image")));
+            this.Angle_Converter_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Angle_Converter_Btn.Location = new System.Drawing.Point(0, 200);
+            this.Angle_Converter_Btn.Name = "Angle_Converter_Btn";
+            this.Angle_Converter_Btn.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Angle_Converter_Btn.Size = new System.Drawing.Size(250, 50);
+            this.Angle_Converter_Btn.TabIndex = 6;
+            this.Angle_Converter_Btn.Text = " Angle";
+            this.Angle_Converter_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Angle_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Angle_Converter_Btn.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -298,7 +298,7 @@
         private System.Windows.Forms.Button UnitConverter_Menu_Btn;
         private System.Windows.Forms.Panel LogoPanel;
         private System.Windows.Forms.Button HelpMenu_Btn;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Angle_Converter_Btn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel ReferenceSubmenu_Panel;

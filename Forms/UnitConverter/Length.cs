@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Forms.UnitConverter;
+using System;
 using System.Windows.Forms;
 
 namespace ModernUiDesign
 {
     
 
-    public partial class Length : Forms.UnitConverter.Speed
+    public partial class Length : Speed
     {
         
         public Length()
@@ -56,5 +57,7 @@ namespace ModernUiDesign
                 textBox_ToUnit.Text = lenthConverter.GetUnswer();
             }
         }
+
+       
     }
 }
