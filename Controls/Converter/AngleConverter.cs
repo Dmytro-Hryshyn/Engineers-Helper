@@ -1,38 +1,48 @@
+using System;
 using System.Collections;
-namespace ModernUiDesign 
+
+namespace ModernUiDesign
 {
     public class AngleConverter : IConverter
     {
+        public decimal FromUnitValue { get; private set; }
 
-        decimal FromUnitValue { get; private set;}
-        string FromUnitName { get; private set; }
-        string ToUnitName { get; private set;}
-        string ResultString { get; private set;}
+        public string FromUnitName { get; private set; }
 
-public AngleConverter(decimal fromUnitValue, string fromUnitName, string toUnitName)
-{
+        public string ToUnitName { get; private set; }
+
+        public string ResultString { get; private set; }
+
+        enum AngleUnit { Degree, Radian, Gradian }
+
+        public AngleConverter(decimal fromUnitValue, string fromUnitName, string toUnitName)
+        {
             FromUnitValue = fromUnitValue;
             FromUnitName = fromUnitName;
             ToUnitName = toUnitName;
-            ResultString=$"{FromUnitName}-{ToUnitName}";
- }
-
-public enum AngleUnit
-{
-Degrees, Radians, Gradians
-}
-        string  GetUnswer()
-        {
-        Hashtable angleTable=new Hashtable();
-        //Degrees to another units
-        angleTable.Add($"{AngleUnit.Degrees}-{AngleUnit.Gradians}", (FromUnitValue * Math(Pi)/180)m);
-        
-        if(angleTable.ContainsKey(ResultString))
-        {
-            return angleTable[ResultString].ToString;
+            ResultString = $"{FromUnitName}-{toUnitName}";
         }
 
-        else  return "0.error";
+
+        public string GetUnswer()
+        {
+            Hashtable hashtable = new Hashtable();
+            //Degree to another Unit
+            hashtable.Add($"{AngleUnit.Degree}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 180));
+            hashtable.Add($"{AngleUnit.Degree}-{AngleUnit.Gradian}", FromUnitValue * (200m / 180m));
+            //Radian to another Unit
+            hashtable.Add($"{AngleUnit.Radian}-{AngleUnit.Degree}", FromUnitValue * (decimal)(180 / Math.PI));
+            hashtable.Add($"{AngleUnit.Radian}-{AngleUnit.Gradian}", FromUnitValue * (decimal)(200 / Math.PI));
+            //Gradian to another Unit
+            hashtable.Add($"{AngleUnit.Gradian}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 200 ));
+            hashtable.Add($"{AngleUnit.Gradian}-{AngleUnit.Degree}", FromUnitValue * (180m / 200m));
+
+            if (hashtable.ContainsKey(ResultString))
+            {
+                return hashtable[ResultString].ToString();
+            }
+
+            else return "0.error";
         }
     }
 
