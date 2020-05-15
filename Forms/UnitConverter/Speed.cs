@@ -152,7 +152,7 @@ namespace Forms.UnitConverter
             Calculate();
         }
 
-        public virtual void Calculate()
+        protected virtual void Calculate()
         {
             if (textBox_FromUnit.Text != string.Empty)
             {
@@ -179,7 +179,7 @@ namespace Forms.UnitConverter
             }
         }
 
-        private void SetComboBox()
+       protected virtual void  SetComboBox()
         {
             comboBox_FromUnit.DataSource = Enum.GetValues(typeof(SpeedConverter.SpeedUnits));
             comboBox_ToUnit.DataSource = Enum.GetValues(typeof(SpeedConverter.SpeedUnits));

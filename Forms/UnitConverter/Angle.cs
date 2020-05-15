@@ -1,13 +1,5 @@
 ﻿using Forms.UnitConverter;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace ModernUiDesign.Forms.UnitConverter
 {
@@ -18,5 +10,17 @@ namespace ModernUiDesign.Forms.UnitConverter
             InitializeComponent();
 
         }
+
+        protected override void Calculate()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void SetComboBox()
+        {
+            base.SetComboBox();
+        }
+
     }
+
 }

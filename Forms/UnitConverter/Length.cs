@@ -12,7 +12,7 @@ namespace ModernUiDesign
         public Length()
         {
             InitializeComponent();
-            SetComboBoxes();
+            SetComboBox();
         }
         
 
@@ -21,7 +21,7 @@ namespace ModernUiDesign
             MessageBox.Show(textError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         } 
 
-        private void SetComboBoxes()
+        protected override void SetComboBox()
         {
            
             comboBox_FromUnit.DataSource = Enum.GetValues(typeof(LengthConverter.LengthUnits));
@@ -36,7 +36,7 @@ namespace ModernUiDesign
             
         }
 
-        public override void Calculate()
+        protected override void Calculate()
         {
             if (textBox_FromUnit.Text==string.Empty)
             {
