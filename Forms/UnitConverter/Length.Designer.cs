@@ -38,7 +38,7 @@
             // button_Convert
             // 
             this.button_Convert.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button_Convert.Click += new System.EventHandler(this.button_Convert_Click);
+
             // 
             // Length
             // 

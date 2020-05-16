@@ -13,7 +13,13 @@ namespace ModernUiDesign.Controls.Converter
 
         public string ResultString { get; private set; }
 
-        enum AngleUnit { Degree, Radian, Gradian }
+        internal enum AngleUnit
+        {
+
+            Degree,
+            Radian,
+            Gradian
+        }
 
         public AngleConverter(decimal fromUnitValue, string fromUnitName, string toUnitName)
         {
@@ -38,9 +44,15 @@ namespace ModernUiDesign.Controls.Converter
 
             if (angleHash.ContainsKey(ResultString))
             {
-                angleHash[ResultString].ToString();
+               return angleHash[ResultString].ToString();
+                
             }
-            return "0.error";
+
+            else
+            {
+                return "0.error";
+            }
+
         }
     }
 }

@@ -28,7 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            
+            this.SuspendLayout();
+            // 
+            // button_Convert
+            // 
+            this.button_Convert.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+
+            // 
+            // Angle
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(959, 622);
+            this.Name = "Angle";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

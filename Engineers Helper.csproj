@@ -81,6 +81,9 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnitConverter\Angle.resx">
+      <DependentUpon>Angle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UnitConverter\Length.resx">
       <DependentUpon>Length.cs</DependentUpon>
     </EmbeddedResource>

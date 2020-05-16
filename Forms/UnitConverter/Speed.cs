@@ -16,7 +16,7 @@ namespace Forms.UnitConverter
         }
   
 
-        private static void  DisplayError(string errorMess)
+        protected virtual void  DisplayError(string errorMess)
         {
             MessageBox.Show(errorMess,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
         }
@@ -34,10 +34,12 @@ namespace Forms.UnitConverter
         private void comboBox_FromUnit_Click(object sender, EventArgs e)
         {
             label_FromUnit.Visible = false;
+            label_ToUnit.Visible = false;
         }
 
         private void comboBox_ToUnit_Click(object sender, EventArgs e)
         {
+            label_FromUnit.Visible = false;
             label_ToUnit.Visible = false;
         }
 
@@ -145,6 +147,7 @@ namespace Forms.UnitConverter
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox_FromUnit.Text = string.Empty;
+            textBox_ToUnit.Text = string.Empty;
         }
 
         private void button_Convert_Click(object sender, EventArgs e)
@@ -162,7 +165,7 @@ namespace Forms.UnitConverter
              if (textBox_ToUnit.Text=="0.error")
             {
                 textBox_ToUnit.Text = string.Empty;
-                DisplayError("Error. Try enother Unit");
+                DisplayError("Error, try select enother speed unit");
             }
             else return;
         }

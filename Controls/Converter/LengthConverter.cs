@@ -4,11 +4,11 @@ namespace ModernUiDesign
 {
     public class LengthConverter : IConverter
     {
-        public decimal FromUnitValue { get; private set; } = 0;
+        public decimal FromUnitValue { get; private set; } 
 
-        public string FromUnitName { get; private set; } = string.Empty;
+        public string FromUnitName { get; private set; } 
 
-        public string ToUnitName { get; private set; } = string.Empty;
+        public string ToUnitName { get; private set; } 
 
         public string ResultString { get; private set; }
 
