@@ -159,7 +159,7 @@ namespace Forms.UnitConverter
         {
             if (textBox_FromUnit.Text != string.Empty)
             {
-                SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
+                SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text.Replace(" ", "_"), comboBox_ToUnit.Text.Replace(" ", "_"));
                 textBox_ToUnit.Text = speedConverter.GetUnswer();
             }
              if (textBox_ToUnit.Text=="0.error")
@@ -184,8 +184,14 @@ namespace Forms.UnitConverter
 
        protected virtual void  SetComboBox()
         {
-            comboBox_FromUnit.DataSource = Enum.GetValues(typeof(SpeedConverter.SpeedUnits));
-            comboBox_ToUnit.DataSource = Enum.GetValues(typeof(SpeedConverter.SpeedUnits));
+            var speedDictinary = SpeedConverter.NiceComboboxDataRepresentation();
+            comboBox_FromUnit.DataSource = new BindingSource(speedDictinary, null);
+            comboBox_FromUnit.DisplayMember = "Key";
+            comboBox_FromUnit.ValueMember = "Value";
+
+            comboBox_ToUnit.DataSource = new BindingSource(speedDictinary, null);
+            comboBox_ToUnit.DisplayMember = "Key";
+            comboBox_ToUnit.ValueMember = "Value";
         }
     }
 }
