@@ -1,5 +1,6 @@
 ﻿using Forms.UnitConverter;
 using ModernUiDesign.Controls;
+using ModernUiDesign.Forms;
 using ModernUiDesign.Forms.UnitConverter;
 using System;
 using System.Windows.Forms;
@@ -32,6 +33,11 @@ namespace ModernUiDesign
                   unitConverterSubcontol.OpenChildForm(new Angle(), ChildForm_Panel);
                   MenuPanel.Visible = false;
               };
+            Temperature_Converter_Btn.Click += (s, a) =>
+            {
+                unitConverterSubcontol.OpenChildForm(new Temperature(), ChildForm_Panel);
+                MenuPanel.Visible = false;
+            };
             SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);
         }
     }

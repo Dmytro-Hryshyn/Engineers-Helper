@@ -58,6 +58,12 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UnitConverter\Temperature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnitConverter\Temperature.Designer.cs">
+      <DependentUpon>Temperature.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UnitConverter\Angle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnitConverter\Temperature.resx">
+      <DependentUpon>Temperature.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UnitConverter\Angle.resx">
       <DependentUpon>Angle.cs</DependentUpon>

@@ -68,7 +68,7 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 622);
+            this.button1.Size = new System.Drawing.Size(50, 600);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -87,7 +87,7 @@
             this.comboBox_FromUnit.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_FromUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox_FromUnit.FormattingEnabled = true;
-            this.comboBox_FromUnit.Location = new System.Drawing.Point(158, 256);
+            this.comboBox_FromUnit.Location = new System.Drawing.Point(177, 233);
             this.comboBox_FromUnit.Name = "comboBox_FromUnit";
             this.comboBox_FromUnit.Size = new System.Drawing.Size(220, 33);
             this.comboBox_FromUnit.TabIndex = 1;
@@ -99,7 +99,7 @@
             this.label_FromUnit.AutoSize = true;
             this.label_FromUnit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_FromUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_FromUnit.Location = new System.Drawing.Point(216, 166);
+            this.label_FromUnit.Location = new System.Drawing.Point(235, 143);
             this.label_FromUnit.Name = "label_FromUnit";
             this.label_FromUnit.Size = new System.Drawing.Size(105, 23);
             this.label_FromUnit.TabIndex = 3;
@@ -111,7 +111,7 @@
             this.label_ToUnit.AutoSize = true;
             this.label_ToUnit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ToUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_ToUnit.Location = new System.Drawing.Point(665, 166);
+            this.label_ToUnit.Location = new System.Drawing.Point(697, 143);
             this.label_ToUnit.Name = "label_ToUnit";
             this.label_ToUnit.Size = new System.Drawing.Size(78, 23);
             this.label_ToUnit.TabIndex = 4;
@@ -125,7 +125,7 @@
             this.button_Convert.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Convert.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Convert.Image = ((System.Drawing.Image)(resources.GetObject("button_Convert.Image")));
-            this.button_Convert.Location = new System.Drawing.Point(351, 389);
+            this.button_Convert.Location = new System.Drawing.Point(372, 365);
             this.button_Convert.Name = "button_Convert";
             this.button_Convert.Size = new System.Drawing.Size(141, 50);
             this.button_Convert.TabIndex = 5;
@@ -143,7 +143,7 @@
             this.button_Clear.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Clear.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Clear.Image = ((System.Drawing.Image)(resources.GetObject("button_Clear.Image")));
-            this.button_Clear.Location = new System.Drawing.Point(498, 389);
+            this.button_Clear.Location = new System.Drawing.Point(519, 365);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.button_Clear.Size = new System.Drawing.Size(141, 50);
@@ -167,7 +167,7 @@
             this.comboBox_ToUnit.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_ToUnit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox_ToUnit.FormattingEnabled = true;
-            this.comboBox_ToUnit.Location = new System.Drawing.Point(594, 256);
+            this.comboBox_ToUnit.Location = new System.Drawing.Point(626, 233);
             this.comboBox_ToUnit.Name = "comboBox_ToUnit";
             this.comboBox_ToUnit.Size = new System.Drawing.Size(220, 33);
             this.comboBox_ToUnit.TabIndex = 7;
@@ -180,7 +180,7 @@
             this.textBox_FromUnit.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_FromUnit.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_FromUnit.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox_FromUnit.Location = new System.Drawing.Point(158, 203);
+            this.textBox_FromUnit.Location = new System.Drawing.Point(177, 180);
             this.textBox_FromUnit.MaxLength = 6;
             this.textBox_FromUnit.Name = "textBox_FromUnit";
             this.textBox_FromUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -196,7 +196,7 @@
             this.textBox_ToUnit.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_ToUnit.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_ToUnit.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox_ToUnit.Location = new System.Drawing.Point(594, 203);
+            this.textBox_ToUnit.Location = new System.Drawing.Point(626, 180);
             this.textBox_ToUnit.MaxLength = 6;
             this.textBox_ToUnit.Name = "textBox_ToUnit";
             this.textBox_ToUnit.ReadOnly = true;
@@ -209,7 +209,7 @@
             // 
             this.pictureBox_Logo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Logo.Image")));
-            this.pictureBox_Logo.Location = new System.Drawing.Point(437, 203);
+            this.pictureBox_Logo.Location = new System.Drawing.Point(456, 186);
             this.pictureBox_Logo.Name = "pictureBox_Logo";
             this.pictureBox_Logo.Size = new System.Drawing.Size(117, 72);
             this.pictureBox_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,9 +223,11 @@
             this.button_KeyboardMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_KeyboardMenu.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_KeyboardMenu.Image = ((System.Drawing.Image)(resources.GetObject("button_KeyboardMenu.Image")));
-            this.button_KeyboardMenu.Location = new System.Drawing.Point(50, 572);
+            this.button_KeyboardMenu.Location = new System.Drawing.Point(415, 550);
+            this.button_KeyboardMenu.MaximumSize = new System.Drawing.Size(200, 60);
+            this.button_KeyboardMenu.MinimumSize = new System.Drawing.Size(150, 50);
             this.button_KeyboardMenu.Name = "button_KeyboardMenu";
-            this.button_KeyboardMenu.Size = new System.Drawing.Size(909, 50);
+            this.button_KeyboardMenu.Size = new System.Drawing.Size(200, 50);
             this.button_KeyboardMenu.TabIndex = 11;
             this.button_KeyboardMenu.UseVisualStyleBackColor = true;
             this.button_KeyboardMenu.Click += new System.EventHandler(this.button_KeyboardMenu_Click);
@@ -257,13 +259,14 @@
             this.tableLayoutPanel_Keyboard.Controls.Add(this.button_Backspace, 5, 0);
             this.tableLayoutPanel_Keyboard.Controls.Add(this.button1_Dot, 6, 0);
             this.tableLayoutPanel_Keyboard.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel_Keyboard.Location = new System.Drawing.Point(225, 466);
-            this.tableLayoutPanel_Keyboard.Margin = new System.Windows.Forms.Padding(50, 3, 50, 3);
+            this.tableLayoutPanel_Keyboard.Location = new System.Drawing.Point(219, 444);
+            this.tableLayoutPanel_Keyboard.MaximumSize = new System.Drawing.Size(650, 125);
+            this.tableLayoutPanel_Keyboard.MinimumSize = new System.Drawing.Size(560, 100);
             this.tableLayoutPanel_Keyboard.Name = "tableLayoutPanel_Keyboard";
             this.tableLayoutPanel_Keyboard.RowCount = 2;
             this.tableLayoutPanel_Keyboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel_Keyboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Keyboard.Size = new System.Drawing.Size(563, 100);
+            this.tableLayoutPanel_Keyboard.Size = new System.Drawing.Size(560, 100);
             this.tableLayoutPanel_Keyboard.TabIndex = 12;
             // 
             // button_CE
@@ -271,9 +274,9 @@
             this.button_CE.FlatAppearance.BorderSize = 0;
             this.button_CE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CE.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_CE.Location = new System.Drawing.Point(403, 53);
+            this.button_CE.Location = new System.Drawing.Point(398, 53);
             this.button_CE.Name = "button_CE";
-            this.button_CE.Size = new System.Drawing.Size(74, 44);
+            this.button_CE.Size = new System.Drawing.Size(73, 44);
             this.button_CE.TabIndex = 20;
             this.button_CE.Text = "CE";
             this.button_CE.UseVisualStyleBackColor = true;
@@ -285,7 +288,7 @@
             this.button_Enter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Enter.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Enter.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_Enter.Location = new System.Drawing.Point(483, 53);
+            this.button_Enter.Location = new System.Drawing.Point(477, 53);
             this.button_Enter.Name = "button_Enter";
             this.button_Enter.Size = new System.Drawing.Size(75, 44);
             this.button_Enter.TabIndex = 19;
@@ -301,9 +304,9 @@
             this.button_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_7.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_7.Location = new System.Drawing.Point(83, 53);
+            this.button_7.Location = new System.Drawing.Point(82, 53);
             this.button_7.Name = "button_7";
-            this.button_7.Size = new System.Drawing.Size(74, 44);
+            this.button_7.Size = new System.Drawing.Size(73, 44);
             this.button_7.TabIndex = 17;
             this.button_7.Text = "7";
             this.button_7.UseVisualStyleBackColor = true;
@@ -319,7 +322,7 @@
             this.button_6.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_6.Location = new System.Drawing.Point(3, 53);
             this.button_6.Name = "button_6";
-            this.button_6.Size = new System.Drawing.Size(74, 44);
+            this.button_6.Size = new System.Drawing.Size(73, 44);
             this.button_6.TabIndex = 16;
             this.button_6.Text = "6";
             this.button_6.UseVisualStyleBackColor = true;
@@ -333,9 +336,9 @@
             this.button_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_8.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_8.Location = new System.Drawing.Point(163, 53);
+            this.button_8.Location = new System.Drawing.Point(161, 53);
             this.button_8.Name = "button_8";
-            this.button_8.Size = new System.Drawing.Size(74, 44);
+            this.button_8.Size = new System.Drawing.Size(73, 44);
             this.button_8.TabIndex = 15;
             this.button_8.Text = "8";
             this.button_8.UseVisualStyleBackColor = true;
@@ -349,9 +352,9 @@
             this.button_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_0.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_0.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_0.Location = new System.Drawing.Point(323, 53);
+            this.button_0.Location = new System.Drawing.Point(319, 53);
             this.button_0.Name = "button_0";
-            this.button_0.Size = new System.Drawing.Size(74, 44);
+            this.button_0.Size = new System.Drawing.Size(73, 44);
             this.button_0.TabIndex = 14;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = true;
@@ -365,9 +368,9 @@
             this.button_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_9.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_9.Location = new System.Drawing.Point(243, 53);
+            this.button_9.Location = new System.Drawing.Point(240, 53);
             this.button_9.Name = "button_9";
-            this.button_9.Size = new System.Drawing.Size(74, 44);
+            this.button_9.Size = new System.Drawing.Size(73, 44);
             this.button_9.TabIndex = 12;
             this.button_9.Text = "9";
             this.button_9.UseVisualStyleBackColor = true;
@@ -380,9 +383,9 @@
             this.button_5.FlatAppearance.BorderSize = 0;
             this.button_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_5.Location = new System.Drawing.Point(323, 3);
+            this.button_5.Location = new System.Drawing.Point(319, 3);
             this.button_5.Name = "button_5";
-            this.button_5.Size = new System.Drawing.Size(74, 44);
+            this.button_5.Size = new System.Drawing.Size(73, 44);
             this.button_5.TabIndex = 4;
             this.button_5.Text = "5";
             this.button_5.UseVisualStyleBackColor = true;
@@ -395,9 +398,9 @@
             this.button_4.FlatAppearance.BorderSize = 0;
             this.button_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_4.Location = new System.Drawing.Point(243, 3);
+            this.button_4.Location = new System.Drawing.Point(240, 3);
             this.button_4.Name = "button_4";
-            this.button_4.Size = new System.Drawing.Size(74, 44);
+            this.button_4.Size = new System.Drawing.Size(73, 44);
             this.button_4.TabIndex = 3;
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
@@ -410,9 +413,9 @@
             this.button_3.FlatAppearance.BorderSize = 0;
             this.button_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_3.Location = new System.Drawing.Point(163, 3);
+            this.button_3.Location = new System.Drawing.Point(161, 3);
             this.button_3.Name = "button_3";
-            this.button_3.Size = new System.Drawing.Size(74, 44);
+            this.button_3.Size = new System.Drawing.Size(73, 44);
             this.button_3.TabIndex = 2;
             this.button_3.Text = "3";
             this.button_3.UseVisualStyleBackColor = true;
@@ -425,9 +428,9 @@
             this.button_2.FlatAppearance.BorderSize = 0;
             this.button_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_2.Location = new System.Drawing.Point(83, 3);
+            this.button_2.Location = new System.Drawing.Point(82, 3);
             this.button_2.Name = "button_2";
-            this.button_2.Size = new System.Drawing.Size(74, 44);
+            this.button_2.Size = new System.Drawing.Size(73, 44);
             this.button_2.TabIndex = 1;
             this.button_2.Text = "2";
             this.button_2.UseVisualStyleBackColor = true;
@@ -443,7 +446,7 @@
             this.button_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_1.Location = new System.Drawing.Point(3, 3);
             this.button_1.Name = "button_1";
-            this.button_1.Size = new System.Drawing.Size(74, 44);
+            this.button_1.Size = new System.Drawing.Size(73, 44);
             this.button_1.TabIndex = 0;
             this.button_1.Text = "1";
             this.button_1.UseVisualStyleBackColor = true;
@@ -456,9 +459,9 @@
             this.button_Backspace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Backspace.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Backspace.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_Backspace.Location = new System.Drawing.Point(403, 3);
+            this.button_Backspace.Location = new System.Drawing.Point(398, 3);
             this.button_Backspace.Name = "button_Backspace";
-            this.button_Backspace.Size = new System.Drawing.Size(74, 44);
+            this.button_Backspace.Size = new System.Drawing.Size(73, 44);
             this.button_Backspace.TabIndex = 11;
             this.button_Backspace.Text = "🢦";
             this.button_Backspace.UseVisualStyleBackColor = true;
@@ -470,7 +473,7 @@
             this.button1_Dot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1_Dot.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1_Dot.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1_Dot.Location = new System.Drawing.Point(483, 3);
+            this.button1_Dot.Location = new System.Drawing.Point(477, 3);
             this.button1_Dot.Name = "button1_Dot";
             this.button1_Dot.Size = new System.Drawing.Size(75, 44);
             this.button1_Dot.TabIndex = 18;
@@ -484,7 +487,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(959, 622);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.tableLayoutPanel_Keyboard);
             this.Controls.Add(this.button_KeyboardMenu);
             this.Controls.Add(this.pictureBox_Logo);
@@ -498,6 +501,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox_ToUnit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Speed";
             this.Text = "Speed";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
@@ -512,7 +516,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button_Clear;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
-        private System.Windows.Forms.Button button_KeyboardMenu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Keyboard;
         private System.Windows.Forms.Button button_5;
         private System.Windows.Forms.Button button_4;
@@ -535,5 +538,6 @@
         protected System.Windows.Forms.Label label_FromUnit;
         protected System.Windows.Forms.Label label_ToUnit;
         protected System.Windows.Forms.Button button_Convert;
+        private System.Windows.Forms.Button button_KeyboardMenu;
     }
 }

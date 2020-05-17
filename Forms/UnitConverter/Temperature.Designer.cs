@@ -1,6 +1,6 @@
-﻿namespace ModernUiDesign
+﻿namespace ModernUiDesign.Forms
 {
-    partial class Length
+    partial class Temperature
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // textBox_FromUnit
-            // 
-            this.textBox_FromUnit.AutoCompleteCustomSource.AddRange(new string[] {
-            "Millemter"});
-            // 
             // button_Convert
             // 
             this.button_Convert.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
             // 
-            // Length
+            // Temperature
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Name = "Length";
+            this.Name = "Temperature";
+            this.Text = "Temperature";
             this.ResumeLayout(false);
             this.PerformLayout();
 

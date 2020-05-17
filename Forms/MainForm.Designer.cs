@@ -36,7 +36,7 @@
             this.HelpMenu_Btn = new System.Windows.Forms.Button();
             this.UnitConverter_Submenu_Panel = new System.Windows.Forms.Panel();
             this.Angle_Converter_Btn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Temperature_Converter_Btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Length_Converter_Btn = new System.Windows.Forms.Button();
             this.Speed_Converter_Btn = new System.Windows.Forms.Button();
@@ -130,7 +130,7 @@
             this.UnitConverter_Submenu_Panel.AutoSize = true;
             this.UnitConverter_Submenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Angle_Converter_Btn);
-            this.UnitConverter_Submenu_Panel.Controls.Add(this.button3);
+            this.UnitConverter_Submenu_Panel.Controls.Add(this.Temperature_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button1);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Length_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Speed_Converter_Btn);
@@ -159,24 +159,24 @@
             this.Angle_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Angle_Converter_Btn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Temperature_Converter_Btn
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 150);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(250, 50);
-            this.button3.TabIndex = 5;
-            this.button3.Text = " Temperature";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.Temperature_Converter_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Temperature_Converter_Btn.FlatAppearance.BorderSize = 0;
+            this.Temperature_Converter_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Temperature_Converter_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Temperature_Converter_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Temperature_Converter_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Temperature_Converter_Btn.Image")));
+            this.Temperature_Converter_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Temperature_Converter_Btn.Location = new System.Drawing.Point(0, 150);
+            this.Temperature_Converter_Btn.Name = "Temperature_Converter_Btn";
+            this.Temperature_Converter_Btn.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Temperature_Converter_Btn.Size = new System.Drawing.Size(250, 50);
+            this.Temperature_Converter_Btn.TabIndex = 5;
+            this.Temperature_Converter_Btn.Text = " Temperature";
+            this.Temperature_Converter_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Temperature_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Temperature_Converter_Btn.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -299,7 +299,7 @@
         private System.Windows.Forms.Panel LogoPanel;
         private System.Windows.Forms.Button HelpMenu_Btn;
         private System.Windows.Forms.Button Angle_Converter_Btn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Temperature_Converter_Btn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel ReferenceSubmenu_Panel;
         private System.Windows.Forms.Button Thread_Btn;
