@@ -182,7 +182,7 @@ namespace Forms.UnitConverter
             }
         }
 
-       protected virtual void  SetComboBox()
+        protected virtual void SetComboBox()
         {
             var speedDictinary = SpeedConverter.NiceComboboxDataRepresentation();
             comboBox_FromUnit.DataSource = new BindingSource(speedDictinary, null);

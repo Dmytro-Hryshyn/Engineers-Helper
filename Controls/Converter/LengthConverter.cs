@@ -1,14 +1,15 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace ModernUiDesign
 {
     public class LengthConverter : IConverter
     {
-        public decimal FromUnitValue { get; private set; } 
+        public decimal FromUnitValue { get; private set; }
 
-        public string FromUnitName { get; private set; } 
+        public string FromUnitName { get; private set; }
 
-        public string ToUnitName { get; private set; } 
+        public string ToUnitName { get; private set; }
 
         public string ResultString { get; private set; }
 
@@ -34,6 +35,23 @@ namespace ModernUiDesign
             Foot,
             Inch,
             Nautical_mile
+        }
+
+        public static Dictionary<string, string> NiceComboboxDataRepresentation()
+        {
+            Dictionary<string, string> lengthPairs = new Dictionary<string, string>();
+            lengthPairs.Add("Kilometre", $"{LengthUnits.Kilometre}");
+            lengthPairs.Add("Metres", $"{LengthUnits.Metres}");
+            lengthPairs.Add("Centimetres", $"{LengthUnits.Centimetres}");
+            lengthPairs.Add("Millimetre", $"{LengthUnits.Millimetre}");
+            lengthPairs.Add("Micrometre", $"{LengthUnits.Micrometre}");
+            lengthPairs.Add("Nanometre", $"{LengthUnits.Nanometre}");
+            lengthPairs.Add("Mile", $"{LengthUnits.Mile}");
+            lengthPairs.Add("Yard", $"{LengthUnits.Yard}");
+            lengthPairs.Add("Foot", $"{LengthUnits.Foot}");
+            lengthPairs.Add("Inch", $"{LengthUnits.Inch}");
+            lengthPairs.Add("Nautical mile", $"{LengthUnits.Nautical_mile}");
+            return lengthPairs;
         }
         public string GetUnswer()
         {
