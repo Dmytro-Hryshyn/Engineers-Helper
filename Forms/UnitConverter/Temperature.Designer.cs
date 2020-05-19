@@ -33,6 +33,7 @@
             // button_Convert
             // 
             this.button_Convert.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+
             // 
             // Temperature
             // 

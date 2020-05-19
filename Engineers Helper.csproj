@@ -51,6 +51,7 @@
     <Compile Include="Controls\Converter\IConverter.cs" />
     <Compile Include="Controls\Converter\LengthConverter.cs" />
     <Compile Include="Controls\Converter\SpeedConverter.cs" />
+    <Compile Include="Controls\Converter\TemperatureConverter.cs" />
     <Compile Include="Controls\SubMenuContol.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>

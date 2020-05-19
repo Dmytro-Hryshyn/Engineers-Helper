@@ -5,7 +5,10 @@ using System.Windows.Forms;
 namespace Forms.UnitConverter
 {
 
-
+    /// <summary>
+    /// Derived Class have to ovveride all this methods.
+    /// Calculate, SetComboBox, Button_Convert_Click, DisplayError(not esential)
+    /// </summary>
     public partial class Speed : Form
     {
         public Speed()
@@ -155,6 +158,7 @@ namespace Forms.UnitConverter
             Calculate();
         }
 
+      
         protected virtual void Calculate()
         {
             if (textBox_FromUnit.Text != string.Empty)
