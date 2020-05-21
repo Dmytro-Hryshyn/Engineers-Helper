@@ -43,6 +43,7 @@
             this.UnitConverter_Menu_Btn = new System.Windows.Forms.Button();
             this.LogoPanel = new System.Windows.Forms.Panel();
             this.ChildForm_Panel = new System.Windows.Forms.Panel();
+            this.Pressure_Converter_Btn = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
             this.ReferenceSubmenu_Panel.SuspendLayout();
             this.UnitConverter_Submenu_Panel.SuspendLayout();
@@ -69,7 +70,7 @@
             this.ReferenceSubmenu_Panel.AutoSize = true;
             this.ReferenceSubmenu_Panel.Controls.Add(this.Thread_Btn);
             this.ReferenceSubmenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ReferenceSubmenu_Panel.Location = new System.Drawing.Point(0, 426);
+            this.ReferenceSubmenu_Panel.Location = new System.Drawing.Point(0, 476);
             this.ReferenceSubmenu_Panel.Name = "ReferenceSubmenu_Panel";
             this.ReferenceSubmenu_Panel.Size = new System.Drawing.Size(250, 50);
             this.ReferenceSubmenu_Panel.TabIndex = 1;
@@ -99,7 +100,7 @@
             this.ReferenceMenu_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ReferenceMenu_Btn.Image = ((System.Drawing.Image)(resources.GetObject("ReferenceMenu_Btn.Image")));
             this.ReferenceMenu_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ReferenceMenu_Btn.Location = new System.Drawing.Point(0, 376);
+            this.ReferenceMenu_Btn.Location = new System.Drawing.Point(0, 426);
             this.ReferenceMenu_Btn.Name = "ReferenceMenu_Btn";
             this.ReferenceMenu_Btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.ReferenceMenu_Btn.Size = new System.Drawing.Size(250, 50);
@@ -128,7 +129,8 @@
             // UnitConverter_Submenu_Panel
             // 
             this.UnitConverter_Submenu_Panel.AutoSize = true;
-            this.UnitConverter_Submenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.UnitConverter_Submenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.UnitConverter_Submenu_Panel.Controls.Add(this.Pressure_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Angle_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Temperature_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.button1);
@@ -137,7 +139,7 @@
             this.UnitConverter_Submenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.UnitConverter_Submenu_Panel.Location = new System.Drawing.Point(0, 126);
             this.UnitConverter_Submenu_Panel.Name = "UnitConverter_Submenu_Panel";
-            this.UnitConverter_Submenu_Panel.Size = new System.Drawing.Size(250, 250);
+            this.UnitConverter_Submenu_Panel.Size = new System.Drawing.Size(250, 300);
             this.UnitConverter_Submenu_Panel.TabIndex = 1;
             // 
             // Angle_Converter_Btn
@@ -272,6 +274,25 @@
             this.ChildForm_Panel.Size = new System.Drawing.Size(733, 714);
             this.ChildForm_Panel.TabIndex = 1;
             // 
+            // Pressure_Converter_Btn
+            // 
+            this.Pressure_Converter_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Pressure_Converter_Btn.FlatAppearance.BorderSize = 0;
+            this.Pressure_Converter_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pressure_Converter_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pressure_Converter_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Pressure_Converter_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Pressure_Converter_Btn.Image")));
+            this.Pressure_Converter_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Pressure_Converter_Btn.Location = new System.Drawing.Point(0, 250);
+            this.Pressure_Converter_Btn.Name = "Pressure_Converter_Btn";
+            this.Pressure_Converter_Btn.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Pressure_Converter_Btn.Size = new System.Drawing.Size(250, 50);
+            this.Pressure_Converter_Btn.TabIndex = 7;
+            this.Pressure_Converter_Btn.Text = "Pressure";
+            this.Pressure_Converter_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Pressure_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pressure_Converter_Btn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +327,7 @@
         private System.Windows.Forms.Button ReferenceMenu_Btn;
         private System.Windows.Forms.Panel ChildForm_Panel;
         private System.Windows.Forms.Panel MenuPanel;
+        private System.Windows.Forms.Button Pressure_Converter_Btn;
     }
 }
 

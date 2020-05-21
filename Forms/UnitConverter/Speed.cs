@@ -132,6 +132,7 @@ namespace Forms.UnitConverter
         private void button_CE_Click(object sender, EventArgs e)
         {
             textBox_FromUnit.Text = string.Empty;
+            textBox_ToUnit.Text = string.Empty;
         }
 
         private void button_Enter_Click(object sender, EventArgs e)
@@ -153,7 +154,7 @@ namespace Forms.UnitConverter
             textBox_ToUnit.Text = string.Empty;
         }
 
-        private void button_Convert_Click(object sender, EventArgs e)
+        private   void  button_Convert_Click(object sender, EventArgs e)
         {
             Calculate();
         }

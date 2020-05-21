@@ -38,6 +38,11 @@ namespace ModernUiDesign
                 unitConverterSubcontol.OpenChildForm(new Temperature(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
+            Pressure_Converter_Btn.Click += (s, a) =>
+            {
+                unitConverterSubcontol.OpenChildForm(new Pressure(), ChildForm_Panel);
+                MenuPanel.Visible = false;
+            };
             SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);
         }
     }

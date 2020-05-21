@@ -3,7 +3,7 @@
 
 namespace ModernUiDesign.Controls.Converter
 {
-    public delegate void ErrorCall(string errormess);
+   
 
     public class TemperatureConverter : IConverter
     {

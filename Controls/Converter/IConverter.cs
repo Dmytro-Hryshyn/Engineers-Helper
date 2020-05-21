@@ -3,7 +3,8 @@ using System;
 
 namespace ModernUiDesign
 {
-    
+    public delegate void ErrorCall(string errormess);
+
     interface IConverter
     {
         
@@ -13,8 +14,5 @@ namespace ModernUiDesign
         string ResultString { get; }
 
          string GetUnswer();
-       
-       
-
     }
 }
