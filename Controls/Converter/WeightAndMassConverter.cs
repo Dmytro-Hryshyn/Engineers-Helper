@@ -165,7 +165,7 @@ namespace ModernUiDesign.Controls.Converter
                   {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Milligram}", FromUnitValue * 9.072e+8m},
                   {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Microgram}", FromUnitValue * 9.072e+11m},
                   {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Imperial_ton}", FromUnitValue / 1.12m},
-                  {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Stone}", FromUnitValue * 142.857},
+                  {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Stone}", FromUnitValue * 142.857m},
                   {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Pound}", FromUnitValue * 2000},
                   {$"{WeightAndMassUnit.US_ton}-{WeightAndMassUnit.Ounce}", FromUnitValue * 32000},
 
