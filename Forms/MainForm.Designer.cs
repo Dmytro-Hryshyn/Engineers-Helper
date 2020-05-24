@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MenuPanel = new System.Windows.Forms.Panel();
+            this.GeometrySubMenu_Panel = new System.Windows.Forms.Panel();
+            this.Circle_btn = new System.Windows.Forms.Button();
+            this.Traingle_btn = new System.Windows.Forms.Button();
+            this.Square_btn = new System.Windows.Forms.Button();
+            this.Rectangle_Btn = new System.Windows.Forms.Button();
+            this.Geometry2DMenu_Btn = new System.Windows.Forms.Button();
             this.ReferenceSubmenu_Panel = new System.Windows.Forms.Panel();
             this.Thread_Btn = new System.Windows.Forms.Button();
             this.ReferenceMenu_Btn = new System.Windows.Forms.Button();
@@ -43,16 +49,10 @@
             this.UnitConverter_Menu_Btn = new System.Windows.Forms.Button();
             this.LogoPanel = new System.Windows.Forms.Panel();
             this.ChildForm_Panel = new System.Windows.Forms.Panel();
-            this.GeometrySubMenu_Panel = new System.Windows.Forms.Panel();
-            this.Geometry2DMenu_Btn = new System.Windows.Forms.Button();
-            this.Rectangle_Btn = new System.Windows.Forms.Button();
-            this.Square_btn = new System.Windows.Forms.Button();
-            this.Traingle_btn = new System.Windows.Forms.Button();
-            this.Circle_btn = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
+            this.GeometrySubMenu_Panel.SuspendLayout();
             this.ReferenceSubmenu_Panel.SuspendLayout();
             this.UnitConverter_Submenu_Panel.SuspendLayout();
-            this.GeometrySubMenu_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuPanel
@@ -71,6 +71,114 @@
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(250, 714);
             this.MenuPanel.TabIndex = 0;
+            // 
+            // GeometrySubMenu_Panel
+            // 
+            this.GeometrySubMenu_Panel.AutoSize = true;
+            this.GeometrySubMenu_Panel.Controls.Add(this.Circle_btn);
+            this.GeometrySubMenu_Panel.Controls.Add(this.Traingle_btn);
+            this.GeometrySubMenu_Panel.Controls.Add(this.Square_btn);
+            this.GeometrySubMenu_Panel.Controls.Add(this.Rectangle_Btn);
+            this.GeometrySubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GeometrySubMenu_Panel.Location = new System.Drawing.Point(0, 576);
+            this.GeometrySubMenu_Panel.Name = "GeometrySubMenu_Panel";
+            this.GeometrySubMenu_Panel.Size = new System.Drawing.Size(233, 200);
+            this.GeometrySubMenu_Panel.TabIndex = 0;
+            // 
+            // Circle_btn
+            // 
+            this.Circle_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Circle_btn.FlatAppearance.BorderSize = 0;
+            this.Circle_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Circle_btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Circle_btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Circle_btn.Image = ((System.Drawing.Image)(resources.GetObject("Circle_btn.Image")));
+            this.Circle_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Circle_btn.Location = new System.Drawing.Point(0, 150);
+            this.Circle_btn.Name = "Circle_btn";
+            this.Circle_btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.Circle_btn.Size = new System.Drawing.Size(233, 50);
+            this.Circle_btn.TabIndex = 11;
+            this.Circle_btn.Text = "Circle";
+            this.Circle_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Circle_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Circle_btn.UseVisualStyleBackColor = true;
+            // 
+            // Traingle_btn
+            // 
+            this.Traingle_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Traingle_btn.FlatAppearance.BorderSize = 0;
+            this.Traingle_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Traingle_btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Traingle_btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Traingle_btn.Image = ((System.Drawing.Image)(resources.GetObject("Traingle_btn.Image")));
+            this.Traingle_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Traingle_btn.Location = new System.Drawing.Point(0, 100);
+            this.Traingle_btn.Name = "Traingle_btn";
+            this.Traingle_btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.Traingle_btn.Size = new System.Drawing.Size(233, 50);
+            this.Traingle_btn.TabIndex = 10;
+            this.Traingle_btn.Text = "Triangle";
+            this.Traingle_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Traingle_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Traingle_btn.UseVisualStyleBackColor = true;
+            // 
+            // Square_btn
+            // 
+            this.Square_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Square_btn.FlatAppearance.BorderSize = 0;
+            this.Square_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Square_btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Square_btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Square_btn.Image = ((System.Drawing.Image)(resources.GetObject("Square_btn.Image")));
+            this.Square_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Square_btn.Location = new System.Drawing.Point(0, 50);
+            this.Square_btn.Name = "Square_btn";
+            this.Square_btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.Square_btn.Size = new System.Drawing.Size(233, 50);
+            this.Square_btn.TabIndex = 9;
+            this.Square_btn.Text = "Square";
+            this.Square_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Square_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Square_btn.UseVisualStyleBackColor = true;
+            // 
+            // Rectangle_Btn
+            // 
+            this.Rectangle_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Rectangle_Btn.FlatAppearance.BorderSize = 0;
+            this.Rectangle_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rectangle_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rectangle_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Rectangle_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Rectangle_Btn.Image")));
+            this.Rectangle_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Rectangle_Btn.Location = new System.Drawing.Point(0, 0);
+            this.Rectangle_Btn.Name = "Rectangle_Btn";
+            this.Rectangle_Btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.Rectangle_Btn.Size = new System.Drawing.Size(233, 50);
+            this.Rectangle_Btn.TabIndex = 8;
+            this.Rectangle_Btn.Text = "Rectangle";
+            this.Rectangle_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Rectangle_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Rectangle_Btn.UseVisualStyleBackColor = true;
+            // 
+            // Geometry2DMenu_Btn
+            // 
+            this.Geometry2DMenu_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Geometry2DMenu_Btn.FlatAppearance.BorderSize = 0;
+            this.Geometry2DMenu_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Geometry2DMenu_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Geometry2DMenu_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Geometry2DMenu_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Geometry2DMenu_Btn.Image")));
+            this.Geometry2DMenu_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Geometry2DMenu_Btn.Location = new System.Drawing.Point(0, 526);
+            this.Geometry2DMenu_Btn.Name = "Geometry2DMenu_Btn";
+            this.Geometry2DMenu_Btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Geometry2DMenu_Btn.Size = new System.Drawing.Size(233, 50);
+            this.Geometry2DMenu_Btn.TabIndex = 8;
+            this.Geometry2DMenu_Btn.Text = "Geometry 2D";
+            this.Geometry2DMenu_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Geometry2DMenu_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Geometry2DMenu_Btn.UseVisualStyleBackColor = true;
             // 
             // ReferenceSubmenu_Panel
             // 
@@ -284,114 +392,6 @@
             this.ChildForm_Panel.Size = new System.Drawing.Size(733, 714);
             this.ChildForm_Panel.TabIndex = 1;
             // 
-            // GeometrySubMenu_Panel
-            // 
-            this.GeometrySubMenu_Panel.AutoSize = true;
-            this.GeometrySubMenu_Panel.Controls.Add(this.Circle_btn);
-            this.GeometrySubMenu_Panel.Controls.Add(this.Traingle_btn);
-            this.GeometrySubMenu_Panel.Controls.Add(this.Square_btn);
-            this.GeometrySubMenu_Panel.Controls.Add(this.Rectangle_Btn);
-            this.GeometrySubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.GeometrySubMenu_Panel.Location = new System.Drawing.Point(0, 576);
-            this.GeometrySubMenu_Panel.Name = "GeometrySubMenu_Panel";
-            this.GeometrySubMenu_Panel.Size = new System.Drawing.Size(233, 200);
-            this.GeometrySubMenu_Panel.TabIndex = 0;
-            // 
-            // Geometry2DMenu_Btn
-            // 
-            this.Geometry2DMenu_Btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Geometry2DMenu_Btn.FlatAppearance.BorderSize = 0;
-            this.Geometry2DMenu_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Geometry2DMenu_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Geometry2DMenu_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Geometry2DMenu_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Geometry2DMenu_Btn.Image")));
-            this.Geometry2DMenu_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Geometry2DMenu_Btn.Location = new System.Drawing.Point(0, 526);
-            this.Geometry2DMenu_Btn.Name = "Geometry2DMenu_Btn";
-            this.Geometry2DMenu_Btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Geometry2DMenu_Btn.Size = new System.Drawing.Size(233, 50);
-            this.Geometry2DMenu_Btn.TabIndex = 8;
-            this.Geometry2DMenu_Btn.Text = "Geometry 2D";
-            this.Geometry2DMenu_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Geometry2DMenu_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Geometry2DMenu_Btn.UseVisualStyleBackColor = true;
-            // 
-            // Rectangle_Btn
-            // 
-            this.Rectangle_Btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Rectangle_Btn.FlatAppearance.BorderSize = 0;
-            this.Rectangle_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Rectangle_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rectangle_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Rectangle_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Rectangle_Btn.Image")));
-            this.Rectangle_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Rectangle_Btn.Location = new System.Drawing.Point(0, 0);
-            this.Rectangle_Btn.Name = "Rectangle_Btn";
-            this.Rectangle_Btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.Rectangle_Btn.Size = new System.Drawing.Size(233, 50);
-            this.Rectangle_Btn.TabIndex = 8;
-            this.Rectangle_Btn.Text = "Rectangle";
-            this.Rectangle_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Rectangle_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Rectangle_Btn.UseVisualStyleBackColor = true;
-            // 
-            // Square_btn
-            // 
-            this.Square_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Square_btn.FlatAppearance.BorderSize = 0;
-            this.Square_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Square_btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Square_btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Square_btn.Image = ((System.Drawing.Image)(resources.GetObject("Square_btn.Image")));
-            this.Square_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Square_btn.Location = new System.Drawing.Point(0, 50);
-            this.Square_btn.Name = "Square_btn";
-            this.Square_btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.Square_btn.Size = new System.Drawing.Size(233, 50);
-            this.Square_btn.TabIndex = 9;
-            this.Square_btn.Text = "Square";
-            this.Square_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Square_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Square_btn.UseVisualStyleBackColor = true;
-            // 
-            // Traingle_btn
-            // 
-            this.Traingle_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Traingle_btn.FlatAppearance.BorderSize = 0;
-            this.Traingle_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Traingle_btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Traingle_btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Traingle_btn.Image = ((System.Drawing.Image)(resources.GetObject("Traingle_btn.Image")));
-            this.Traingle_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Traingle_btn.Location = new System.Drawing.Point(0, 100);
-            this.Traingle_btn.Name = "Traingle_btn";
-            this.Traingle_btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.Traingle_btn.Size = new System.Drawing.Size(233, 50);
-            this.Traingle_btn.TabIndex = 10;
-            this.Traingle_btn.Text = "Triangle";
-            this.Traingle_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Traingle_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Traingle_btn.UseVisualStyleBackColor = true;
-            // 
-            // Circle_btn
-            // 
-            this.Circle_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Circle_btn.FlatAppearance.BorderSize = 0;
-            this.Circle_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Circle_btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Circle_btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Circle_btn.Image = ((System.Drawing.Image)(resources.GetObject("Circle_btn.Image")));
-            this.Circle_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Circle_btn.Location = new System.Drawing.Point(0, 150);
-            this.Circle_btn.Name = "Circle_btn";
-            this.Circle_btn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.Circle_btn.Size = new System.Drawing.Size(233, 50);
-            this.Circle_btn.TabIndex = 11;
-            this.Circle_btn.Text = "Circle";
-            this.Circle_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Circle_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Circle_btn.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,9 +405,9 @@
             this.Text = "Form1";
             this.MenuPanel.ResumeLayout(false);
             this.MenuPanel.PerformLayout();
+            this.GeometrySubMenu_Panel.ResumeLayout(false);
             this.ReferenceSubmenu_Panel.ResumeLayout(false);
             this.UnitConverter_Submenu_Panel.ResumeLayout(false);
-            this.GeometrySubMenu_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
