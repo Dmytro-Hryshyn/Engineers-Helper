@@ -35,15 +35,15 @@
             this.ReferenceMenu_Btn = new System.Windows.Forms.Button();
             this.HelpMenu_Btn = new System.Windows.Forms.Button();
             this.UnitConverter_Submenu_Panel = new System.Windows.Forms.Panel();
+            this.Pressure_Converter_Btn = new System.Windows.Forms.Button();
             this.Angle_Converter_Btn = new System.Windows.Forms.Button();
             this.Temperature_Converter_Btn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.WaightAndMass_Button = new System.Windows.Forms.Button();
             this.Length_Converter_Btn = new System.Windows.Forms.Button();
             this.Speed_Converter_Btn = new System.Windows.Forms.Button();
             this.UnitConverter_Menu_Btn = new System.Windows.Forms.Button();
             this.LogoPanel = new System.Windows.Forms.Panel();
             this.ChildForm_Panel = new System.Windows.Forms.Panel();
-            this.Pressure_Converter_Btn = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
             this.ReferenceSubmenu_Panel.SuspendLayout();
             this.UnitConverter_Submenu_Panel.SuspendLayout();
@@ -133,7 +133,7 @@
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Pressure_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Angle_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Temperature_Converter_Btn);
-            this.UnitConverter_Submenu_Panel.Controls.Add(this.button1);
+            this.UnitConverter_Submenu_Panel.Controls.Add(this.WaightAndMass_Button);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Length_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Controls.Add(this.Speed_Converter_Btn);
             this.UnitConverter_Submenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -141,6 +141,25 @@
             this.UnitConverter_Submenu_Panel.Name = "UnitConverter_Submenu_Panel";
             this.UnitConverter_Submenu_Panel.Size = new System.Drawing.Size(250, 300);
             this.UnitConverter_Submenu_Panel.TabIndex = 1;
+            // 
+            // Pressure_Converter_Btn
+            // 
+            this.Pressure_Converter_Btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Pressure_Converter_Btn.FlatAppearance.BorderSize = 0;
+            this.Pressure_Converter_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pressure_Converter_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pressure_Converter_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Pressure_Converter_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Pressure_Converter_Btn.Image")));
+            this.Pressure_Converter_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Pressure_Converter_Btn.Location = new System.Drawing.Point(0, 250);
+            this.Pressure_Converter_Btn.Name = "Pressure_Converter_Btn";
+            this.Pressure_Converter_Btn.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Pressure_Converter_Btn.Size = new System.Drawing.Size(250, 50);
+            this.Pressure_Converter_Btn.TabIndex = 7;
+            this.Pressure_Converter_Btn.Text = "Pressure";
+            this.Pressure_Converter_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Pressure_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Pressure_Converter_Btn.UseVisualStyleBackColor = true;
             // 
             // Angle_Converter_Btn
             // 
@@ -180,24 +199,24 @@
             this.Temperature_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Temperature_Converter_Btn.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // WaightAndMass_Button
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 100);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(250, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = " Waight && Mass";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.WaightAndMass_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WaightAndMass_Button.FlatAppearance.BorderSize = 0;
+            this.WaightAndMass_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WaightAndMass_Button.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WaightAndMass_Button.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.WaightAndMass_Button.Image = ((System.Drawing.Image)(resources.GetObject("WaightAndMass_Button.Image")));
+            this.WaightAndMass_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.WaightAndMass_Button.Location = new System.Drawing.Point(0, 100);
+            this.WaightAndMass_Button.Name = "WaightAndMass_Button";
+            this.WaightAndMass_Button.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.WaightAndMass_Button.Size = new System.Drawing.Size(250, 50);
+            this.WaightAndMass_Button.TabIndex = 4;
+            this.WaightAndMass_Button.Text = " Waight && Mass";
+            this.WaightAndMass_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.WaightAndMass_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.WaightAndMass_Button.UseVisualStyleBackColor = true;
             // 
             // Length_Converter_Btn
             // 
@@ -274,25 +293,6 @@
             this.ChildForm_Panel.Size = new System.Drawing.Size(733, 714);
             this.ChildForm_Panel.TabIndex = 1;
             // 
-            // Pressure_Converter_Btn
-            // 
-            this.Pressure_Converter_Btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Pressure_Converter_Btn.FlatAppearance.BorderSize = 0;
-            this.Pressure_Converter_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Pressure_Converter_Btn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pressure_Converter_Btn.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Pressure_Converter_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Pressure_Converter_Btn.Image")));
-            this.Pressure_Converter_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Pressure_Converter_Btn.Location = new System.Drawing.Point(0, 250);
-            this.Pressure_Converter_Btn.Name = "Pressure_Converter_Btn";
-            this.Pressure_Converter_Btn.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.Pressure_Converter_Btn.Size = new System.Drawing.Size(250, 50);
-            this.Pressure_Converter_Btn.TabIndex = 7;
-            this.Pressure_Converter_Btn.Text = "Pressure";
-            this.Pressure_Converter_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Pressure_Converter_Btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Pressure_Converter_Btn.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,7 +321,7 @@
         private System.Windows.Forms.Button HelpMenu_Btn;
         private System.Windows.Forms.Button Angle_Converter_Btn;
         private System.Windows.Forms.Button Temperature_Converter_Btn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button WaightAndMass_Button;
         private System.Windows.Forms.Panel ReferenceSubmenu_Panel;
         private System.Windows.Forms.Button Thread_Btn;
         private System.Windows.Forms.Button ReferenceMenu_Btn;

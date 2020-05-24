@@ -57,7 +57,7 @@ namespace ModernUiDesign
         {
             Hashtable lengthTable = new Hashtable();
 
-            //Kilometre to another unit
+            //Kilometre to other unit
             lengthTable.Add($"{ LengthUnits.Kilometre }-{ LengthUnits.Metres }", FromUnitValue * 1000m);
             lengthTable.Add($"{ LengthUnits.Kilometre }-{ LengthUnits.Centimetres }", FromUnitValue * 100000m);
             lengthTable.Add($"{ LengthUnits.Kilometre }-{ LengthUnits.Millimetre }", FromUnitValue * 1e+6m);
@@ -69,7 +69,7 @@ namespace ModernUiDesign
             lengthTable.Add($"{ LengthUnits.Kilometre }-{ LengthUnits.Inch }", FromUnitValue * 39370.1m);
             lengthTable.Add($"{ LengthUnits.Kilometre }-{ LengthUnits.Nautical_mile }", FromUnitValue / 1.852m);
 
-            //Metres to another unit
+            //Metres to other unit
             lengthTable.Add($"{LengthUnits.Metres}-{LengthUnits.Kilometre}", FromUnitValue / 1000m);
             lengthTable.Add($"{LengthUnits.Metres}-{LengthUnits.Centimetres}", FromUnitValue * 100m);
             lengthTable.Add($"{LengthUnits.Metres}-{LengthUnits.Millimetre}", FromUnitValue * 1000m);
@@ -81,7 +81,7 @@ namespace ModernUiDesign
             lengthTable.Add($"{LengthUnits.Metres}-{LengthUnits.Inch}", FromUnitValue * 39.37m);
             lengthTable.Add($"{LengthUnits.Metres}-{LengthUnits.Nautical_mile}", FromUnitValue / 1852m);
 
-            //Centimetres to another unit
+            //Centimetres to other unit
             lengthTable.Add($"{LengthUnits.Centimetres}-{LengthUnits.Kilometre}", FromUnitValue / 100000m);
             lengthTable.Add($"{LengthUnits.Centimetres}-{LengthUnits.Metres}", FromUnitValue / 100m);
             lengthTable.Add($"{LengthUnits.Centimetres}-{LengthUnits.Millimetre}", FromUnitValue * 10m);

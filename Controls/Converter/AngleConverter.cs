@@ -32,13 +32,13 @@ namespace ModernUiDesign.Controls.Converter
         public string GetUnswer()
         {
             Hashtable angleHash = new Hashtable();
-            //Degree to another Unit
+            //Degree to other Unit
             angleHash.Add($"{AngleUnit.Degree}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 180));
             angleHash.Add($"{AngleUnit.Degree}-{AngleUnit.Gradian}", FromUnitValue * (200m / 180m));
-            //Radian to another unit
+            //Radian to other unit
             angleHash.Add($"{AngleUnit.Radian}-{AngleUnit.Degree}", FromUnitValue * (decimal)(180 / Math.PI));
             angleHash.Add($"{AngleUnit.Radian}-{AngleUnit.Gradian}", FromUnitValue * (decimal)(200 / Math.PI));
-            //Gradian to another unit
+            //Gradian to other unit
             angleHash.Add($"{AngleUnit.Gradian}-{AngleUnit.Degree}", FromUnitValue * (180m / 200m));
             angleHash.Add($"{AngleUnit.Gradian}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 200));
 

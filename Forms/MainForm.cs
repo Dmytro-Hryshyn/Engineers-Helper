@@ -43,8 +43,15 @@ namespace ModernUiDesign
                 unitConverterSubcontol.OpenChildForm(new Pressure(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
+            WaightAndMass_Button.Click += (s, a) =>
+              {
+                  unitConverterSubcontol.OpenChildForm(new WeightAndMass(), ChildForm_Panel);
+                  MenuPanel.Visible = false;
+              };
             SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);
         }
+
+       
     }
 }
 

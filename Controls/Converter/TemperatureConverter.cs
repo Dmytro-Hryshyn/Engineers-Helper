@@ -46,7 +46,7 @@ namespace ModernUiDesign.Controls.Converter
             TemperatureHash.Add($"{TemperatureUnit.Kelvin}-{TemperatureUnit.Celsius}", FromUnitValue - 273.15m);
             TemperatureHash.Add($"{TemperatureUnit.Kelvin}-{TemperatureUnit.Fahrenheit}", (FromUnitValue - 273.15m) * 9 / 5 + 32);
 
-            //Fahrenheit to another Unit
+            //Fahrenheit to other Unit
             TemperatureHash.Add($"{TemperatureUnit.Fahrenheit}-{TemperatureUnit.Celsius}", (FromUnitValue - 32) * 5 / 9);
             TemperatureHash.Add($"{TemperatureUnit.Fahrenheit}-{TemperatureUnit.Kelvin}", (FromUnitValue - 32) * 5 / 9 + 273.15m);
 
@@ -81,7 +81,7 @@ namespace ModernUiDesign.Controls.Converter
             TemperatureHash.Add($"{TemperatureUnit.Kelvin}-{TemperatureUnit.Celsius}", FromUnitValue - 273.15m);
             TemperatureHash.Add($"{TemperatureUnit.Kelvin}-{TemperatureUnit.Fahrenheit}", (FromUnitValue - 273.15m) * 9 / 5 + 32);
 
-            //Fahrenheit to another Unit
+            //Fahrenheit to other Unit
             TemperatureHash.Add($"{TemperatureUnit.Fahrenheit}-{TemperatureUnit.Celsius}", (FromUnitValue - 32) * 5 / 9);
             TemperatureHash.Add($"{TemperatureUnit.Fahrenheit}-{TemperatureUnit.Kelvin}", (FromUnitValue - 32) * 5 / 9 + 273.15m);
 

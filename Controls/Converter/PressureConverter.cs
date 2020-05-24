@@ -52,7 +52,7 @@ namespace ModernUiDesign.Controls.Converter
             pressureHashtable.Add($"{PressureUnit.PSI}-{PressureUnit.Atmosphere}", FromUnitValue / 14.696m);
             pressureHashtable.Add($"{PressureUnit.PSI}-{PressureUnit.Torr}", FromUnitValue * 51.715m);
 
-            //Atmospher to another unit
+            //Atmospher to other unit
             pressureHashtable.Add($"{PressureUnit.Atmosphere}-{PressureUnit.Bar}", FromUnitValue * 1.013m);
             pressureHashtable.Add($"{PressureUnit.Atmosphere}-{PressureUnit.Pascal}", FromUnitValue * 101325);
             pressureHashtable.Add($"{PressureUnit.Atmosphere}-{PressureUnit.Pascal}", FromUnitValue * 14.696m);
@@ -97,7 +97,7 @@ namespace ModernUiDesign.Controls.Converter
             pressureHashtable.Add($"{PressureUnit.PSI}-{PressureUnit.Atmosphere}", FromUnitValue / 14.696m);
             pressureHashtable.Add($"{PressureUnit.PSI}-{PressureUnit.Torr}", FromUnitValue * 51.715m);
 
-            //Atmospher to another unit
+            //Atmospher to other unit
             pressureHashtable.Add($"{PressureUnit.Atmosphere}-{PressureUnit.Bar}", FromUnitValue * 1.013m);
             pressureHashtable.Add($"{PressureUnit.Atmosphere}-{PressureUnit.Pascal}", FromUnitValue * 101325);
             pressureHashtable.Add($"{PressureUnit.Atmosphere}-{PressureUnit.PSI}", FromUnitValue * 14.696m);

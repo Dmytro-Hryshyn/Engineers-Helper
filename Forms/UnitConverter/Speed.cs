@@ -7,7 +7,7 @@ namespace Forms.UnitConverter
 
     /// <summary>
     /// Derived Class have to ovveride all this methods.
-    /// Calculate, SetComboBox, Button_Convert_Click, DisplayError(not esential)
+    /// Calculate, SetComboBox,  DisplayError(not esential)
     /// </summary>
     public partial class Speed : Form
     {

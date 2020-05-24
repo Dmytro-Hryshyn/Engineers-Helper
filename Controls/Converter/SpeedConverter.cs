@@ -55,7 +55,7 @@ namespace ModernUiDesign
             speedTable.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.609m);
             speedTable.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Knot}", FromUnitValue / 1.151m);
 
-            //Feet per second to another Unit
+            //Feet per second to other Unit
             speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Mile_per_hour}", FromUnitValue / 1.467m);
             speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Metre_per_second}", FromUnitValue / 3.281m);
             speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.097m);
