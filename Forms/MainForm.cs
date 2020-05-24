@@ -16,6 +16,9 @@ namespace ModernUiDesign
 
             InitializeComponent();
 
+            #region UnitConverter menu
+
+          
             SubMenuContol unitConverterSubcontol = new SubMenuContol(UnitConverter_Menu_Btn, UnitConverter_Submenu_Panel);
             Speed_Converter_Btn.Click += (sender, EventArgs) =>
             {
@@ -48,7 +51,16 @@ namespace ModernUiDesign
                   unitConverterSubcontol.OpenChildForm(new WeightAndMass(), ChildForm_Panel);
                   MenuPanel.Visible = false;
               };
+            #endregion
+
+            #region  Reference menu
+
             SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);
+            #endregion
+
+            #region Geometry2D menu
+            SubMenuContol geometrySubMenu = new SubMenuContol(Geometry2DMenu_Btn, GeometrySubMenu_Panel);
+            #endregion
         }
 
        
