@@ -1,6 +1,7 @@
 ﻿using Forms.UnitConverter;
 using ModernUiDesign.Controls;
 using ModernUiDesign.Forms;
+using ModernUiDesign.Forms.Geometry;
 using ModernUiDesign.Forms.UnitConverter;
 using System;
 using System.Windows.Forms;
@@ -60,6 +61,11 @@ namespace ModernUiDesign
 
             #region Geometry2D menu
             SubMenuContol geometrySubMenu = new SubMenuContol(Geometry2DMenu_Btn, GeometrySubMenu_Panel);
+            Square_btn.Click += (s, a) => 
+            {
+                geometrySubMenu.OpenChildForm(new Square(), ChildForm_Panel);
+                MenuPanel.Visible = false;
+            };
             #endregion
         }
 

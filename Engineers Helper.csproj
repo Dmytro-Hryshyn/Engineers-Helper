@@ -54,8 +54,14 @@
     <Compile Include="Controls\Converter\SpeedConverter.cs" />
     <Compile Include="Controls\Converter\TemperatureConverter.cs" />
     <Compile Include="Controls\Converter\WeightAndMassConverter.cs" />
-    <Compile Include="Controls\Geometry\Shape.cs" />
+    <Compile Include="Controls\Geometry\AbstractShape.cs" />
     <Compile Include="Controls\SubMenuContol.cs" />
+    <Compile Include="Forms\Geometry\Square.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Geometry\Square.Designer.cs">
+      <DependentUpon>Square.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Geometry\Square.resx">
+      <DependentUpon>Square.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

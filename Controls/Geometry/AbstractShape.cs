@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ModernUiDesign.Controls.Geometry
 {
-    abstract class Shape
+    abstract class AbstractShape
     {
         public virtual byte NumberOfSides { get; } = 3;
 
@@ -19,9 +19,6 @@ namespace ModernUiDesign.Controls.Geometry
         public virtual double CircumScribedRadius { get; set; }
 
         public virtual double InscribeCircleRadius { get; set; }
-
-
-
 
         public abstract double GetPerimeter();
 
