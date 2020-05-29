@@ -69,7 +69,7 @@
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(250, 714);
+            this.MenuPanel.Size = new System.Drawing.Size(250, 761);
             this.MenuPanel.TabIndex = 0;
             // 
             // GeometrySubMenu_Panel
@@ -389,14 +389,14 @@
             this.ChildForm_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChildForm_Panel.Location = new System.Drawing.Point(250, 0);
             this.ChildForm_Panel.Name = "ChildForm_Panel";
-            this.ChildForm_Panel.Size = new System.Drawing.Size(733, 714);
+            this.ChildForm_Panel.Size = new System.Drawing.Size(934, 761);
             this.ChildForm_Panel.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 714);
+            this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.ChildForm_Panel);
             this.Controls.Add(this.MenuPanel);
             this.MinimumSize = new System.Drawing.Size(800, 600);
