@@ -56,6 +56,7 @@
     <Compile Include="Controls\Converter\TemperatureConverter.cs" />
     <Compile Include="Controls\Converter\WeightAndMassConverter.cs" />
     <Compile Include="Controls\Geometry\AbstractShape.cs" />
+    <Compile Include="Controls\Geometry\SquareLib.cs" />
     <Compile Include="Controls\SubMenuContol.cs" />
     <Compile Include="Forms\Geometry\Square.cs">
       <SubType>Form</SubType>

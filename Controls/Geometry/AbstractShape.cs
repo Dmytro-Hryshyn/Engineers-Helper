@@ -1,24 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ModernUiDesign.Controls.Geometry
+﻿namespace ModernUiDesign.Controls.Geometry
 {
-    abstract class AbstractShape
+    public abstract class AbstractShape
     {
-        public virtual byte NumberOfSides { get; } = 3;
+       
 
-        public virtual double Diagonal { get; set; }
+        public abstract double Diagonal { get; set; }
+        public abstract string DiagonalFromula { get; }
 
-        public virtual double Perimeter { get; set; }
+        public abstract double Perimeter { get; set; }
+        public abstract string PerimeterFormula { get;}
 
-        public virtual double Area { get; set; }
+        public abstract double Area { get; set; }
+        public abstract string AreaFormula { get; }
 
-        public virtual double CircumScribedRadius { get; set; }
+        public abstract double CircumScribedRadius { get; set; }
+        public abstract string CircumScribedRadiusFromula { get; }
 
-        public virtual double InscribeCircleRadius { get; set; }
+        public abstract double InRadius { get; set; }
+        public abstract string InRadiusFormula { get; }
 
         public abstract double GetPerimeter();
 
@@ -26,7 +25,7 @@ namespace ModernUiDesign.Controls.Geometry
 
         public abstract double GetDiagonal();
 
-        public abstract double GetCircumscribedRadius();
+        public abstract double GetCircumScribedRadius();
 
         public abstract double GetInscribedCircleRadius();
     }

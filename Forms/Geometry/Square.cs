@@ -19,7 +19,10 @@ namespace ModernUiDesign.Forms.Geometry
             textBox_OutsideRadius.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
             textBox_Diagonal.MouseEnter += (s, a) => AnimatePictureBox("Diagonals.png");
             textBox_Diagonal.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-
+            textBox_Area.MouseEnter += (s, a) => AnimatePictureBox("Area.png");
+            textBox_Area.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
+            textBox_Perimeter.MouseEnter += (s, a) => AnimatePictureBox("Perimeter.png");
+            textBox_Perimeter.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
 
               
             void AnimatePictureBox(string pictureName)
