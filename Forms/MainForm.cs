@@ -63,7 +63,7 @@ namespace ModernUiDesign
             SubMenuContol geometrySubMenu = new SubMenuContol(Geometry2DMenu_Btn, GeometrySubMenu_Panel);
             Square_btn.Click += (s, a) => 
             {
-                geometrySubMenu.OpenChildForm(new Square(), ChildForm_Panel);
+                geometrySubMenu.OpenChildForm(new SquareForm(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
             #endregion

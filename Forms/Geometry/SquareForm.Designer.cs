@@ -1,6 +1,6 @@
 ﻿namespace ModernUiDesign.Forms.Geometry
 {
-    partial class Square
+    partial class SquareForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Square));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SquareForm));
             this.Btn_Back = new System.Windows.Forms.Button();
             this.pictureBox_Screan = new System.Windows.Forms.PictureBox();
             this.textBox_Side = new System.Windows.Forms.TextBox();
@@ -85,6 +85,7 @@
             this.textBox_Side.Name = "textBox_Side";
             this.textBox_Side.Size = new System.Drawing.Size(212, 40);
             this.textBox_Side.TabIndex = 3;
+            this.textBox_Side.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label_Side
             // 
@@ -93,9 +94,9 @@
             this.label_Side.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_Side.Location = new System.Drawing.Point(496, 106);
             this.label_Side.Name = "label_Side";
-            this.label_Side.Size = new System.Drawing.Size(50, 16);
+            this.label_Side.Size = new System.Drawing.Size(61, 16);
             this.label_Side.TabIndex = 4;
-            this.label_Side.Text = "Side A";
+            this.label_Side.Text = "Side - a";
             // 
             // label_Perimeter
             // 
@@ -104,9 +105,9 @@
             this.label_Perimeter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_Perimeter.Location = new System.Drawing.Point(496, 182);
             this.label_Perimeter.Name = "label_Perimeter";
-            this.label_Perimeter.Size = new System.Drawing.Size(70, 16);
+            this.label_Perimeter.Size = new System.Drawing.Size(95, 16);
             this.label_Perimeter.TabIndex = 6;
-            this.label_Perimeter.Text = "Perimeter";
+            this.label_Perimeter.Text = "Perimeter - P";
             // 
             // textBox_Perimeter
             // 
@@ -116,6 +117,7 @@
             this.textBox_Perimeter.Name = "textBox_Perimeter";
             this.textBox_Perimeter.Size = new System.Drawing.Size(212, 40);
             this.textBox_Perimeter.TabIndex = 5;
+            this.textBox_Perimeter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label_Area
             // 
@@ -124,9 +126,9 @@
             this.label_Area.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_Area.Location = new System.Drawing.Point(496, 334);
             this.label_Area.Name = "label_Area";
-            this.label_Area.Size = new System.Drawing.Size(38, 16);
+            this.label_Area.Size = new System.Drawing.Size(64, 16);
             this.label_Area.TabIndex = 8;
-            this.label_Area.Text = "Area";
+            this.label_Area.Text = "Area - A";
             // 
             // textBox_Area
             // 
@@ -136,6 +138,7 @@
             this.textBox_Area.Name = "textBox_Area";
             this.textBox_Area.Size = new System.Drawing.Size(212, 40);
             this.textBox_Area.TabIndex = 7;
+            this.textBox_Area.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Label_Header
             // 
@@ -160,6 +163,7 @@
             this.button_Clear.TabIndex = 10;
             this.button_Clear.Text = "Clear";
             this.button_Clear.UseVisualStyleBackColor = true;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
             // button_Calculate
             // 
@@ -173,6 +177,7 @@
             this.button_Calculate.TabIndex = 11;
             this.button_Calculate.Text = "Calculate";
             this.button_Calculate.UseVisualStyleBackColor = true;
+            this.button_Calculate.Click += new System.EventHandler(this.button_Calculate_Click);
             // 
             // button_Info
             // 
@@ -217,9 +222,9 @@
             this.label_InsideRadius.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_InsideRadius.Location = new System.Drawing.Point(496, 410);
             this.label_InsideRadius.Name = "label_InsideRadius";
-            this.label_InsideRadius.Size = new System.Drawing.Size(94, 16);
+            this.label_InsideRadius.Size = new System.Drawing.Size(116, 16);
             this.label_InsideRadius.TabIndex = 15;
-            this.label_InsideRadius.Text = "Inside Radius";
+            this.label_InsideRadius.Text = "Inside Radius - r";
             // 
             // textBox_IsideRadius
             // 
@@ -229,6 +234,7 @@
             this.textBox_IsideRadius.Name = "textBox_IsideRadius";
             this.textBox_IsideRadius.Size = new System.Drawing.Size(212, 40);
             this.textBox_IsideRadius.TabIndex = 14;
+            this.textBox_IsideRadius.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -237,9 +243,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(496, 486);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 16);
+            this.label2.Size = new System.Drawing.Size(130, 16);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Outside Radius";
+            this.label2.Text = "Outside Radius - R";
             // 
             // textBox_OutsideRadius
             // 
@@ -249,6 +255,7 @@
             this.textBox_OutsideRadius.Name = "textBox_OutsideRadius";
             this.textBox_OutsideRadius.Size = new System.Drawing.Size(212, 40);
             this.textBox_OutsideRadius.TabIndex = 16;
+            this.textBox_OutsideRadius.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label_Diagonal
             // 
@@ -257,9 +264,9 @@
             this.label_Diagonal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_Diagonal.Location = new System.Drawing.Point(496, 258);
             this.label_Diagonal.Name = "label_Diagonal";
-            this.label_Diagonal.Size = new System.Drawing.Size(63, 16);
+            this.label_Diagonal.Size = new System.Drawing.Size(88, 16);
             this.label_Diagonal.TabIndex = 19;
-            this.label_Diagonal.Text = "Diagonal";
+            this.label_Diagonal.Text = "Diagonal - d";
             // 
             // textBox_Diagonal
             // 
@@ -269,6 +276,7 @@
             this.textBox_Diagonal.Name = "textBox_Diagonal";
             this.textBox_Diagonal.Size = new System.Drawing.Size(212, 40);
             this.textBox_Diagonal.TabIndex = 18;
+            this.textBox_Diagonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Square
             // 
