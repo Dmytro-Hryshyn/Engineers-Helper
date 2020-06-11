@@ -58,6 +58,7 @@
     <Compile Include="Controls\Geometry\IBaseShape.cs" />
     <Compile Include="Controls\Geometry\ISquare.cs" />
     <Compile Include="Controls\Geometry\Square.cs" />
+    <Compile Include="Controls\Geometry\SquareSolver.cs" />
     <Compile Include="Controls\SubMenuContol.cs" />
     <Compile Include="Forms\Geometry\SquareForm.cs">
       <SubType>Form</SubType>

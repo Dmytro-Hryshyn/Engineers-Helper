@@ -58,11 +58,20 @@ namespace ModernUiDesign.Forms.Geometry
 
         private void button_Calculate_Click(object sender, EventArgs e)
         {
-            
-            #region initialize
-           
 
-            #endregion
+            double  side = textBox_Side.Text != string.Empty ? double.Parse(textBox_Side.Text) : 0;
+            double diagonal = textBox_Diagonal.Text != string.Empty ? double.Parse(textBox_Diagonal.Text) : 0;
+            double perimeter = textBox_Perimeter.Text != string.Empty ? double.Parse(textBox_Perimeter.Text) : 0;
+            double area = textBox_Area.Text != string.Empty ? double.Parse(textBox_Area.Text) : 0;
+            double ourRad = textBox_OutsideRadius.Text != string.Empty ? double.Parse(textBox_OutsideRadius.Text) : 0;
+            double inRad = textBox_IsideRadius.Text != string.Empty ? double.Parse(textBox_IsideRadius.Text) : 0;
+            SquareSolver square = new SquareSolver(side, diagonal, perimeter, area, ourRad, inRad);
+            textBox_Side.Text = square.Side.ToString("0.###");
+            textBox_Diagonal.Text = square.Diagonal.ToString("0.###");
+            textBox_Perimeter.Text = square.Perimeter.ToString("0.###");
+            textBox_Area.Text = square.Area.ToString("0.###");
+            textBox_OutsideRadius.Text = square.CircumScribedRadius.ToString("0.###");
+            textBox_IsideRadius.Text = square.InRadius.ToString("0.###");
         }
     }
 }
