@@ -7,6 +7,7 @@
         double CircumScribedRadius { get;  }
         double InRadius { get;  }
 
+        void GetSide();
         void GetPerimeter();
         void GetArea();
         void GetCircumScribedRadius();

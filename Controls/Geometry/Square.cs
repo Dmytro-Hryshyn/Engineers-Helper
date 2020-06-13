@@ -36,9 +36,9 @@ namespace ModernUiDesign.Controls.Geometry
         /// <summary>
         /// Calculate side of square using circumscribed radius.
         /// </summary>
-        /// <param name="outRadius"></param>
+        /// <param name="circumRadius"></param>
         /// <returns>Side of square</returns>
-        public static double GetSideUsingOutRadius(double outRadius) => outRadius / (Math.Sqrt(2) / 2);
+        public static double GetSideUsingCircumRadius(double circumRadius) => circumRadius / (Math.Sqrt(2) / 2);
         #endregion
 
         #region Get Diagonal

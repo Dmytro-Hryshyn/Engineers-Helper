@@ -1,31 +1,7 @@
-﻿using System;
-
-namespace ModernUiDesign.Controls.Geometry
+﻿namespace ModernUiDesign.Controls.Geometry
 {
     public class SquareSolver : ISquare
     {
-        public SquareSolver(double side, double diagonal, double perimeter, double area, double circumScribedRadius, double inRadius)
-        {
-            Side = side;
-            Diagonal = diagonal;
-            Perimeter = perimeter;
-            Area = area;
-            CircumScribedRadius = circumScribedRadius;
-            InRadius = inRadius;
-            Calculate();
-        }
-        public SquareSolver()
-        {
-
-        }
-
-
-        public static string DiagonalFromula { get; } = "d = a·√2";
-        public static string PerimeterFormula { get; } = "P = a*4";
-        public static string AreaFormula { get; } = "A = a²";
-        public static string CircumScribedRadiusFromula { get; } = $"R = a*(√2/2)";
-        public static string InRadiusFormula { get; } = "r = a/2";
-
         public double Side { get; private set; }
         public double Diagonal { get; private set; }
         public double Perimeter { get; private set; }
@@ -33,125 +9,317 @@ namespace ModernUiDesign.Controls.Geometry
         public double CircumScribedRadius { get; private set; }
         public double InRadius { get; private set; }
 
+        bool SideIsKnown = false;
+        bool DiagonalIsKnown = false;
+        bool PerimeterIsKnown = false;
+        bool AreaIsKnown = false;
+        bool CircumRadiusIsKnown = false;
+        bool InRadiusisKnown = false;
 
-
-
-        #region GetArea
-        /// <summary>
-        /// Calculate Area of square. Return answer to the Area property.
-        /// </summary>
-        public void GetArea()
+        void SetKnownSides()
         {
-            if (Side != 0 && Diagonal == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
-
+            if (Side > 0 && Diagonal == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
             {
-
-                Area = Side * Side;
+                SideIsKnown = true;
             }
-
-            else if (Perimeter != 0 && Side == 0 && Diagonal == 0 && CircumScribedRadius == 0 && InRadius == 0)
-
+            else if (Side == 0 && Diagonal > 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
             {
-                Area = Math.Pow(Perimeter, 2) / 16;
+                DiagonalIsKnown = true;
             }
-
-            else if (Diagonal != 0 && Side == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
+            else if (Side == 0 && Diagonal == 0 && Perimeter > 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
             {
-                Area = Diagonal * Diagonal / 2;
+                PerimeterIsKnown = true;
             }
-
-            else if (CircumScribedRadius != 0 && Side == 0 && Perimeter == 0 && Area == 0 && Diagonal == 0 && InRadius == 0)
+            else if (Side == 0 && Diagonal == 0 && Perimeter == 0 && Area > 0 && CircumScribedRadius == 0 && InRadius == 0)
             {
-                Area = 2 * CircumScribedRadius * CircumScribedRadius;
+                AreaIsKnown = true;
             }
-
-            else if (InRadius != 0 && Side == 0 && Diagonal == 0 && Area == 0 && Perimeter == 0 && CircumScribedRadius == 0)
+            else if (Side == 0 && Diagonal == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius > 0 && InRadius == 0)
             {
-                Area = 4 * InRadius * InRadius;
+                CircumRadiusIsKnown = true;
             }
+            else if (Side == 0 && Diagonal == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius > 0)
+            {
+                InRadiusisKnown = true;
+            }
+            else return;
+        }
+        #region Constructor
+        /// <summary>
+        /// Default an empty constructor
+        /// </summary>
+        public SquareSolver()
+        {
+            SetKnownSides();
+        }
+        /// <summary>
+        /// Initialize Side property
+        /// </summary>
+        /// <param name="side">Side of square</param>
+        public SquareSolver(double side) 
+        {
+            Side = side > 0 ? Side = side : Side = 0;
 
-            else Area = 0;
-
+            SetKnownSides();
         }
 
-        #endregion
-
-        #region GetCircumScribedRadius
         /// <summary>
-        /// Calculate circum scribed radius if side of square is known, return answer to CircumScribedRadius property.
+        /// Initialize Side, Diagonal properties
         /// </summary>
-        public void GetCircumScribedRadius()
+        /// <param name="side">Side of square</param>
+        /// <param name="diagonal">Diagonal of square</param>
+        public SquareSolver(double side, double diagonal) : this(side)
         {
-            if (Side != 0)
-            {
-                CircumScribedRadius = Side * (Math.Sqrt(2) / 2);
-            }
-            else
-            {
-                CircumScribedRadius = 0;
-            }
+            Diagonal = diagonal > 0 ? Diagonal = diagonal : Diagonal = 0;
+            SetKnownSides();
+        }
 
+        /// <summary>
+        /// Initialize Side, Diagonal, Perimeter properties
+        /// </summary>
+        /// <param name="side">Side of square</param>
+        /// <param name="diagonal">Diagonal of square</param>
+        /// <param name="perimeter">Perimeter of squre</param>
+        public SquareSolver(double side, double diagonal, double perimeter) : this(side, diagonal)
+        {
+            Perimeter = perimeter > 0 ? Perimeter = perimeter : Perimeter = 0;
+            SetKnownSides();
+        }
+
+        /// <summary>
+        /// Initialize Side, Diagonal, Perimeter, Area properties
+        /// </summary>
+        /// <param name="side">Side of square</param>
+        /// <param name="diagonal">Diagonal of square</param>
+        /// <param name="perimeter">Perimeter of squre</param>
+        /// <param name="area">Area of square</param>
+        public SquareSolver(double side, double diagonal, double perimeter, double area) : this(side, diagonal, perimeter)
+        {
+            Area = area > 0 ? Area = area : Area = 0;
+            SetKnownSides();
+        }
+
+        /// <summary>
+        /// Initialize Side, Diagonal, Perimeter, Area, Circum radius properties
+        /// </summary>
+        /// <param name="side">Side of square</param>
+        /// <param name="diagonal">Diagonal of square</param>
+        /// <param name="perimeter">Perimeter of squre</param>
+        /// <param name="area">Area of square</param>
+        /// <param name="circumScribedRadius">Circum radius of square</param>
+        public SquareSolver(double side, double diagonal, double perimeter, double area, double circumScribedRadius) : this(side, diagonal, perimeter, area)
+        {
+            CircumScribedRadius = circumScribedRadius > 0 ? CircumScribedRadius = circumScribedRadius : CircumScribedRadius = 0;
+            SetKnownSides();
+        }
+
+        /// <summary>
+        /// Initialize Side, Diagonal, Perimeter, Area, Circum radius, Inside radius properties
+        /// </summary>
+        /// <param name="side">Side of square</param>
+        /// <param name="diagonal">Diagonal of square</param>
+        /// <param name="perimeter">Perimeter of squre</param>
+        /// <param name="area">Area of square</param>
+        /// <param name="circumScribedRadius">Circum radius of square</param>
+        /// <param name="inRadius">Inside radius of square</param>
+        public SquareSolver(double side, double diagonal, double perimeter, double area, double circumScribedRadius, double inRadius) : this(side, diagonal, perimeter, area, circumScribedRadius)
+        {
+            InRadius = inRadius > 0 ? InRadius = inRadius : InRadius = 0;
+            SetKnownSides();
         }
         #endregion
 
-        #region GetDiagonal
         /// <summary>
-        /// Calculate diagonal of square in terms square side. Return answer to Diagonal property
+        /// Calculate Side of square. returns value to a Side property.
+        /// </summary>
+        public void GetSide()
+        {
+            if (DiagonalIsKnown)
+            {
+                Side = Square.GetSideUsingDiagonal(Diagonal);
+            }
+            else if (AreaIsKnown)
+            {
+                Side = Square.GetSideUsingArea(Area);
+            }
+            else if (PerimeterIsKnown)
+            {
+                Side = Square.GetSideUsingPerimeter(Perimeter);
+            }
+            else if (CircumRadiusIsKnown)
+            {
+                Side = Square.GetSideUsingCircumRadius(CircumScribedRadius);
+            }
+            else if (InRadiusisKnown)
+            {
+                Side = Square.GetSideUsingInRadius(InRadius);
+            }
+            else Side = Side;
+        }
+
+        /// <summary>
+        /// Calculate diagonal of square, returns value to a Diagonal property
         /// </summary>
         public void GetDiagonal()
         {
-            if (Side != 0)
+            if (SideIsKnown)
             {
-                Diagonal = Side * Math.Sqrt(2);
+                Diagonal = Square.GetDiagonalUsingSide(Side);
             }
-            else Diagonal = 0;
-        }
-        #endregion
 
-        #region GetInRadius
+            else if (PerimeterIsKnown)
+            {
+                Diagonal = Square.GetDiagonalUsingPerimeter(Perimeter);
+            }
+
+            else if (AreaIsKnown)
+            {
+                Diagonal = Square.GetDiagonalUsingAre(Area);
+            }
+            else if (CircumRadiusIsKnown)
+            {
+                Diagonal = Square.GetDiagonalUsingOutRadius(CircumScribedRadius);
+            }
+            else if (InRadiusisKnown)
+            {
+                Diagonal = Square.GetDiagonalUsingInRadius(InRadius);
+            }
+            else Diagonal = Diagonal;
+        }
+
+
         /// <summary>
-        /// Calculate inside radius in terms of square Side. Return asnwer to InRadius property.
+        /// Calculate perimeter of square, returns value to Perimeter property
         /// </summary>
-        public void GetInRadius()
-        {
-            if (Side != 0)
-            {
-                InRadius = Side / 2;
-            }
-        }
-        #endregion
-
-        #region GetPerimeter
         public void GetPerimeter()
         {
-            if (Side != 0)
+            if (SideIsKnown)
             {
-                Perimeter = Side * 4;
+                Perimeter = Square.GetPerimeterUsingSide(Side);
             }
+            else if (DiagonalIsKnown)
+            {
+                Perimeter = Square.GetPerimeterUsingDiagonal(Diagonal);
+            }
+            else if (AreaIsKnown)
+            {
+                Perimeter = Square.GetPerimeterUsingArea(Area);
+            }
+            else if (CircumRadiusIsKnown)
+            {
+                Perimeter = Square.GetPerimeterUsingOutRadius(CircumScribedRadius);
+            }
+            else if (InRadiusisKnown)
+            {
+                Perimeter = Square.GetPerimeterUsingInRadius(InRadius);
+            }
+            else Diagonal = Diagonal ;
         }
-        #endregion
-        public void GetSide()
-        {
-            if (Side != 0)
-                return;
 
-            else if (Diagonal != 0 && Side == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
+        /// <summary>
+        ///  Calculate area of square, returns value to Area property
+        /// </summary>
+        public void GetArea()
+        {
+            if (SideIsKnown)
             {
-                Side = Diagonal / Math.Sqrt(2);
+                Area = Square.GetAreaUsingSide(Side);
             }
-            else Side = 0;
+
+            else if (DiagonalIsKnown)
+            {
+                Area = Square.GetAreaUsingDiagonal(Diagonal);
+            }
+
+            else if (PerimeterIsKnown)
+            {
+                Area = Square.GetAreaUsingPerimeter(Perimeter);
+            }
+
+            else if (CircumRadiusIsKnown)
+            {
+                Area = Square.GetAreaUsingOutRadius(CircumScribedRadius);
+            }
+
+            else if (InRadiusisKnown)
+            {
+                Area = Square.GetAreaUsingInRadius(InRadius);
+            }
+
+            else Area = Area;
+
         }
-        void Calculate()
-        {
 
-            if (Side != 0 && Diagonal == 0 && Perimeter == 0 && CircumScribedRadius == 0 && InRadius == 0)
+        /// <summary>
+        /// Calculate circumradius of square, returns value to Circumradius property
+        /// </summary>
+        public void GetCircumScribedRadius()
+        {
+            if (SideIsKnown)
             {
-                Diagonal = Side * Math.Sqrt(2);
+                CircumScribedRadius = Square.GetCircumRadiusUsingSide(Side);
             }
-            else if (Diagonal != 0 && Side == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
+
+            else if (DiagonalIsKnown)
             {
-                Side = Diagonal / Math.Sqrt(2);
+                CircumScribedRadius = Square.GetCircumRadiusUsingDiagonal(Diagonal);
             }
+
+            else if (PerimeterIsKnown)
+            {
+                CircumScribedRadius = Square.GetCircumRadiusUsingPerimeter(Perimeter);
+            }
+
+            else if (AreaIsKnown)
+            {
+                CircumScribedRadius = Square.GetCircumRadiusUsingArea(Area);
+            }
+
+            else if (InRadiusisKnown)
+            {
+                CircumScribedRadius = Square.GetcircumRadiusUsingInRadius(InRadius);
+            }
+
+            else CircumScribedRadius = CircumScribedRadius;
+        }
+
+
+        public void GetInRadius()
+        {
+            if (SideIsKnown)
+            {
+                InRadius = Square.GetInRadiusUsingSide(Side);
+            }
+
+            else if (DiagonalIsKnown)
+            {
+                InRadius = Square.GetInRadiusUsingDiagonal(Diagonal);
+            }
+
+            else if (PerimeterIsKnown)
+            {
+                InRadius = Square.GetInRadiusUsingPerimeter(Perimeter);
+            }
+
+            else if (AreaIsKnown)
+            {
+                InRadius = Square.GetInRadiusUsingArea(Area);
+            }
+            else if (CircumRadiusIsKnown)
+            {
+                InRadius = Square.GetInRadiusUsingOutRadius(CircumScribedRadius);
+            }
+            else InRadius = InRadius;
+        }
+
+        public void GetAllValuesOfSquare()
+        {
+            GetSide();
+            GetDiagonal();
+            GetArea();
+            GetPerimeter();
+            GetInRadius();
+            GetCircumScribedRadius();
         }
     }
 }
