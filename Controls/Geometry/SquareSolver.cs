@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace ModernUiDesign.Controls.Geometry
 {
@@ -20,7 +18,7 @@ namespace ModernUiDesign.Controls.Geometry
         {
 
         }
-        
+
 
         public static string DiagonalFromula { get; } = "d = a·√2";
         public static string PerimeterFormula { get; } = "P = a*4";
@@ -35,7 +33,7 @@ namespace ModernUiDesign.Controls.Geometry
         public double CircumScribedRadius { get; private set; }
         public double InRadius { get; private set; }
 
-        
+
 
 
         #region GetArea
@@ -47,7 +45,7 @@ namespace ModernUiDesign.Controls.Geometry
             if (Side != 0 && Diagonal == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
 
             {
-                
+
                 Area = Side * Side;
             }
 
@@ -72,7 +70,7 @@ namespace ModernUiDesign.Controls.Geometry
                 Area = 4 * InRadius * InRadius;
             }
 
-            else Area=0;
+            else Area = 0;
 
         }
 
@@ -134,7 +132,7 @@ namespace ModernUiDesign.Controls.Geometry
         #endregion
         public void GetSide()
         {
-            if (Side !=0)
+            if (Side != 0)
                 return;
 
             else if (Diagonal != 0 && Side == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
