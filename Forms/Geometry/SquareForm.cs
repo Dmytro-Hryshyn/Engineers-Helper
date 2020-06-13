@@ -30,7 +30,7 @@ namespace ModernUiDesign.Forms.Geometry
 
             void AnimatePictureBox(string pictureName)
             {
-                pictureBox_Screan.Image = Image.FromFile(new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.FullName + @"\Resource\Square\" + pictureName);
+                pictureBox_Screan.Image = Image.FromFile(new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + @"\Resource\Square\" + pictureName);
             }
             #endregion  
         }
