@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace ModernUiDesign
+namespace Unit.Converter
 {
 
     public class SpeedConverter : IConverter

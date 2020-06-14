@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ModernUiDesign.Controls.Geometry
+namespace Geometry
 {
     public  static class Square
     {

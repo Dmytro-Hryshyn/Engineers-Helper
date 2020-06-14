@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace ModernUiDesign.Controls.Converter
+namespace Unit.Converter
 {
     public class WeightAndMassConverter : IConverter
     {

@@ -1,4 +1,4 @@
-﻿namespace ModernUiDesign.Controls.Geometry
+﻿namespace Geometry
 {
     interface ISquare : IBaseShape
     {

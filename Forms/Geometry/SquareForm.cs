@@ -1,4 +1,4 @@
-﻿using ModernUiDesign.Controls.Geometry;
+﻿using Geometry;
 using System;
 using System.Drawing;
 using System.IO;
