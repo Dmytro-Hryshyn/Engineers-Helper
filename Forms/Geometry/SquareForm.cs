@@ -33,12 +33,14 @@ namespace ModernUiDesign.Forms.Geometry
                 pictureBox_Screan.Image = Image.FromFile(new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + @"\Resource\Square\" + pictureName);
             }
             #endregion
-            CorrectinputForTexBoxes();
+            #region Textbox lost focuse event
 
+          
             textBox_Side.LostFocus += (s, a) => { foreach (var control in Controls.OfType<TextBox>())
                 {
                     control.ReadOnly = true;
                 } };
+
             textBox_Diagonal.LostFocus += (s, a) => 
             {
                 foreach (var item in Controls.OfType<TextBox>())
@@ -46,10 +48,40 @@ namespace ModernUiDesign.Forms.Geometry
                     item.ReadOnly = true;
                 }
             };
-          
+
+            textBox_Perimeter.FontChanged += (s, a) => 
+            {
+                foreach (var item in Controls.OfType<TextBox>())
+                {
+                    item.ReadOnly = true;
+                }
+            };
+            textBox_Area.FontChanged += (s, a) =>
+            {
+                foreach (var item in Controls.OfType<TextBox>())
+                {
+                    item.ReadOnly = true;
+                }
+            };
+            textBox_IsideRadius.FontChanged += (s, a) =>
+            {
+                foreach (var item in Controls.OfType<TextBox>())
+                {
+                    item.ReadOnly = true;
+                }
+            };
+            textBox_OutsideRadius.FontChanged += (s, a) =>
+            {
+                foreach (var item in Controls.OfType<TextBox>())
+                {
+                    item.ReadOnly = true;
+                }
+            };
+            #endregion
+            CorrectinputForTexBoxes();
         }
 
-        
+
         private void Btn_Back_Click(object sender, EventArgs e)
         {
 
