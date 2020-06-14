@@ -26,17 +26,24 @@ namespace ModernUiDesign.Forms.Geometry
             textBox_Area.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
             textBox_Perimeter.MouseEnter += (s, a) => AnimatePictureBox("Perimeter.png");
             textBox_Perimeter.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-            
 
 
             void AnimatePictureBox(string pictureName)
             {
                 pictureBox_Screan.Image = Image.FromFile(new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + @"\Resource\Square\" + pictureName);
             }
-            #endregion  
+            #endregion
+            CorrectinputForTexBoxes();
+            textBox_Side.LostFocus += (s, a) => { foreach (var control in Controls.OfType<TextBox>())
+                {
+                    control.ReadOnly = true;
+                } };
+            {
+
+            }
         }
 
-
+        
         private void Btn_Back_Click(object sender, EventArgs e)
         {
 
@@ -54,13 +61,14 @@ namespace ModernUiDesign.Forms.Geometry
             foreach (TextBox control in Controls.OfType<TextBox>())
             {
                 control.Text = string.Empty;
+                control.ReadOnly = false;
             }
         }
 
         private void button_Calculate_Click(object sender, EventArgs e)
         {
 
-            double  side = textBox_Side.Text != string.Empty ? double.Parse(textBox_Side.Text) : 0;
+            double side = textBox_Side.Text != string.Empty ? double.Parse(textBox_Side.Text) : 0;
             double diagonal = textBox_Diagonal.Text != string.Empty ? double.Parse(textBox_Diagonal.Text) : 0;
             double perimeter = textBox_Perimeter.Text != string.Empty ? double.Parse(textBox_Perimeter.Text) : 0;
             double area = textBox_Area.Text != string.Empty ? double.Parse(textBox_Area.Text) : 0;
@@ -74,6 +82,41 @@ namespace ModernUiDesign.Forms.Geometry
             textBox_Area.Text = square.Area.ToString("0.###");
             textBox_OutsideRadius.Text = square.CircumScribedRadius.ToString("0.###");
             textBox_IsideRadius.Text = square.InRadius.ToString("0.###");
+            SetTexboxToReadOnly();
+
+
         }
+
+
+        /// <summary>
+        /// set control.ReadOnly propery equals true. Applyes for all textboxes on form
+        /// </summary>
+        void SetTexboxToReadOnly()
+        {
+            foreach (TextBox control in Controls.OfType<TextBox>())
+            {
+                control.ReadOnly = true;
+            }
+        }
+
+        void CorrectinputForTexBoxes()
+        {
+            foreach (TextBox item in Controls.OfType<TextBox>())
+            {
+                item.KeyPress += (object sender, KeyPressEventArgs e) =>
+                {
+                    if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                    {
+                        e.Handled = true;
+                    }
+                    if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+                    {
+                        e.Handled = true;
+                    }
+                };
+            }
+        }
+
+
     }
 }
