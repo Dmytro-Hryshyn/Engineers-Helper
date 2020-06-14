@@ -49,28 +49,28 @@ namespace ModernUiDesign.Forms.Geometry
                 }
             };
 
-            textBox_Perimeter.FontChanged += (s, a) => 
+            textBox_Perimeter.LostFocus += (s, a) => 
             {
                 foreach (var item in Controls.OfType<TextBox>())
                 {
                     item.ReadOnly = true;
                 }
             };
-            textBox_Area.FontChanged += (s, a) =>
+            textBox_Area.LostFocus += (s, a) =>
             {
                 foreach (var item in Controls.OfType<TextBox>())
                 {
                     item.ReadOnly = true;
                 }
             };
-            textBox_IsideRadius.FontChanged += (s, a) =>
+            textBox_IsideRadius.LostFocus += (s, a) =>
             {
                 foreach (var item in Controls.OfType<TextBox>())
                 {
                     item.ReadOnly = true;
                 }
             };
-            textBox_OutsideRadius.FontChanged += (s, a) =>
+            textBox_OutsideRadius.LostFocus += (s, a) =>
             {
                 foreach (var item in Controls.OfType<TextBox>())
                 {
@@ -127,7 +127,7 @@ namespace ModernUiDesign.Forms.Geometry
 
 
         /// <summary>
-        /// set control.ReadOnly propery equals true. Applyes for all textboxes on form
+        /// Set all textboxes on current form to read only.
         /// </summary>
         void SetTexboxToReadOnly()
         {
@@ -137,6 +137,9 @@ namespace ModernUiDesign.Forms.Geometry
             }
         }
 
+        /// <summary>
+        /// Allows enter only numbers and one decimal point for all textboxes which contains on curent form.
+        /// </summary>
         void CorrectinputForTexBoxes()
         {
             foreach (TextBox item in Controls.OfType<TextBox>())
