@@ -34,13 +34,19 @@ namespace ModernUiDesign.Forms.Geometry
             }
             #endregion
             CorrectinputForTexBoxes();
+
             textBox_Side.LostFocus += (s, a) => { foreach (var control in Controls.OfType<TextBox>())
                 {
                     control.ReadOnly = true;
                 } };
+            textBox_Diagonal.LostFocus += (s, a) => 
             {
-
-            }
+                foreach (var item in Controls.OfType<TextBox>())
+                {
+                    item.ReadOnly = true;
+                }
+            };
+          
         }
 
         
