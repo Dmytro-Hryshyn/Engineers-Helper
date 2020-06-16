@@ -158,6 +158,40 @@ namespace ModernUiDesign.Forms.Geometry
             }
         }
 
+        private void label_Definition_Click(object sender, EventArgs e)
+        {
+            richTextBox_Definition.Visible = (richTextBox_Definition.Visible == false) ? true : false;
+        }
 
+        private void label_Properties_Click(object sender, EventArgs e)
+        {
+            richTextBox_Properties.Visible = (richTextBox_Properties.Visible == false) ? true : false;
+        }
+
+        private void label_DiagonalFormula_Click(object sender, EventArgs e)
+        {
+            richTextBox_DiagonalFormula.Visible=(richTextBox_DiagonalFormula.Visible == false) ? true : false;
+        }
+
+        //Simple way. Much shorter then ternary operator or If else ;))
+        private void label_PerimeterFormula_Click(object sender, EventArgs e)
+        {
+            richTextBox_PerimeterFormula.Visible = !richTextBox_PerimeterFormula.Visible;
+        }
+
+        private void label_AreaFormula_Click(object sender, EventArgs e)
+        {
+            richTextBox_AreaFormula.Visible = !richTextBox_AreaFormula.Visible;
+        }
+
+        private void label_CircumradiusFormula_Click(object sender, EventArgs e)
+        {
+            richTextBox_CircumradiusFormula.Visible = !richTextBox_CircumradiusFormula.Visible;
+        }
+
+        private void label_InradiusFormula_Click(object sender, EventArgs e)
+        {
+            richTextBox_InradiusFormula.Visible = !richTextBox_InradiusFormula.Visible;
+        }
     }
 }
