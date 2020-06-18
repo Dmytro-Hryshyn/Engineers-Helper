@@ -1,4 +1,4 @@
-﻿namespace ModernUiDesign.Forms
+﻿namespace Engineers_Helper.Forms
 {
     partial class Temperature
     {

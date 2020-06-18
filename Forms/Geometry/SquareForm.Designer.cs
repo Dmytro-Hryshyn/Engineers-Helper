@@ -1,4 +1,4 @@
-﻿namespace ModernUiDesign.Forms.Geometry
+﻿namespace Engineers_Helper.Forms.Geometry
 {
     partial class SquareForm
     {

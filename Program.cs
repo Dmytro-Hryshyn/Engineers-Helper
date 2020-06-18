@@ -1,8 +1,8 @@
-﻿using ModernUiDesign.Forms.Geometry;
+﻿using Engineers_Helper.Forms.Geometry;
 using System;
 using System.Windows.Forms;
 
-namespace ModernUiDesign
+namespace Engineers_Helper
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace ModernUiDesign
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new RectangleForm());
         }
     }
 }

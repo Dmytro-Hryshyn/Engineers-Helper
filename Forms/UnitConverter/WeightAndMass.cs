@@ -2,7 +2,7 @@
 using Unit.Converter;
 using System.Windows.Forms;
 
-namespace ModernUiDesign.Forms.UnitConverter
+namespace Engineers_Helper.Forms.UnitConverter
 {
     public partial class WeightAndMass : Speed
     {

@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace ModernUiDesign.Forms.Geometry
+namespace Engineers_Helper.Forms.Geometry
 {
 
     public partial class SquareForm : Form

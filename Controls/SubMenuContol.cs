@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace ModernUiDesign.Controls
+namespace Engineers_Helper.Controls
 {
   public  class SubMenuContol   
     {

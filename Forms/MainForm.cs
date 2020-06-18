@@ -1,12 +1,11 @@
 ﻿using Forms.UnitConverter;
-using ModernUiDesign.Controls;
-using ModernUiDesign.Forms;
-using ModernUiDesign.Forms.Geometry;
-using ModernUiDesign.Forms.UnitConverter;
-using System;
+using Engineers_Helper.Controls;
+using Engineers_Helper.Forms;
+using Engineers_Helper.Forms.Geometry;
+using Engineers_Helper.Forms.UnitConverter;
 using System.Windows.Forms;
 
-namespace ModernUiDesign
+namespace Engineers_Helper
 {
 
 
@@ -19,7 +18,7 @@ namespace ModernUiDesign
 
             #region UnitConverter menu
 
-          
+
             SubMenuContol unitConverterSubcontol = new SubMenuContol(UnitConverter_Menu_Btn, UnitConverter_Submenu_Panel);
             Speed_Converter_Btn.Click += (sender, EventArgs) =>
             {
@@ -61,15 +60,21 @@ namespace ModernUiDesign
 
             #region Geometry2D menu
             SubMenuContol geometrySubMenu = new SubMenuContol(Geometry2DMenu_Btn, GeometrySubMenu_Panel);
-            Square_btn.Click += (s, a) => 
+            Square_btn.Click += (s, a) =>
             {
                 geometrySubMenu.OpenChildForm(new SquareForm(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
+            Rectangle_Btn.Click += (s, a) =>
+            {
+                geometrySubMenu.OpenChildForm(new RectangleForm(), ChildForm_Panel);
+                MenuPanel.Visible = false;
+            };
             #endregion
+
         }
 
-       
+
     }
 }
 

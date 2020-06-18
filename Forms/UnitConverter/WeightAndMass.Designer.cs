@@ -1,4 +1,4 @@
-﻿namespace ModernUiDesign.Forms.UnitConverter
+﻿namespace Engineers_Helper.Forms.UnitConverter
 {
     partial class WeightAndMass
     {
