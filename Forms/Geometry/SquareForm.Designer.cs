@@ -84,8 +84,9 @@
             // 
             // pictureBox_Screan
             // 
+            this.pictureBox_Screan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_Screan.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Screan.Image")));
-            this.pictureBox_Screan.Location = new System.Drawing.Point(92, 136);
+            this.pictureBox_Screan.Location = new System.Drawing.Point(163, 137);
             this.pictureBox_Screan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox_Screan.Name = "pictureBox_Screan";
             this.pictureBox_Screan.Size = new System.Drawing.Size(387, 352);
@@ -95,6 +96,7 @@
             // 
             // textBox_Side
             // 
+            this.textBox_Side.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Side.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Side.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Side.Location = new System.Drawing.Point(582, 152);
@@ -106,6 +108,7 @@
             // 
             // label_Side
             // 
+            this.label_Side.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Side.AutoSize = true;
             this.label_Side.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Side.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -118,6 +121,7 @@
             // 
             // label_Perimeter
             // 
+            this.label_Perimeter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Perimeter.AutoSize = true;
             this.label_Perimeter.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Perimeter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -130,6 +134,7 @@
             // 
             // textBox_Perimeter
             // 
+            this.textBox_Perimeter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Perimeter.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Perimeter.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Perimeter.Location = new System.Drawing.Point(582, 240);
@@ -141,6 +146,7 @@
             // 
             // label_Area
             // 
+            this.label_Area.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Area.AutoSize = true;
             this.label_Area.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Area.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -153,6 +159,7 @@
             // 
             // textBox_Area
             // 
+            this.textBox_Area.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Area.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Area.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Area.Location = new System.Drawing.Point(582, 415);
@@ -164,10 +171,11 @@
             // 
             // Label_Header
             // 
+            this.Label_Header.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_Header.AutoSize = true;
             this.Label_Header.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Label_Header.ForeColor = System.Drawing.SystemColors.Control;
-            this.Label_Header.Location = new System.Drawing.Point(574, 30);
+            this.Label_Header.Location = new System.Drawing.Point(289, 137);
             this.Label_Header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_Header.Name = "Label_Header";
             this.Label_Header.Size = new System.Drawing.Size(143, 42);
@@ -176,11 +184,13 @@
             // 
             // button_Clear
             // 
+            this.button_Clear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Clear.AutoSize = true;
             this.button_Clear.FlatAppearance.BorderSize = 0;
             this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Clear.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Clear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Clear.Location = new System.Drawing.Point(551, 702);
+            this.button_Clear.Location = new System.Drawing.Point(565, 666);
             this.button_Clear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(128, 52);
@@ -191,11 +201,13 @@
             // 
             // button_Calculate
             // 
+            this.button_Calculate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Calculate.AutoSize = true;
             this.button_Calculate.FlatAppearance.BorderSize = 0;
             this.button_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Calculate.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Calculate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Calculate.Location = new System.Drawing.Point(701, 702);
+            this.button_Calculate.Location = new System.Drawing.Point(715, 666);
             this.button_Calculate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Calculate.Name = "button_Calculate";
             this.button_Calculate.Size = new System.Drawing.Size(128, 52);
@@ -466,6 +478,7 @@
             // 
             // label_InsideRadius
             // 
+            this.label_InsideRadius.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_InsideRadius.AutoSize = true;
             this.label_InsideRadius.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_InsideRadius.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -478,6 +491,7 @@
             // 
             // textBox_IsideRadius
             // 
+            this.textBox_IsideRadius.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_IsideRadius.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_IsideRadius.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_IsideRadius.Location = new System.Drawing.Point(582, 503);
@@ -489,6 +503,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -501,6 +516,7 @@
             // 
             // textBox_OutsideRadius
             // 
+            this.textBox_OutsideRadius.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_OutsideRadius.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_OutsideRadius.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_OutsideRadius.Location = new System.Drawing.Point(582, 591);
@@ -512,6 +528,7 @@
             // 
             // label_Diagonal
             // 
+            this.label_Diagonal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Diagonal.AutoSize = true;
             this.label_Diagonal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Diagonal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -524,6 +541,7 @@
             // 
             // textBox_Diagonal
             // 
+            this.textBox_Diagonal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Diagonal.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Diagonal.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Diagonal.Location = new System.Drawing.Point(582, 328);
@@ -539,16 +557,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1400, 808);
+            this.Controls.Add(this.button_Calculate);
+            this.Controls.Add(this.button_Clear);
             this.Controls.Add(this.label_Diagonal);
-            this.Controls.Add(this.textBox_Diagonal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_OutsideRadius);
             this.Controls.Add(this.label_InsideRadius);
             this.Controls.Add(this.textBox_IsideRadius);
             this.Controls.Add(this.panel_Info);
             this.Controls.Add(this.button_Info);
-            this.Controls.Add(this.button_Calculate);
-            this.Controls.Add(this.button_Clear);
             this.Controls.Add(this.Label_Header);
             this.Controls.Add(this.label_Area);
             this.Controls.Add(this.textBox_Area);
@@ -558,6 +575,7 @@
             this.Controls.Add(this.textBox_Side);
             this.Controls.Add(this.pictureBox_Screan);
             this.Controls.Add(this.Btn_Back);
+            this.Controls.Add(this.textBox_Diagonal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MinimumSize = new System.Drawing.Size(933, 692);

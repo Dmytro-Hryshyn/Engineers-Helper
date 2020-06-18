@@ -14,7 +14,7 @@ namespace ModernUiDesign
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SquareForm());
+            Application.Run(new Form1());
         }
     }
 }
