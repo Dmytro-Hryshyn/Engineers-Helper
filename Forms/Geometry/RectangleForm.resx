@@ -85,4 +85,62 @@
         kWwhAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="richTextBox_SidesFormulas.Text" xml:space="preserve">
+    <value>Definition:
+⦿The length of rectangle is called the length of the longer pair of its sides.
+
+⦿ The width of rectangle is called the length of the shorter pair of its sides.
+
+◦ Using diagonal and another rectangle side:
+
+	a  = √(d² - b²) 
+	b = √(d² - a²) 
+
+◦ Using area and another rectangle side:
+
+	a =  A / b
+	b =  A / a
+
+◦ Using  perimeter and another rectangle side:
+
+	a = (P - 2b) / 2
+	b = (P - 2a) / 2
+
+◦ Usingf diagonal and angle α:
+	
+	a = d * sinα
+	b = d * cosα
+
+◦ Using diagonal and angle β:
+
+	a = d * sin(β / 2)
+	b = d * cos(β / 2)</value>
+  </data>
+  <data name="richTextBox_Properties.Text" xml:space="preserve">
+    <value>◦ An opposite sides of the rectangle are equal.
+
+◦ An opposite sides of the rectangle are parallel
+
+◦ An adjacent sides of the rectangle are always perpendicular:
+
+◦ All four angles of the rectangle is right
+
+◦ The sum all of the angles of a rectangle is equal to 360 degrees:
+
+◦ A diagonals of the rectangle are equal:
+
+◦ The sum of the squares two diagonals is equal to the sum of the squares of the sides:
+
+◦  The each diagonal divides the rectangle into two equal shape, namely a right triangle.
+
+◦  A diagonal of a rectangle in half divides each other:
+ 	      	
+◦  Intersection point of the diagonals is called the center of the rectangle and also a center of the circumcircle (incenter).
+
+◦  Diagonal of a rectangle is the diameter of the circumcircle.
+
+◦  Around the rectangle can always describe a circle, because the sum of the opposite angles is 180 degrees:
+
+◦  In rectangle with the different size of sides never enter the incircle.</value>
+  </data>
 </root>

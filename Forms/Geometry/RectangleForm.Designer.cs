@@ -32,8 +32,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button_Info = new System.Windows.Forms.Button();
             this.panel_Info = new System.Windows.Forms.Panel();
+            this.richTextBox_DiagonalFormula = new System.Windows.Forms.RichTextBox();
+            this.label_DiagonalFromula = new System.Windows.Forms.Label();
+            this.richTextBox_SidesFormulas = new System.Windows.Forms.RichTextBox();
+            this.label_SidesFormula = new System.Windows.Forms.Label();
+            this.richTextBox_Properties = new System.Windows.Forms.RichTextBox();
+            this.label_Properties = new System.Windows.Forms.Label();
+            this.richTextBox_Definition = new System.Windows.Forms.RichTextBox();
+            this.label_Definition = new System.Windows.Forms.Label();
             this.lable_Info = new System.Windows.Forms.Label();
             this.panel_Image = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_TextBoxes = new System.Windows.Forms.Panel();
             this.button_Clear = new System.Windows.Forms.Button();
             this.button_Solve = new System.Windows.Forms.Button();
@@ -49,11 +58,11 @@
             this.label_Side_b = new System.Windows.Forms.Label();
             this.textBox_Side_a = new System.Windows.Forms.TextBox();
             this.label_Side_a = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ides = new System.Windows.Forms.RichTextBox();
             this.panel_Info.SuspendLayout();
             this.panel_Image.SuspendLayout();
-            this.panel_TextBoxes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_TextBoxes.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -88,38 +97,168 @@
             // 
             // panel_Info
             // 
+            this.panel_Info.AutoScroll = true;
+            this.panel_Info.Controls.Add(this.richTextBox_DiagonalFormula);
+            this.panel_Info.Controls.Add(this.label_DiagonalFromula);
+            this.panel_Info.Controls.Add(this.richTextBox_SidesFormulas);
+            this.panel_Info.Controls.Add(this.label_SidesFormula);
+            this.panel_Info.Controls.Add(this.richTextBox_Properties);
+            this.panel_Info.Controls.Add(this.label_Properties);
+            this.panel_Info.Controls.Add(this.richTextBox_Definition);
+            this.panel_Info.Controls.Add(this.label_Definition);
             this.panel_Info.Controls.Add(this.lable_Info);
             this.panel_Info.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_Info.Location = new System.Drawing.Point(1016, 0);
+            this.panel_Info.Location = new System.Drawing.Point(917, 0);
             this.panel_Info.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.panel_Info.Name = "panel_Info";
-            this.panel_Info.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.panel_Info.Size = new System.Drawing.Size(310, 761);
+            this.panel_Info.Padding = new System.Windows.Forms.Padding(5, 10, 5, 0);
+            this.panel_Info.Size = new System.Drawing.Size(409, 761);
             this.panel_Info.TabIndex = 1;
             this.panel_Info.Visible = false;
+            // 
+            // richTextBox_DiagonalFormula
+            // 
+            this.richTextBox_DiagonalFormula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_DiagonalFormula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_DiagonalFormula.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_DiagonalFormula.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_DiagonalFormula.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_DiagonalFormula.Location = new System.Drawing.Point(5, 1741);
+            this.richTextBox_DiagonalFormula.Name = "richTextBox_DiagonalFormula";
+            this.richTextBox_DiagonalFormula.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox_DiagonalFormula.Size = new System.Drawing.Size(382, 142);
+            this.richTextBox_DiagonalFormula.TabIndex = 2;
+            this.richTextBox_DiagonalFormula.Text = "";
+            this.richTextBox_DiagonalFormula.Visible = false;
+            // 
+            // label_DiagonalFromula
+            // 
+            this.label_DiagonalFromula.AutoSize = true;
+            this.label_DiagonalFromula.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_DiagonalFromula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_DiagonalFromula.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_DiagonalFromula.Location = new System.Drawing.Point(5, 1698);
+            this.label_DiagonalFromula.Name = "label_DiagonalFromula";
+            this.label_DiagonalFromula.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_DiagonalFromula.Size = new System.Drawing.Size(334, 43);
+            this.label_DiagonalFromula.TabIndex = 1;
+            this.label_DiagonalFromula.Text = "Diagonal of a rectangle formulas:";
+            this.label_DiagonalFromula.Click += new System.EventHandler(this.lable_FiagonalFormulas_Click);
+            // 
+            // richTextBox_SidesFormulas
+            // 
+            this.richTextBox_SidesFormulas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_SidesFormulas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_SidesFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_SidesFormulas.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_SidesFormulas.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_SidesFormulas.Location = new System.Drawing.Point(5, 1061);
+            this.richTextBox_SidesFormulas.Name = "richTextBox_SidesFormulas";
+            this.richTextBox_SidesFormulas.Size = new System.Drawing.Size(382, 637);
+            this.richTextBox_SidesFormulas.TabIndex = 2;
+            this.richTextBox_SidesFormulas.Text = resources.GetString("richTextBox_SidesFormulas.Text");
+            this.richTextBox_SidesFormulas.Visible = false;
+            // 
+            // label_SidesFormula
+            // 
+            this.label_SidesFormula.AutoSize = true;
+            this.label_SidesFormula.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_SidesFormula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_SidesFormula.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_SidesFormula.Location = new System.Drawing.Point(5, 1018);
+            this.label_SidesFormula.Name = "label_SidesFormula";
+            this.label_SidesFormula.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_SidesFormula.Size = new System.Drawing.Size(274, 43);
+            this.label_SidesFormula.TabIndex = 1;
+            this.label_SidesFormula.Text = "A rectangle sides formulas:";
+            this.label_SidesFormula.Click += new System.EventHandler(this.lable_SidesFormulas_Click);
+            // 
+            // richTextBox_Properties
+            // 
+            this.richTextBox_Properties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_Properties.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_Properties.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_Properties.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_Properties.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_Properties.Location = new System.Drawing.Point(5, 238);
+            this.richTextBox_Properties.Name = "richTextBox_Properties";
+            this.richTextBox_Properties.Size = new System.Drawing.Size(382, 780);
+            this.richTextBox_Properties.TabIndex = 2;
+            this.richTextBox_Properties.Text = resources.GetString("richTextBox_Properties.Text");
+            this.richTextBox_Properties.Visible = false;
+            // 
+            // label_Properties
+            // 
+            this.label_Properties.AutoSize = true;
+            this.label_Properties.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_Properties.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_Properties.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_Properties.Location = new System.Drawing.Point(5, 195);
+            this.label_Properties.Name = "label_Properties";
+            this.label_Properties.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_Properties.Size = new System.Drawing.Size(236, 43);
+            this.label_Properties.TabIndex = 1;
+            this.label_Properties.Text = "Properties of rectangle:";
+            this.label_Properties.Click += new System.EventHandler(this.lable_Properties_Click);
+            // 
+            // richTextBox_Definition
+            // 
+            this.richTextBox_Definition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_Definition.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_Definition.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_Definition.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_Definition.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_Definition.Location = new System.Drawing.Point(5, 99);
+            this.richTextBox_Definition.Name = "richTextBox_Definition";
+            this.richTextBox_Definition.Size = new System.Drawing.Size(382, 96);
+            this.richTextBox_Definition.TabIndex = 2;
+            this.richTextBox_Definition.Text = "Rectangle - is a quadrilateral in which two opposite sides are equal and all angl" +
+    "es is right.";
+            this.richTextBox_Definition.Visible = false;
+            // 
+            // label_Definition
+            // 
+            this.label_Definition.AutoSize = true;
+            this.label_Definition.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_Definition.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_Definition.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_Definition.Location = new System.Drawing.Point(5, 56);
+            this.label_Definition.Name = "label_Definition";
+            this.label_Definition.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_Definition.Size = new System.Drawing.Size(113, 43);
+            this.label_Definition.TabIndex = 1;
+            this.label_Definition.Text = "Definition:";
+            this.label_Definition.Click += new System.EventHandler(this.lable_Difinition_Click);
             // 
             // lable_Info
             // 
             this.lable_Info.Dock = System.Windows.Forms.DockStyle.Top;
             this.lable_Info.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lable_Info.ForeColor = System.Drawing.SystemColors.Window;
-            this.lable_Info.Location = new System.Drawing.Point(0, 10);
+            this.lable_Info.Location = new System.Drawing.Point(5, 10);
             this.lable_Info.Margin = new System.Windows.Forms.Padding(3, 40, 3, 0);
             this.lable_Info.Name = "lable_Info";
-            this.lable_Info.Size = new System.Drawing.Size(310, 46);
+            this.lable_Info.Size = new System.Drawing.Size(382, 46);
             this.lable_Info.TabIndex = 0;
             this.lable_Info.Text = "Info";
             this.lable_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_Image
             // 
-            this.panel_Image.Controls.Add(this.panel_TextBoxes);
             this.panel_Image.Controls.Add(this.pictureBox1);
-            this.panel_Image.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Image.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Image.Location = new System.Drawing.Point(58, 0);
             this.panel_Image.Name = "panel_Image";
-            this.panel_Image.Size = new System.Drawing.Size(958, 761);
+            this.panel_Image.Size = new System.Drawing.Size(351, 761);
             this.panel_Image.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(74, 235);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel_TextBoxes
             // 
@@ -137,10 +276,11 @@
             this.panel_TextBoxes.Controls.Add(this.label_Side_b);
             this.panel_TextBoxes.Controls.Add(this.textBox_Side_a);
             this.panel_TextBoxes.Controls.Add(this.label_Side_a);
-            this.panel_TextBoxes.Location = new System.Drawing.Point(423, 0);
+            this.panel_TextBoxes.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_TextBoxes.Location = new System.Drawing.Point(409, 0);
             this.panel_TextBoxes.Margin = new System.Windows.Forms.Padding(3, 150, 3, 3);
             this.panel_TextBoxes.Name = "panel_TextBoxes";
-            this.panel_TextBoxes.Size = new System.Drawing.Size(535, 761);
+            this.panel_TextBoxes.Size = new System.Drawing.Size(502, 761);
             this.panel_TextBoxes.TabIndex = 1;
             // 
             // button_Clear
@@ -332,13 +472,20 @@
             this.label_Side_a.Text = "Side - a";
             this.label_Side_a.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
+            // ides
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(108, 223);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.ides.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.ides.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ides.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ides.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ides.ForeColor = System.Drawing.SystemColors.Window;
+            this.ides.Location = new System.Drawing.Point(10, 665);
+            this.ides.Name = "ides";
+            this.ides.Size = new System.Drawing.Size(322, 96);
+            this.ides.TabIndex = 2;
+            this.ides.Text = "Rectangle - is a quadrilateral in which two opposite sides are equal and all angl" +
+    "es is right.";
+            this.ides.Visible = false;
             // 
             // RectangleForm
             // 
@@ -346,6 +493,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.panel_TextBoxes);
             this.Controls.Add(this.panel_Image);
             this.Controls.Add(this.panel_Info);
             this.Controls.Add(this.button_Info);
@@ -354,10 +502,11 @@
             this.Name = "RectangleForm";
             this.Text = "Rectangle";
             this.panel_Info.ResumeLayout(false);
+            this.panel_Info.PerformLayout();
             this.panel_Image.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_TextBoxes.ResumeLayout(false);
             this.panel_TextBoxes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,5 +534,14 @@
         private System.Windows.Forms.Label label_Angle_a;
         private System.Windows.Forms.Button button_Clear;
         private System.Windows.Forms.Button button_Solve;
+        private System.Windows.Forms.RichTextBox richTextBox_Definition;
+        private System.Windows.Forms.Label label_Definition;
+        private System.Windows.Forms.RichTextBox richTextBox_Properties;
+        private System.Windows.Forms.Label label_Properties;
+        private System.Windows.Forms.RichTextBox richTextBox_SidesFormulas;
+        private System.Windows.Forms.Label label_SidesFormula;
+        private System.Windows.Forms.RichTextBox ides;
+        private System.Windows.Forms.RichTextBox richTextBox_DiagonalFormula;
+        private System.Windows.Forms.Label label_DiagonalFromula;
     }
 }

@@ -58,5 +58,29 @@ namespace Engineers_Helper.Forms.Geometry
         {
 
         }
+
+        private void lable_Difinition_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_Definition.Visible = !richTextBox_Definition.Visible;
+        }
+
+       
+
+        private void lable_Properties_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_Properties.Visible = !richTextBox_Properties.Visible;
+        }
+
+        private void lable_SidesFormulas_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_SidesFormulas.Visible = !richTextBox_SidesFormulas.Visible;
+        }
+
+        private void lable_FiagonalFormulas_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_DiagonalFormula.Visible = !richTextBox_DiagonalFormula.Visible;
+        }
+
+       
     }
 }
