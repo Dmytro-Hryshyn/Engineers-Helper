@@ -8,6 +8,8 @@
     <LangVersion>8.0</LangVersion>
     <Authors>Dmytro Hryshyn</Authors>
     <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RepositoryType>GitHub</RepositoryType>
+    <RepositoryUrl>https://github.com/Dmytro-Hryshyn/Engineers-Helper</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
