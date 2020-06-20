@@ -4,4 +4,4 @@
 
 ## Engineer's Helper key functions
 - Unit Conversion (speed, mass, temperature, presure, length)
-- Geometry sape solution (Square)
+- Geometry shape solution (Square)
