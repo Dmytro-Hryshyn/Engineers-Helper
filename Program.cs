@@ -1,5 +1,4 @@
-﻿using Engineers_Helper.Forms.Geometry;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace Engineers_Helper
@@ -14,7 +13,7 @@ namespace Engineers_Helper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RectangleForm());
+            Application.Run(new Form1());
         }
     }
 }

@@ -65,7 +65,6 @@ namespace Engineers_Helper.Forms.Geometry
         }
 
        
-
         private void lable_Properties_Click(object sender, System.EventArgs e)
         {
             richTextBox_Properties.Visible = !richTextBox_Properties.Visible;
@@ -76,11 +75,31 @@ namespace Engineers_Helper.Forms.Geometry
             richTextBox_SidesFormulas.Visible = !richTextBox_SidesFormulas.Visible;
         }
 
-        private void lable_FiagonalFormulas_Click(object sender, System.EventArgs e)
+
+        private void lable_DiagonalFormulas_Click(object sender, System.EventArgs e)
         {
             richTextBox_DiagonalFormula.Visible = !richTextBox_DiagonalFormula.Visible;
         }
 
        
+        private void lable_PerimeterFormulas_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_PerimeterFormulas.Visible = !richTextBox_PerimeterFormulas.Visible;
+        }
+
+        private void lable_AreaFormulas_Click(object sender, System.EventArgs e)
+        {
+            richbox_AreaFormulas.Visible = !richbox_AreaFormulas.Visible;
+        }
+
+        private void lable_CircumradiusFormulas_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_CircumscribedradiusFormula.Visible = !richTextBox_CircumscribedradiusFormula.Visible;
+        }
+
+        private void lable_AngleFormulas_Click(object sender, System.EventArgs e)
+        {
+            richTextBox_AngleFormulas.Visible = !richTextBox_AngleFormulas.Visible;
+        }
     }
 }

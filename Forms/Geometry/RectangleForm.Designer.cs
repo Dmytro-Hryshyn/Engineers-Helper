@@ -32,6 +32,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button_Info = new System.Windows.Forms.Button();
             this.panel_Info = new System.Windows.Forms.Panel();
+            this.richTextBox_AngleFormulas = new System.Windows.Forms.RichTextBox();
+            this.label_AngleFormulas = new System.Windows.Forms.Label();
+            this.richTextBox_CircumscribedradiusFormula = new System.Windows.Forms.RichTextBox();
+            this.label_CircumscribedFormula = new System.Windows.Forms.Label();
+            this.richbox_AreaFormulas = new System.Windows.Forms.RichTextBox();
+            this.label_AreaFormulas = new System.Windows.Forms.Label();
+            this.richTextBox_PerimeterFormulas = new System.Windows.Forms.RichTextBox();
+            this.label_PerimeterFormulas = new System.Windows.Forms.Label();
             this.richTextBox_DiagonalFormula = new System.Windows.Forms.RichTextBox();
             this.label_DiagonalFromula = new System.Windows.Forms.Label();
             this.richTextBox_SidesFormulas = new System.Windows.Forms.RichTextBox();
@@ -98,6 +106,14 @@
             // panel_Info
             // 
             this.panel_Info.AutoScroll = true;
+            this.panel_Info.Controls.Add(this.richTextBox_AngleFormulas);
+            this.panel_Info.Controls.Add(this.label_AngleFormulas);
+            this.panel_Info.Controls.Add(this.richTextBox_CircumscribedradiusFormula);
+            this.panel_Info.Controls.Add(this.label_CircumscribedFormula);
+            this.panel_Info.Controls.Add(this.richbox_AreaFormulas);
+            this.panel_Info.Controls.Add(this.label_AreaFormulas);
+            this.panel_Info.Controls.Add(this.richTextBox_PerimeterFormulas);
+            this.panel_Info.Controls.Add(this.label_PerimeterFormulas);
             this.panel_Info.Controls.Add(this.richTextBox_DiagonalFormula);
             this.panel_Info.Controls.Add(this.label_DiagonalFromula);
             this.panel_Info.Controls.Add(this.richTextBox_SidesFormulas);
@@ -116,6 +132,123 @@
             this.panel_Info.TabIndex = 1;
             this.panel_Info.Visible = false;
             // 
+            // richTextBox_AngleFormulas
+            // 
+            this.richTextBox_AngleFormulas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_AngleFormulas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_AngleFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_AngleFormulas.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_AngleFormulas.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_AngleFormulas.Location = new System.Drawing.Point(5, 5545);
+            this.richTextBox_AngleFormulas.Name = "richTextBox_AngleFormulas";
+            this.richTextBox_AngleFormulas.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+            this.richTextBox_AngleFormulas.Size = new System.Drawing.Size(382, 201);
+            this.richTextBox_AngleFormulas.TabIndex = 2;
+            this.richTextBox_AngleFormulas.Text = "◦ Using  angle between the diagonal and rectangle side:\n\t\n\tβ = 2α\n\n◦ Using area a" +
+    "nd rectangle diagonal:\n\n\tsin β = 2A / d²";
+            this.richTextBox_AngleFormulas.Visible = false;
+            // 
+            // label_AngleFormulas
+            // 
+            this.label_AngleFormulas.AutoSize = true;
+            this.label_AngleFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_AngleFormulas.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_AngleFormulas.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_AngleFormulas.Location = new System.Drawing.Point(5, 5502);
+            this.label_AngleFormulas.Name = "label_AngleFormulas";
+            this.label_AngleFormulas.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_AngleFormulas.Size = new System.Drawing.Size(380, 43);
+            this.label_AngleFormulas.TabIndex = 1;
+            this.label_AngleFormulas.Text = "An angle between diagonals formulas:\r\n";
+            this.label_AngleFormulas.Click += new System.EventHandler(this.lable_AngleFormulas_Click);
+            // 
+            // richTextBox_CircumscribedradiusFormula
+            // 
+            this.richTextBox_CircumscribedradiusFormula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_CircumscribedradiusFormula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_CircumscribedradiusFormula.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_CircumscribedradiusFormula.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_CircumscribedradiusFormula.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_CircumscribedradiusFormula.Location = new System.Drawing.Point(5, 4458);
+            this.richTextBox_CircumscribedradiusFormula.Name = "richTextBox_CircumscribedradiusFormula";
+            this.richTextBox_CircumscribedradiusFormula.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+            this.richTextBox_CircumscribedradiusFormula.Size = new System.Drawing.Size(382, 1044);
+            this.richTextBox_CircumscribedradiusFormula.TabIndex = 2;
+            this.richTextBox_CircumscribedradiusFormula.Text = resources.GetString("richTextBox_CircumscribedradiusFormula.Text");
+            this.richTextBox_CircumscribedradiusFormula.Visible = false;
+            // 
+            // label_CircumscribedFormula
+            // 
+            this.label_CircumscribedFormula.AutoSize = true;
+            this.label_CircumscribedFormula.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_CircumscribedFormula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_CircumscribedFormula.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_CircumscribedFormula.Location = new System.Drawing.Point(5, 4415);
+            this.label_CircumscribedFormula.Name = "label_CircumscribedFormula";
+            this.label_CircumscribedFormula.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_CircumscribedFormula.Size = new System.Drawing.Size(335, 43);
+            this.label_CircumscribedFormula.TabIndex = 1;
+            this.label_CircumscribedFormula.Text = "The circumscribedradius formulas";
+            this.label_CircumscribedFormula.Click += new System.EventHandler(this.lable_CircumradiusFormulas_Click);
+            // 
+            // richbox_AreaFormulas
+            // 
+            this.richbox_AreaFormulas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richbox_AreaFormulas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richbox_AreaFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richbox_AreaFormulas.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richbox_AreaFormulas.ForeColor = System.Drawing.SystemColors.Window;
+            this.richbox_AreaFormulas.Location = new System.Drawing.Point(5, 3723);
+            this.richbox_AreaFormulas.Name = "richbox_AreaFormulas";
+            this.richbox_AreaFormulas.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+            this.richbox_AreaFormulas.Size = new System.Drawing.Size(382, 692);
+            this.richbox_AreaFormulas.TabIndex = 2;
+            this.richbox_AreaFormulas.Text = resources.GetString("richbox_AreaFormulas.Text");
+            this.richbox_AreaFormulas.Visible = false;
+            // 
+            // label_AreaFormulas
+            // 
+            this.label_AreaFormulas.AutoSize = true;
+            this.label_AreaFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_AreaFormulas.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_AreaFormulas.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_AreaFormulas.Location = new System.Drawing.Point(5, 3680);
+            this.label_AreaFormulas.Name = "label_AreaFormulas";
+            this.label_AreaFormulas.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_AreaFormulas.Size = new System.Drawing.Size(305, 43);
+            this.label_AreaFormulas.TabIndex = 1;
+            this.label_AreaFormulas.Text = "The area of rectangle formulas";
+            this.label_AreaFormulas.Click += new System.EventHandler(this.lable_AreaFormulas_Click);
+            // 
+            // richTextBox_PerimeterFormulas
+            // 
+            this.richTextBox_PerimeterFormulas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.richTextBox_PerimeterFormulas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_PerimeterFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox_PerimeterFormulas.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_PerimeterFormulas.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox_PerimeterFormulas.Location = new System.Drawing.Point(5, 3096);
+            this.richTextBox_PerimeterFormulas.Name = "richTextBox_PerimeterFormulas";
+            this.richTextBox_PerimeterFormulas.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+            this.richTextBox_PerimeterFormulas.Size = new System.Drawing.Size(382, 584);
+            this.richTextBox_PerimeterFormulas.TabIndex = 2;
+            this.richTextBox_PerimeterFormulas.Text = resources.GetString("richTextBox_PerimeterFormulas.Text");
+            this.richTextBox_PerimeterFormulas.Visible = false;
+            // 
+            // label_PerimeterFormulas
+            // 
+            this.label_PerimeterFormulas.AutoSize = true;
+            this.label_PerimeterFormulas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_PerimeterFormulas.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_PerimeterFormulas.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_PerimeterFormulas.Location = new System.Drawing.Point(5, 3053);
+            this.label_PerimeterFormulas.Name = "label_PerimeterFormulas";
+            this.label_PerimeterFormulas.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.label_PerimeterFormulas.Size = new System.Drawing.Size(356, 43);
+            this.label_PerimeterFormulas.TabIndex = 1;
+            this.label_PerimeterFormulas.Text = "The perimeter of rectangle formulas";
+            this.label_PerimeterFormulas.Click += new System.EventHandler(this.lable_PerimeterFormulas_Click);
+            // 
             // richTextBox_DiagonalFormula
             // 
             this.richTextBox_DiagonalFormula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
@@ -123,12 +256,12 @@
             this.richTextBox_DiagonalFormula.Dock = System.Windows.Forms.DockStyle.Top;
             this.richTextBox_DiagonalFormula.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox_DiagonalFormula.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox_DiagonalFormula.Location = new System.Drawing.Point(5, 1741);
+            this.richTextBox_DiagonalFormula.Location = new System.Drawing.Point(5, 2061);
             this.richTextBox_DiagonalFormula.Name = "richTextBox_DiagonalFormula";
-            this.richTextBox_DiagonalFormula.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox_DiagonalFormula.Size = new System.Drawing.Size(382, 142);
+            this.richTextBox_DiagonalFormula.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
+            this.richTextBox_DiagonalFormula.Size = new System.Drawing.Size(382, 992);
             this.richTextBox_DiagonalFormula.TabIndex = 2;
-            this.richTextBox_DiagonalFormula.Text = "";
+            this.richTextBox_DiagonalFormula.Text = resources.GetString("richTextBox_DiagonalFormula.Text");
             this.richTextBox_DiagonalFormula.Visible = false;
             // 
             // label_DiagonalFromula
@@ -137,13 +270,13 @@
             this.label_DiagonalFromula.Dock = System.Windows.Forms.DockStyle.Top;
             this.label_DiagonalFromula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_DiagonalFromula.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_DiagonalFromula.Location = new System.Drawing.Point(5, 1698);
+            this.label_DiagonalFromula.Location = new System.Drawing.Point(5, 2018);
             this.label_DiagonalFromula.Name = "label_DiagonalFromula";
             this.label_DiagonalFromula.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.label_DiagonalFromula.Size = new System.Drawing.Size(334, 43);
             this.label_DiagonalFromula.TabIndex = 1;
             this.label_DiagonalFromula.Text = "Diagonal of a rectangle formulas:";
-            this.label_DiagonalFromula.Click += new System.EventHandler(this.lable_FiagonalFormulas_Click);
+            this.label_DiagonalFromula.Click += new System.EventHandler(this.lable_DiagonalFormulas_Click);
             // 
             // richTextBox_SidesFormulas
             // 
@@ -152,7 +285,7 @@
             this.richTextBox_SidesFormulas.Dock = System.Windows.Forms.DockStyle.Top;
             this.richTextBox_SidesFormulas.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox_SidesFormulas.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox_SidesFormulas.Location = new System.Drawing.Point(5, 1061);
+            this.richTextBox_SidesFormulas.Location = new System.Drawing.Point(5, 1381);
             this.richTextBox_SidesFormulas.Name = "richTextBox_SidesFormulas";
             this.richTextBox_SidesFormulas.Size = new System.Drawing.Size(382, 637);
             this.richTextBox_SidesFormulas.TabIndex = 2;
@@ -165,7 +298,7 @@
             this.label_SidesFormula.Dock = System.Windows.Forms.DockStyle.Top;
             this.label_SidesFormula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_SidesFormula.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_SidesFormula.Location = new System.Drawing.Point(5, 1018);
+            this.label_SidesFormula.Location = new System.Drawing.Point(5, 1338);
             this.label_SidesFormula.Name = "label_SidesFormula";
             this.label_SidesFormula.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.label_SidesFormula.Size = new System.Drawing.Size(274, 43);
@@ -178,11 +311,11 @@
             this.richTextBox_Properties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.richTextBox_Properties.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox_Properties.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox_Properties.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox_Properties.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox_Properties.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox_Properties.Location = new System.Drawing.Point(5, 238);
             this.richTextBox_Properties.Name = "richTextBox_Properties";
-            this.richTextBox_Properties.Size = new System.Drawing.Size(382, 780);
+            this.richTextBox_Properties.Size = new System.Drawing.Size(382, 1100);
             this.richTextBox_Properties.TabIndex = 2;
             this.richTextBox_Properties.Text = resources.GetString("richTextBox_Properties.Text");
             this.richTextBox_Properties.Visible = false;
@@ -543,5 +676,14 @@
         private System.Windows.Forms.RichTextBox ides;
         private System.Windows.Forms.RichTextBox richTextBox_DiagonalFormula;
         private System.Windows.Forms.Label label_DiagonalFromula;
+        private System.Windows.Forms.Label label_PerimeterFormulas;
+        private System.Windows.Forms.RichTextBox richTextBox_PerimeterFormulas;
+        private System.Windows.Forms.RichTextBox richbox_AreaFormulas;
+        private System.Windows.Forms.Label label_AreaFormulas;
+        private System.Windows.Forms.RichTextBox u;
+        private System.Windows.Forms.Label label_CircumscribedFormula;
+        private System.Windows.Forms.RichTextBox richTextBox_CircumscribedradiusFormula;
+        private System.Windows.Forms.Label label_AngleFormulas;
+        private System.Windows.Forms.RichTextBox richTextBox_AngleFormulas;
     }
 }

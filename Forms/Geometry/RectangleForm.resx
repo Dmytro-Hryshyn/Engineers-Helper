@@ -85,6 +85,121 @@
         kWwhAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="richTextBox_CircumscribedradiusFormula.Text" xml:space="preserve">
+    <value>Definition. The circumscribed circle of a rectangle (circumcircle) circle which passes only four vertex 
+of the angle and has a center at the intersection of the diagonals of the rectangle.
+
+◦ Using sides:
+
+	R = √(a² + b²) / 2 
+
+◦ Using perimeter and rectangle side:
+
+	R = √(p²-4Pa+8a²) / 4
+	R = √(p²-4Pb+8b²) / 4
+
+◦ Using area and rectangle side:
+
+	R = √(A²+a⁴) / 2a
+	R = √(A²+b⁴) / 2b
+
+◦ Using diagonal:
+
+	R = d / 2
+ 
+◦ Using sine of the angle that adjacent to the diagonal and the opposite side of the angle:
+
+	R = a / 2sinα
+
+◦ Using cosine of the angle that adjacent to the diagonal and the adjacent side of the angle:
+
+	R = b / 2cosα
+
+◦ Using sine of the acute angle between the diagonals and the area of a rectangle:
+
+ 	R = √(2A /sinB) / 2</value>
+  </data>
+  <data name="richbox_AreaFormulas.Text" xml:space="preserve">
+    <value>Definition. The area of a rectangle the space is restricted rectangle sides
+ or within the perimeter of a rectangle.
+
+◦ Using rectangle sides:
+
+	A = a · b
+
+◦ Using perimeter and rectangle side:
+
+	A = (Pa - 2a²) / 2	 
+	A = (Pb - 2b²) / 2
+
+◦ Using diagonal and rectangle side:
+
+	A = a √(d² - a²) = b √(d² - b²)
+
+◦ Using angle between the diagonals and the diagonal of a rectangle:
+
+	A= (d² * sin β) / 2
+
+◦ Using radius (circumradius) and rectangle side:
+
+	A = a √(4R² - a²)
+	A = b √(4R² - b²)</value>
+  </data>
+  <data name="richTextBox_PerimeterFormulas.Text" xml:space="preserve">
+    <value>Definition. The perimeter of a rectangle is the sum of the lengths of all rectangle sides.
+
+◦ Using rectangle sides:
+
+	P = 2a + 2b = 2(a + b)
+
+◦ Using area and rectangle side:
+
+	P = (2A+2a²) / a
+	P = (2A+2b²) / b
+
+◦ Using diagonal and rectangle side:
+
+	P = 2(a + √d² - a²) 
+	P = 2(b + √d² - b²)
+
+◦ Using circumscribedradius and rectangle side:
+
+	P = 2(a + √(4R² - a²)) 
+	P = 2(b + √(4R² - b²))</value>
+  </data>
+  <data name="richTextBox_DiagonalFormula.Text" xml:space="preserve">
+    <value>Definition: The diagonal of a rectangle is any segment that connects two opposite vertices of a rectangle.
+
+◦ Using rectangle sides (by the Pythagorean theorem):
+	
+	d = √(a² + b²)
+
+◦ Using area and rectangle side:
+
+	d = √(A²+a⁴) / a
+	d = √(A²+b⁴) / b
+
+◦ Using perimeter and rectangle side:
+
+	d = √(P²-4Pa+8a²) / 2
+	d = √(P²-4Pb+8a²) / 2
+
+◦ Using circumscribedradius of ractangle:
+	
+	d = 2R
+
+◦ Using sine of the angle that adjacent to the diagonal and the opposite side of the angle:
+
+	d = a / sin α
+
+◦ Using cosine of the angle that adjacent to the diagonal and the adjacent side of the angle:
+
+	d = b / cos α
+
+◦ Using sine of the acute angle between the diagonals and the area of a rectangle
+
+	d = √(2A / sin β)</value>
+  </data>
   <data name="richTextBox_SidesFormulas.Text" xml:space="preserve">
     <value>Definition:
 ⦿The length of rectangle is called the length of the longer pair of its sides.
