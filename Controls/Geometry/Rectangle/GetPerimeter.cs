@@ -48,6 +48,14 @@ namespace Geometry.Rectangle
             else return 0;
         }
 
+        public double ByOutRadiusAndSide(double outRadius, double side)
+        {
+            if (outRadius > 0 && side > 0)
+            {
+                return 2 * (side + (Math.Sqrt(4 * Math.Pow(outRadius, 2) - Math.Pow(side, 2))));
+            }
+            else return 0;
+        }
 
     }
 }
