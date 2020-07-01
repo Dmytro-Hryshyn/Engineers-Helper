@@ -2,7 +2,10 @@
 
 namespace Geometry.Rectangle
 {
-    public class GetPerimeter
+    /// <summary>
+    /// Calculate perimeter of rectangle using different properties
+    /// </summary>
+    public sealed class GetPerimeter
     {
         /// <summary>
         /// Calculate perimeter of rectangle using both side
@@ -48,6 +51,12 @@ namespace Geometry.Rectangle
             else return 0;
         }
 
+        /// <summary>
+        /// Calculate perimeter of rectangle when OutRadius and Side are known
+        /// </summary>
+        /// <param name="outRadius">Circumscribedradius of rectangle</param>
+        /// <param name="side">Side of recatangle</param>
+        /// <returns>Returns perimeter of rectangle</returns>
         public double ByOutRadiusAndSide(double outRadius, double side)
         {
             if (outRadius > 0 && side > 0)

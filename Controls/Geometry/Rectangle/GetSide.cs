@@ -1,6 +1,6 @@
 ﻿namespace Geometry.Rectangle
 {
-    public class GetSideB
+    public sealed class GetSide
     {
     }
 }
