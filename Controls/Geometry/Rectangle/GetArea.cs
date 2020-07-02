@@ -58,16 +58,25 @@ namespace Geometry.Rectangle
             }
         }
 
-        // ToDo: Fix this method and test it
+        /// <summary>
+        /// Calculate area of rectangle when acute angle and diagonal are known
+        /// </summary>
+        /// <param name="angle">Angle between two diagonals and less  then 90 degrees</param>
+        /// <param name="diagonal">Diagonal of rectangle</param>
+        /// <returns>Area of rectangle</returns>
         public double ByAcuteAngleAndDiagonal(double angle, double diagonal)
         {
-            return (diagonal * diagonal) * Math.Sin(angle.ToRadian());
+            if (angle > 0 && diagonal > 0)
+            {
+                return ((diagonal * diagonal) * Math.Sin(angle.ToRadian())) / 2;
+            }
+            else
+                return 0;
         }
-
 
         public double ByOutRadiusAndSide(double outRadius, double side)
         {
-            if (  side > 0 && outRadius > 0)
+            if (side > 0 && outRadius > 0)
             {
                 return side * Math.Sqrt(4 * (outRadius * outRadius) - (side * side));
             }
