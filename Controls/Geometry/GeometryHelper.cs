@@ -23,5 +23,10 @@ namespace Engineers_Helper.Controls.Geometry
         {
             return radians * 180 / Math.PI;
         }
+
+        public static double SqRoot(this double value)
+        {
+            return Math.Sqrt(value);
+        }
     }
 }
