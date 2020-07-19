@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Unit.Converter
 {
-    public class AngleConverter : IConverter
+    public class AngleConverter : BaseConverter, IConverterRefactoring
     {
-        public decimal FromUnitValue { get; private set; }
 
-        public string FromUnitName { get; private set; }
-
-        public string ToUnitName { get; private set; }
-
-        public string ResultString { get; private set; }
 
         internal enum AngleUnit
         {
-
             Degree,
             Radian,
             Gradian
@@ -24,35 +17,38 @@ namespace Unit.Converter
         public AngleConverter(decimal fromUnitValue, string fromUnitName, string toUnitName)
         {
             FromUnitValue = fromUnitValue;
-            FromUnitName = fromUnitName;
-            ToUnitName = toUnitName;
-            ResultString = $"{fromUnitName}-{toUnitName}";
+            FromUnit = fromUnitName;
+            ToUnit = toUnitName;
+            FromUnit_ToUnit = $"{fromUnitName}-{toUnitName}";
         }
 
-        public string GetUnswer()
+
+
+
+        public decimal ConvertUnit()
         {
-            Hashtable angleHash = new Hashtable();
+
+            var keyValuePairs = CreateDictinary();
+            decimal keyExists = 0;
+            keyValuePairs.TryGetValue(FromUnit_ToUnit, out keyExists);
+            return keyExists;
+        }
+
+
+
+        public Dictionary<string, decimal> CreateDictinary()
+        {
+            Dictionary<string, decimal> angleDictinary = new Dictionary<string, decimal>();
             //Degree to other Unit
-            angleHash.Add($"{AngleUnit.Degree}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 180));
-            angleHash.Add($"{AngleUnit.Degree}-{AngleUnit.Gradian}", FromUnitValue * (200m / 180m));
+            angleDictinary.Add($"{AngleUnit.Degree}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 180));
+            angleDictinary.Add($"{AngleUnit.Degree}-{AngleUnit.Gradian}", FromUnitValue * (200m / 180m));
             //Radian to other unit
-            angleHash.Add($"{AngleUnit.Radian}-{AngleUnit.Degree}", FromUnitValue * (decimal)(180 / Math.PI));
-            angleHash.Add($"{AngleUnit.Radian}-{AngleUnit.Gradian}", FromUnitValue * (decimal)(200 / Math.PI));
+            angleDictinary.Add($"{AngleUnit.Radian}-{AngleUnit.Degree}", FromUnitValue * (decimal)(180 / Math.PI));
+            angleDictinary.Add($"{AngleUnit.Radian}-{AngleUnit.Gradian}", FromUnitValue * (decimal)(200 / Math.PI));
             //Gradian to other unit
-            angleHash.Add($"{AngleUnit.Gradian}-{AngleUnit.Degree}", FromUnitValue * (180m / 200m));
-            angleHash.Add($"{AngleUnit.Gradian}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 200));
-
-            if (angleHash.ContainsKey(ResultString))
-            {
-               return angleHash[ResultString].ToString();
-                
-            }
-
-            else
-            {
-                return "0.error";
-            }
-
+            angleDictinary.Add($"{AngleUnit.Gradian}-{AngleUnit.Degree}", FromUnitValue * (180m / 200m));
+            angleDictinary.Add($"{AngleUnit.Gradian}-{AngleUnit.Radian}", FromUnitValue * (decimal)(Math.PI / 200));
+            return angleDictinary;
         }
     }
 }

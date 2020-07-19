@@ -18,15 +18,10 @@ namespace Engineers_Helper.Forms.UnitConverter
             if (textBox_FromUnit.Text != string.Empty)
             {
                 AngleConverter angleConverter = new AngleConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
-                textBox_ToUnit.Text = angleConverter.GetUnswer();
+                textBox_ToUnit.Text = angleConverter.ConvertUnit().ToString(".#####");
             }
 
            
-            if (textBox_ToUnit.Text == "0.error")
-            {
-                textBox_ToUnit.Text = string.Empty;
-                DisplayError("Error, try select enother angle unit");
-            }
 
             else return;
         }
