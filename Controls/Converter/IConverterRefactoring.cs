@@ -2,7 +2,7 @@
 
 namespace Unit.Converter
 {
-    interface IConverterRefactoring
+    interface IConverter
     {
          public decimal ConvertUnit();
 

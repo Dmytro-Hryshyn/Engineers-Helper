@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Unit.Converter
 {
-    public class WeightAndMassConverter : BaseConverter , IConverterRefactoring
+    public class WeightAndMassConverter : BaseConverter , IConverter
     {
        
         enum WeightAndMassUnit

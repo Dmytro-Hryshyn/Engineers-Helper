@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Unit.Converter
 {
-    public class AngleConverter : BaseConverter, IConverterRefactoring
+    public class AngleConverter : BaseConverter, IConverter
     {
         internal enum AngleUnit
         {

@@ -3,7 +3,7 @@
 namespace Unit.Converter
 {
 
-    public class TemperatureConverter : BaseConverter, IConverterRefactoring
+    public class TemperatureConverter : BaseConverter, IConverter
     {
 
         public enum TemperatureUnit

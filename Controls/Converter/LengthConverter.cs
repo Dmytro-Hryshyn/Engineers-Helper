@@ -2,7 +2,7 @@
 
 namespace Unit.Converter
 {
-    public class LengthConverter : BaseConverter, IConverterRefactoring
+    public class LengthConverter : BaseConverter, IConverter
     {
 
         public LengthConverter(decimal fromUnitValue, string fromUnit, string toUnit)

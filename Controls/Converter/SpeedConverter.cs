@@ -3,7 +3,7 @@
 namespace Unit.Converter
 {
 
-    public class SpeedConverter : BaseConverter, IConverterRefactoring
+    public class SpeedConverter : BaseConverter, IConverter
     {
 
         public SpeedConverter(decimal fromUnitValue, string fromUnit, string toUnit)

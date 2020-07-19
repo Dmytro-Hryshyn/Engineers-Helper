@@ -2,7 +2,7 @@
 
 namespace Unit.Converter
 {
-    public class PressureConverter : BaseConverter, IConverterRefactoring
+    public class PressureConverter : BaseConverter, IConverter
     {
         public PressureConverter(decimal fromUnitValue, string fromUnit, string toUnit)
         {
