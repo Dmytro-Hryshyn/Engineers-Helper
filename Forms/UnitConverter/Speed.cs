@@ -166,13 +166,9 @@ namespace Forms.UnitConverter
             if (textBox_FromUnit.Text != string.Empty)
             {
                 SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text.Replace(" ", "_"), comboBox_ToUnit.Text.Replace(" ", "_"));
-                textBox_ToUnit.Text = speedConverter.GetUnswer();
+                textBox_ToUnit.Text = speedConverter.ConvertUnit().ToString(".########");
             }
-             if (textBox_ToUnit.Text=="0.error")
-            {
-                textBox_ToUnit.Text = string.Empty;
-                DisplayError("Error, try select enother speed unit");
-            }
+             
             else return;
         }
 

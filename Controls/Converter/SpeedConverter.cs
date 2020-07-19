@@ -1,26 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Unit.Converter
 {
 
-    public class SpeedConverter : IConverter
+    public class SpeedConverter : BaseConverter, IConverterRefactoring
     {
 
-        public decimal FromUnitValue { get; private set; }
-
-        public string FromUnitName { get; private set; }
-
-        public string ToUnitName { get; private set; }
-
-        public string ResultString { get; private set; }
-
-        public SpeedConverter(decimal fromUnitValue, string fromUnitName, string toUnitName)
+        public SpeedConverter(decimal fromUnitValue, string fromUnit, string toUnit)
         {
             FromUnitValue = fromUnitValue;
-            FromUnitName = fromUnitName;
-            ToUnitName = toUnitName;
-            ResultString = FromUnitName + "-" + toUnitName;
+            FromUnit = fromUnit;
+            ToUnit = toUnit;
+            FromUnit_ToUnit = $"{FromUnit}-{ToUnit}";
         }
 
         public enum SpeedUnits
@@ -31,7 +22,6 @@ namespace Unit.Converter
             Metre_per_second,
             Knot
         }
-       
 
         public static Dictionary<string, string> NiceComboboxDataRepresentation()
         {
@@ -45,54 +35,50 @@ namespace Unit.Converter
             return speeUnitPairs;
         }
 
-        public string GetUnswer()
+        public decimal ConvertUnit()
         {
-            Hashtable speedTable = new Hashtable();
+            var speedDictinary = CreateDictinary();
+            decimal keyIsMatched = 0;
+            speedDictinary.TryGetValue(FromUnit_ToUnit, out keyIsMatched);
+            return keyIsMatched;
+        }
+
+        public Dictionary<string, decimal> CreateDictinary()
+        {
+            Dictionary<string, decimal> speedDictinary = new Dictionary<string, decimal>();
             //Mile per hour to enother Unit
 
-            speedTable.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Feet_per_second}", FromUnitValue * 1.467m);
-            speedTable.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Metre_per_second}", FromUnitValue / 2.237m);
-            speedTable.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.609m);
-            speedTable.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Knot}", FromUnitValue / 1.151m);
+            speedDictinary.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Feet_per_second}", FromUnitValue * 1.467m);
+            speedDictinary.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Metre_per_second}", FromUnitValue / 2.237m);
+            speedDictinary.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.609m);
+            speedDictinary.Add($"{SpeedUnits.Mile_per_hour}-{SpeedUnits.Knot}", FromUnitValue / 1.151m);
 
             //Feet per second to other Unit
-            speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Mile_per_hour}", FromUnitValue / 1.467m);
-            speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Metre_per_second}", FromUnitValue / 3.281m);
-            speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.097m);
-            speedTable.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Knot}", FromUnitValue / 1.688m);
+            speedDictinary.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Mile_per_hour}", FromUnitValue / 1.467m);
+            speedDictinary.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Metre_per_second}", FromUnitValue / 3.281m);
+            speedDictinary.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.097m);
+            speedDictinary.Add($"{SpeedUnits.Feet_per_second}-{SpeedUnits.Knot}", FromUnitValue / 1.688m);
 
             //Metre per second to enother Unit
-            speedTable.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Mile_per_hour}", FromUnitValue * 2.237m);
-            speedTable.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Feet_per_second}", FromUnitValue * 3.281m);
-            speedTable.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 3.6m);
-            speedTable.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Knot}", FromUnitValue * 1.944m);
+            speedDictinary.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Mile_per_hour}", FromUnitValue * 2.237m);
+            speedDictinary.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Feet_per_second}", FromUnitValue * 3.281m);
+            speedDictinary.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 3.6m);
+            speedDictinary.Add($"{SpeedUnits.Metre_per_second}-{SpeedUnits.Knot}", FromUnitValue * 1.944m);
 
 
             //Kilometre per hour to enother Unit
-            speedTable.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Mile_per_hour}", FromUnitValue / 1.609m);
-            speedTable.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Feet_per_second}", FromUnitValue / 1.097m);
-            speedTable.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Metre_per_second}", FromUnitValue / 3.6m);
-            speedTable.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Knot}", FromUnitValue / 1.852m);
+            speedDictinary.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Mile_per_hour}", FromUnitValue / 1.609m);
+            speedDictinary.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Feet_per_second}", FromUnitValue / 1.097m);
+            speedDictinary.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Metre_per_second}", FromUnitValue / 3.6m);
+            speedDictinary.Add($"{SpeedUnits.Kilometre_per_hour}-{SpeedUnits.Knot}", FromUnitValue / 1.852m);
 
             //Knot to enother Unit
-            speedTable.Add($"{SpeedUnits.Knot}-{SpeedUnits.Mile_per_hour}", FromUnitValue * 1.151m);
-            speedTable.Add($"{SpeedUnits.Knot}-{SpeedUnits.Feet_per_second}", FromUnitValue * 1.688m);
-            speedTable.Add($"{SpeedUnits.Knot}-{SpeedUnits.Metre_per_second}", FromUnitValue / 1.944m);
-            speedTable.Add($"{SpeedUnits.Knot}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.852m);
+            speedDictinary.Add($"{SpeedUnits.Knot}-{SpeedUnits.Mile_per_hour}", FromUnitValue * 1.151m);
+            speedDictinary.Add($"{SpeedUnits.Knot}-{SpeedUnits.Feet_per_second}", FromUnitValue * 1.688m);
+            speedDictinary.Add($"{SpeedUnits.Knot}-{SpeedUnits.Metre_per_second}", FromUnitValue / 1.944m);
+            speedDictinary.Add($"{SpeedUnits.Knot}-{SpeedUnits.Kilometre_per_hour}", FromUnitValue * 1.852m);
 
-
-            if (speedTable.ContainsKey(ResultString))
-            {
-                return speedTable[ResultString].ToString();
-            }
-            else
-            {
-                return "0.error";
-            }
-
-
-
-
+            return speedDictinary;
         }
     }
 }
