@@ -5,8 +5,6 @@ namespace Unit.Converter
 {
     public class AngleConverter : BaseConverter, IConverterRefactoring
     {
-
-
         internal enum AngleUnit
         {
             Degree,
@@ -22,19 +20,13 @@ namespace Unit.Converter
             FromUnit_ToUnit = $"{fromUnitName}-{toUnitName}";
         }
 
-
-
-
         public decimal ConvertUnit()
         {
-
             var keyValuePairs = CreateDictinary();
             decimal keyExists = 0;
             keyValuePairs.TryGetValue(FromUnit_ToUnit, out keyExists);
             return keyExists;
         }
-
-
 
         public Dictionary<string, decimal> CreateDictinary()
         {

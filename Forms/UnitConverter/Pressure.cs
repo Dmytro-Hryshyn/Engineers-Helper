@@ -1,14 +1,7 @@
 ﻿using Forms.UnitConverter;
-using Unit.Converter;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Unit.Converter;
 
 namespace Engineers_Helper.Forms.UnitConverter
 {
@@ -26,10 +19,10 @@ namespace Engineers_Helper.Forms.UnitConverter
             comboBox_ToUnit.DataSource = Enum.GetValues(typeof(PressureConverter.PressureUnit));
         }
 
-      
+
         protected override void DisplayError(string errorText)
         {
-            MessageBox.Show(errorTodisplay,"Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            MessageBox.Show(errorTodisplay, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         protected override void Calculate()
@@ -40,7 +33,7 @@ namespace Engineers_Helper.Forms.UnitConverter
                 var pressureConverter = new PressureConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
                 textBox_ToUnit.Text = pressureConverter.ConvertUnit().ToString(".######");
             }
-           
+
         }
     }
 }
