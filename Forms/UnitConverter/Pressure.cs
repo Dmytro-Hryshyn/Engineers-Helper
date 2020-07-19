@@ -38,7 +38,7 @@ namespace Engineers_Helper.Forms.UnitConverter
             {
                 ErrorCall error = this.DisplayError;
                 var pressureConverter = new PressureConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
-                textBox_ToUnit.Text = pressureConverter.GetUnswer(error, errorTodisplay).ToString("#.##########");
+                textBox_ToUnit.Text = pressureConverter.ConvertUnit().ToString(".######");
             }
            
         }
