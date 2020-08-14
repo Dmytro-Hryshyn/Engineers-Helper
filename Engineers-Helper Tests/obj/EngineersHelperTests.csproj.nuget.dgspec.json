@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj": {}
+  },
+  "projects": {
+    "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj",
+        "projectName": "EngineersHelperTests",
+        "projectPath": "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj",
+        "packagesPath": "C:\\Users\\johnsellcomputer565\\.nuget\\packages\\",
+        "outputPath": "F:\\C#\\New Design\\Engineers-Helper Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\johnsellcomputer565\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {
+              "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj": {
+                "projectPath": "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.2.20176.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
