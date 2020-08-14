@@ -901,6 +901,19 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Engineers_Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Engineers_Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Engineers_Helper.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -3494,11 +3507,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Engineers_Helper/1.0.0": {
+      "type": "project",
+      "path": "../Engineers Helper/Engineers_Helper.csproj",
+      "msbuildProject": "../Engineers Helper/Engineers_Helper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v5.0": [
-      "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj",
+      "Engineers_Helper >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -3531,8 +3549,8 @@
       "frameworks": {
         "net5.0": {
           "projectReferences": {
-            "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj": {
-              "projectPath": "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj"
+            "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj": {
+              "projectPath": "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj"
             }
           }
         }
@@ -3576,21 +3594,13 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.2.20176.6\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v5.0"
-      ]
-    }
-  ]
+  }
 }

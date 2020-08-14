@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "EzQ1prm0yuNsoUF9hiHwEzMX62DFnmvRaZTS+ZUt4SkK+UQpw3iyUVe0UhReHJ3suRYXoNzra+g1vQ6y6M+KTw==",
-  "success": false,
+  "dgSpecHash": "dbYjM7th3iwbscR7N5dFNsxU0q90hsz4MRZC3ku8JplODM0njwrnPqpAeuVeNVMbP7KzAaFRCGP8oHI0+JGNdQ==",
+  "success": true,
   "projectFilePath": "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnsellcomputer565\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
@@ -55,15 +55,5 @@
     "C:\\Users\\johnsellcomputer565\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512",
     "C:\\Users\\johnsellcomputer565\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

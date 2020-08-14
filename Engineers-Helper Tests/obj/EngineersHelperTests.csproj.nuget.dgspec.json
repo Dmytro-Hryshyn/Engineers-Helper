@@ -4,6 +4,72 @@
     "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj": {}
   },
   "projects": {
+    "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj",
+        "projectName": "Engineers_Helper",
+        "projectPath": "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj",
+        "packagesPath": "C:\\Users\\johnsellcomputer565\\.nuget\\packages\\",
+        "outputPath": "F:\\C#\\New Design\\Engineers Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\johnsellcomputer565\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.2.20176.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\C#\\New Design\\Engineers-Helper Tests\\EngineersHelperTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,8 +93,8 @@
         "frameworks": {
           "net5.0": {
             "projectReferences": {
-              "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj": {
-                "projectPath": "F:\\C#\\New Design\\Engineers-Helper\\Engineers_Helper.csproj"
+              "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj": {
+                "projectPath": "F:\\C#\\New Design\\Engineers Helper\\Engineers_Helper.csproj"
               }
             }
           }
@@ -72,6 +138,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.2.20176.6\\RuntimeIdentifierGraph.json"

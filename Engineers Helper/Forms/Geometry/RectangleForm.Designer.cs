@@ -680,7 +680,6 @@
         private System.Windows.Forms.RichTextBox richTextBox_PerimeterFormulas;
         private System.Windows.Forms.RichTextBox richbox_AreaFormulas;
         private System.Windows.Forms.Label label_AreaFormulas;
-        private System.Windows.Forms.RichTextBox u;
         private System.Windows.Forms.Label label_CircumscribedFormula;
         private System.Windows.Forms.RichTextBox richTextBox_CircumscribedradiusFormula;
         private System.Windows.Forms.Label label_AngleFormulas;
