@@ -49,14 +49,7 @@ namespace Forms.UnitConverter
 
         private void button_KeyboardMenu_Click(object sender, EventArgs e)
         {
-            if (tableLayoutPanel_Keyboard.Visible == true)
-            {
-                tableLayoutPanel_Keyboard.Visible = false;
-            }
-            else
-            {
-                tableLayoutPanel_Keyboard.Visible = true;
-            }
+            tableLayoutPanel_Keyboard.Visible = !tableLayoutPanel_Keyboard.Visible;
         }
 
         private void button_0_Click(object sender, EventArgs e)

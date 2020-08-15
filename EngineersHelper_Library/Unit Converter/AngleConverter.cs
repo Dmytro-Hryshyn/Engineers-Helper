@@ -5,7 +5,7 @@ namespace Unit.Converter
 {
     public class AngleConverter : BaseConverter, IConverter
     {
-        internal enum AngleUnit
+       public enum AngleUnit
         {
             Degree,
             Radian,

@@ -32,7 +32,10 @@ namespace Engineers_Helper.Forms.UnitConverter
             comboBox_ToUnit.DataSource = Enum.GetValues(typeof(AngleConverter.AngleUnit));
         }
 
+        private void Angle_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 
 }

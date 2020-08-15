@@ -298,3 +298,5 @@ F:\C#\New Design\Engineers-Helper Tests\obj\Debug\net5.0\EngineersHelperTests.cs
 F:\C#\New Design\Engineers-Helper Tests\obj\Debug\net5.0\EngineersHelperTests.dll
 F:\C#\New Design\Engineers-Helper Tests\obj\Debug\net5.0\EngineersHelperTests.pdb
 F:\C#\New Design\Engineers-Helper Tests\obj\Debug\net5.0\EngineersHelperTests.genruntimeconfig.cache
+F:\C#\New Design\Engineers-Helper Tests\bin\Debug\net5.0\EngineersHelper_Library.dll
+F:\C#\New Design\Engineers-Helper Tests\bin\Debug\net5.0\EngineersHelper_Library.pdb

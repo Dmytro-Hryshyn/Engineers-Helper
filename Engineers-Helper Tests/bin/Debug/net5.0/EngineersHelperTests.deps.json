@@ -689,7 +689,15 @@
           "Microsoft.NET.Test.Sdk": "16.5.0"
         }
       },
+      "EngineersHelper_Library/1.0.0": {
+        "runtime": {
+          "EngineersHelper_Library.dll": {}
+        }
+      },
       "Engineers_Helper/1.0.0": {
+        "dependencies": {
+          "EngineersHelper_Library": "1.0.0"
+        },
         "runtime": {
           "Engineers_Helper.dll": {}
         }
@@ -1051,6 +1059,11 @@
       "sha512": "sha512-3eq5cGXbEJkqW9nwLuXwtxy9B5gMA8i7HW4rN63AhAvy5UvEcQbZnve23wx/oPrkyg/4CbfNhxkBezS0b1oUdQ==",
       "path": "xunit.runner.visualstudio/2.4.0",
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    },
+    "EngineersHelper_Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Engineers_Helper/1.0.0": {
       "type": "project",

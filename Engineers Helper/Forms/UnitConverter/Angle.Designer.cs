@@ -30,15 +30,26 @@
         {
             this.SuspendLayout();
             // 
+            // textBox_FromUnit
+            // 
+            this.textBox_FromUnit.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            // 
+            // textBox_ToUnit
+            // 
+            this.textBox_ToUnit.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            // 
             // button_Convert
             // 
             this.button_Convert.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
             // 
             // Angle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.ClientSize = new System.Drawing.Size(1167, 798);
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.MinimumSize = new System.Drawing.Size(1088, 798);
             this.Name = "Angle";
+            this.Load += new System.EventHandler(this.Angle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

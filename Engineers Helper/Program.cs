@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Engineers_Helper
 {
@@ -8,6 +9,7 @@ namespace Engineers_Helper
         /// The main entry point for the application.
         /// </summary>
        
+        [STAThreadAttribute]
         static void Main()
         {
             Application.EnableVisualStyles();

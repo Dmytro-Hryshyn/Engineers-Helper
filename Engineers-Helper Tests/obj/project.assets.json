@@ -902,9 +902,22 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "EngineersHelper_Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/EngineersHelper_Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EngineersHelper_Library.dll": {}
+        }
+      },
       "Engineers_Helper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "EngineersHelper_Library": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Engineers_Helper.dll": {}
         },
@@ -3507,6 +3520,11 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "EngineersHelper_Library/1.0.0": {
+      "type": "project",
+      "path": "../EngineersHelper_Library/EngineersHelper_Library.csproj",
+      "msbuildProject": "../EngineersHelper_Library/EngineersHelper_Library.csproj"
     },
     "Engineers_Helper/1.0.0": {
       "type": "project",
