@@ -24,5 +24,10 @@ namespace Engineers_Helper_WPF
         {
             InitializeComponent();
         }
+
+        private void SomeStuffClick(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

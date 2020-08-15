@@ -59,5 +59,15 @@ namespace Engineers_Helper_WPF.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Gears {
+            get {
+                object obj = ResourceManager.GetObject("Gears", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Engineers_Helper_WPF"
         mc:Ignorable="d"
-        Title="Engineers Helper" Height="600" Width="1000">
+        Title="Engineers Helper"  Height="600" Width="1000" Icon="/Gears.webp">
     <Grid>
-
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF070234"/>
+                <GradientStop Color="#FF0E0C21" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.35*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Name="MenuPanel">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF060B6A" Offset="0.294"/>
+                    <GradientStop Color="#FF2C1B46" Offset="0.817"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock FontSize="25" Foreground="White" TextAlignment="Center">Menu</TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Column="1" Foreground="White" FontSize="25" TextAlignment="Center"> Some cool stuff</TextBlock>
+        
     </Grid>
 </Window>
