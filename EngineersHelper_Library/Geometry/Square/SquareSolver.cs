@@ -1,4 +1,4 @@
-﻿namespace Geometry
+﻿namespace Geometry.Square
 {
     public class SquareSolver : ISquare
     {

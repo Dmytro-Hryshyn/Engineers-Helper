@@ -1,4 +1,4 @@
-﻿using Geometry;
+﻿using Geometry.Square;
 using System;
 using System.Drawing;
 using System.IO;
@@ -173,7 +173,7 @@ namespace Engineers_Helper.Forms.Geometry
             richTextBox_DiagonalFormula.Visible=(richTextBox_DiagonalFormula.Visible == false) ? true : false;
         }
 
-        //Simple way. Much shorter then ternary operator or If else ;))
+        //Simple way. Shorter then ternary operator or If else ;))
         private void label_PerimeterFormula_Click(object sender, EventArgs e)
         {
             richTextBox_PerimeterFormula.Visible = !richTextBox_PerimeterFormula.Visible;

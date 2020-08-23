@@ -1,4 +1,4 @@
-﻿namespace Geometry
+﻿namespace Geometry.Square
 {
     interface ISquare : IBaseShape
     {

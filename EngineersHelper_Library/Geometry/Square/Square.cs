@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using System;
 
-namespace Geometry
+namespace Geometry.Square
 {
     public  static class Square
     {
