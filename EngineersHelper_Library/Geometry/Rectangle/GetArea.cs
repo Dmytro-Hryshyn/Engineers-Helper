@@ -1,4 +1,4 @@
-﻿using Engineers_Helper.Controls.Geometry;
+﻿
 using System;
 
 namespace Geometry.Rectangle
