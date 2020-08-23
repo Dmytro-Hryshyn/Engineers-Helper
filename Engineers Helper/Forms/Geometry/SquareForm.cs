@@ -14,24 +14,21 @@ namespace Engineers_Helper.Forms.Geometry
         {
             InitializeComponent();
             #region Textboxes Events
-            textBox_Side.MouseEnter += (s, a) => AnimatePictureBox("Side.png");
-            textBox_Side.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-            textBox_IsideRadius.MouseEnter += (s, a) => AnimatePictureBox("Inside Radius.png");
-            textBox_IsideRadius.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-            textBox_OutsideRadius.MouseEnter += (s, a) => AnimatePictureBox("Outside Radius.png");
-            textBox_OutsideRadius.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-            textBox_Diagonal.MouseEnter += (s, a) => AnimatePictureBox("Diagonals.png");
-            textBox_Diagonal.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-            textBox_Area.MouseEnter += (s, a) => AnimatePictureBox("Area.png");
-            textBox_Area.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
-            textBox_Perimeter.MouseEnter += (s, a) => AnimatePictureBox("Perimeter.png");
-            textBox_Perimeter.MouseLeave += (s, a) => AnimatePictureBox("Square.png");
+            textBox_Side.MouseEnter += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Side;
+            textBox_Side.MouseLeave += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Square;
+            textBox_IsideRadius.MouseEnter += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Inside_Radius;
+            textBox_IsideRadius.MouseLeave += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Square;
+            textBox_OutsideRadius.MouseEnter += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Outside_Radius;
+            textBox_OutsideRadius.MouseLeave += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Square;
+            textBox_Diagonal.MouseEnter += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Diagonals;
+            textBox_Diagonal.MouseLeave += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Square;
+            textBox_Area.MouseEnter += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Area;
+            textBox_Area.MouseLeave += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Square;
+            textBox_Perimeter.MouseEnter += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Perimeter;
+            textBox_Perimeter.MouseLeave += (s, a) => pictureBox_Screan.Image = Properties.Resources.s_Square;
 
 
-            void AnimatePictureBox(string pictureName)
-            {
-                pictureBox_Screan.Image = Image.FromFile(new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + @"\Resource\Square\" + pictureName);
-            }
+          
             #endregion
             #region Textbox lost focuse event
 
