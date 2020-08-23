@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Engineers_Helper.Controls.Geometry
+namespace Geometry
 {
     public static class GeometryHelper
     {
         /// <summary>
-        /// Converting Angle in degrees to angle in radians format
+        /// Converting Angle from degrees to radians
         /// </summary>
         /// <param name="degrees">angle in degrees</param>
         /// <returns>Angle in radians format</returns>
@@ -15,7 +15,7 @@ namespace Engineers_Helper.Controls.Geometry
         }
 
         /// <summary>
-        /// Converting agle in radians to angle in degrees format
+        /// Converting Agle from radians to degrees.
         /// </summary>
         /// <param name="radians">angle in radians </param>
         /// <returns>Angle in degrees format </returns>
@@ -23,6 +23,7 @@ namespace Engineers_Helper.Controls.Geometry
         {
             return radians * 180 / Math.PI;
         }
+
 
         public static double SqRoot(this double value)
         {
