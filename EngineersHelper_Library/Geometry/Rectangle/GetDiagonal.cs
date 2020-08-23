@@ -1,6 +1,4 @@
-﻿using Engineers_Helper.Controls.Geometry;
-using Engineers_Helper.Forms.UnitConverter;
-using System;
+﻿using System;
 
 namespace Geometry.Rectangle
 {
@@ -70,7 +68,7 @@ namespace Geometry.Rectangle
         /// <returns>Returns diagonal of rectangle</returns>
         public double ByAngleAndOppositeSide(double angle, double opposisteSide)
         {
-            return angle > 0 && opposisteSide > 0 ? opposisteSide / Math.Sin(angle.ToRadian()) : 0;
+            return angle > 0 && opposisteSide > 0 ? opposisteSide / Math.Sin(angle*(Math.PI/180)) : 0;
         }
 
         /// <summary>
@@ -81,7 +79,7 @@ namespace Geometry.Rectangle
         /// <returns>Returns diagonal of rectangle</returns>
         public double ByAngleAndAdjacentSide(double angle, double adjacentSide)
         {
-            return angle > 0 && adjacentSide > 0 ? adjacentSide / Math.Cos(angle.ToRadian()) : 0;
+            return angle > 0 && adjacentSide > 0 ? adjacentSide / Math.Cos(angle*(Math.PI/180)) : 0;
         }
 
         //ToDO: Fix this method tests failed 
@@ -94,7 +92,7 @@ namespace Geometry.Rectangle
         /// <returns>Diagona of rectangle</returns>
         public double ByAcuteAngleAndArea(double acuteAngle, double area)
         {
-            double sinAcuteAngle = Math.Sin(acuteAngle.ToRadian());
+            double sinAcuteAngle = Math.Sin(acuteAngle*(Math.PI/180));
             double result = (area * 2)/sinAcuteAngle;
             result = Math.Sqrt(result);
             return (area > 0 && acuteAngle > 0) ? result : 0;

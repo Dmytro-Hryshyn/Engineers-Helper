@@ -1,4 +1,4 @@
-﻿using Engineers_Helper.Controls.Geometry;
+﻿
 using System;
 
 namespace Geometry.Rectangle
@@ -68,7 +68,7 @@ namespace Geometry.Rectangle
         {
             if (angle > 0 && diagonal > 0)
             {
-                return ((diagonal * diagonal) * Math.Sin(angle.ToRadian())) / 2;
+                return ((diagonal * diagonal) * Math.Sin(angle*(Math.PI/180)) / 2);
             }
             else
                 return 0;

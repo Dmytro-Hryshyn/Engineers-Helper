@@ -1,4 +1,3 @@
-using Geometry;
 using Geometry.Rectangle;
 using System;
 using Xunit;

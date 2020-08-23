@@ -1,5 +1,4 @@
-﻿using System.Windows.Forms;
-
+﻿
 namespace Geometry.Rectangle
 {
     interface IRectangle
@@ -13,7 +12,6 @@ namespace Geometry.Rectangle
 
 
     }
-
 
 }
 
