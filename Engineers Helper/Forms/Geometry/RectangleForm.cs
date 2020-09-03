@@ -11,6 +11,7 @@ namespace Engineers_Helper.Forms.Geometry
 
         private void Btn_Back_Click(object sender, System.EventArgs e)
         {
+            this.Close();
             Form1.ActiveForm.Controls["MenuPanel"].Visible = true;
         }
 

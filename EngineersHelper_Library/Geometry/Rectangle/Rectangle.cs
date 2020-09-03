@@ -1,4 +1,5 @@
-﻿namespace Geometry.Rectangle
+﻿
+namespace Geometry.Rectangle
 {
     public class Rectangle : IRectangle
     {
@@ -7,7 +8,7 @@
         public GetDiagonal GetDiagonal { get; private set; } = new GetDiagonal();
         public GetOutRadius GetOutRadius { get; private set; }
         public GetInRadius GetInRadius { get; private set; }
-        public GetSide GetSide { get; private set; }
+        public GetSide GetSide { get; private set; } = new GetSide();
        
     }
 }

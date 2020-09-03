@@ -137,6 +137,8 @@ namespace EngineersHelperTests
 
 
         #endregion
+
+        #region GetDiagonal Tests
         [Theory]
         [InlineData(5, 10, 11.18)]
         [InlineData(5.5, 10.5, 11.853)]
@@ -217,5 +219,41 @@ namespace EngineersHelperTests
             actual = Math.Round(actual, 3);
             Assert.Equal(expected, actual);
         }
+        #endregion
+
+        #region GetSide Tests
+
+        [Theory]
+        [InlineData(5,11.18,10)]
+        [InlineData(0,11.18,0)]
+        public void GetSide_ByEnotherSideAndDiagonal_ShouldCalculateSide(double side, double diagonal, double expected)
+        {
+            var actual = rectangle.GetSide.BySideAndDIagonal(side, diagonal);
+            
+            Assert.Equal(expected, Math.Round(actual,3));
+        }
+
+        [Theory]
+        [InlineData(5, 50, 10)]
+        [InlineData(0, 50, 0)]
+        public void GetSide_ByOtherSideAndArea_ShouldCalculateSide(double side, double area, double expected)
+        {
+            double actual = rectangle.GetSide.BySideAndArea(side, area);
+            Assert.Equal(expected, Math.Round(expected, 3));
+        }
+        
+        [Theory]
+        [InlineData(5, 30, 10)]
+        [InlineData(0, 50, 0)]
+        public void GetSide_ByOtherSideAndPerimeter_ShouldCalculateSide(double side, double perimeter, double expected)
+        {
+            double actual = rectangle.GetSide.BySideAndPerimeter(side, perimeter);
+            Assert.Equal(expected, Math.Round(expected, 3));
+        }
+
+        
+
+
+        #endregion
     }
 }
