@@ -207,8 +207,8 @@ namespace EngineersHelperTests
         }
 
         [Theory]
-        [InlineData(20,50, 11.18)]
-        [InlineData(21, 57.75, 11.853)]
+        [InlineData(53.13,50, 11.18)]
+        [InlineData(55.3, 57.75, 11.853)]
         [InlineData(0, 10.5, 0)]
         [InlineData(5.5, 0, 0)]
         public void GetDiagona_ByAcuteangleAndArea(double angle, double area, double expected)

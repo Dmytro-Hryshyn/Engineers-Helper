@@ -82,20 +82,23 @@ namespace Geometry.Rectangle
             return angle > 0 && adjacentSide > 0 ? adjacentSide / Math.Cos(angle*(Math.PI/180)) : 0;
         }
 
-        //ToDO: Fix this method tests failed 
+        
         /// <summary>
         /// Calculate diagonal of rectangle using acute angle between two diagonals and area of rectangle.
         /// Acute angle it is angle that less then 90 degrees
         /// </summary>
-        /// <param name="acuteAngle">Angle between to diagonals and less then 90 degrees</param>
+        /// <param name="acuteAngle">Angle between to diagonals and  it less then 90 degrees</param>
         /// <param name="area">Area of rectangle</param>
         /// <returns>Diagona of rectangle</returns>
         public double ByAcuteAngleAndArea(double acuteAngle, double area)
         {
-            double sinAcuteAngle = Math.Sin(acuteAngle*(Math.PI/180));
-            double result = (area * 2)/sinAcuteAngle;
-            result = Math.Sqrt(result);
-            return (area > 0 && acuteAngle > 0) ? result : 0;
+            if (area > 0 && acuteAngle > 0)
+            {
+                return Math.Sqrt((2 * area) / Math.Sin(acuteAngle.ToRadian()));
+            }
+
+            else
+                return 0;
         }
 
     }
