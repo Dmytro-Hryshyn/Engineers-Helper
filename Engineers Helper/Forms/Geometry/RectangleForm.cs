@@ -7,6 +7,31 @@ namespace Engineers_Helper.Forms.Geometry
         public RectangleForm()
         {
             InitializeComponent();
+
+            textBox_Side_a.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleSideA;
+            textBox_Side_a.MouseLeave += (s, a) => DefaultIamage();
+
+            textBox_Side_b.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleSideB;
+            textBox_Side_b.MouseLeave += (s, a) => DefaultIamage();
+
+            textBox_Diagonal.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleDiagonal;
+            textBox_Diagonal.MouseLeave += (s, a) => DefaultIamage();
+
+            textBox_Perimeter.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectanglePerimeter;
+            textBox_Perimeter.MouseLeave += (s, a) => DefaultIamage();
+
+            textBox_Area.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleArea;
+            textBox_Area.MouseLeave += (s, a) => DefaultIamage();
+
+            textBox_Circumradius.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleOutRadius;
+            textBox_Circumradius.MouseLeave += (s, a) => DefaultIamage();
+
+        }
+
+
+        private void DefaultIamage()
+        {
+            pictureBox1.Image = Properties.Resources.RectangleBase;
         }
 
         private void Btn_Back_Click(object sender, System.EventArgs e)
@@ -65,7 +90,7 @@ namespace Engineers_Helper.Forms.Geometry
             richTextBox_Definition.Visible = !richTextBox_Definition.Visible;
         }
 
-       
+
         private void lable_Properties_Click(object sender, System.EventArgs e)
         {
             richTextBox_Properties.Visible = !richTextBox_Properties.Visible;
@@ -82,7 +107,7 @@ namespace Engineers_Helper.Forms.Geometry
             richTextBox_DiagonalFormula.Visible = !richTextBox_DiagonalFormula.Visible;
         }
 
-       
+
         private void lable_PerimeterFormulas_Click(object sender, System.EventArgs e)
         {
             richTextBox_PerimeterFormulas.Visible = !richTextBox_PerimeterFormulas.Visible;
@@ -102,5 +127,6 @@ namespace Engineers_Helper.Forms.Geometry
         {
             richTextBox_AngleFormulas.Visible = !richTextBox_AngleFormulas.Visible;
         }
+
     }
 }

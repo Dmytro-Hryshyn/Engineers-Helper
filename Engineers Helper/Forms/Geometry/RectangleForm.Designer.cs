@@ -52,9 +52,13 @@
             this.panel_Image = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_TextBoxes = new System.Windows.Forms.Panel();
+            this.textBox_Perimeter = new System.Windows.Forms.TextBox();
+            this.label_Perimeter = new System.Windows.Forms.Label();
+            this.textBox_Area = new System.Windows.Forms.TextBox();
+            this.label_Area = new System.Windows.Forms.Label();
             this.button_Clear = new System.Windows.Forms.Button();
             this.button_Solve = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Circumradius = new System.Windows.Forms.TextBox();
             this.label_Circumradius = new System.Windows.Forms.Label();
             this.textBox_Angle_b = new System.Windows.Forms.TextBox();
             this.label_Angle_b = new System.Windows.Forms.Label();
@@ -387,17 +391,23 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(74, 235);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 170);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panel_TextBoxes
             // 
+            this.panel_TextBoxes.Controls.Add(this.textBox_Perimeter);
+            this.panel_TextBoxes.Controls.Add(this.label_Perimeter);
+            this.panel_TextBoxes.Controls.Add(this.textBox_Area);
+            this.panel_TextBoxes.Controls.Add(this.label_Area);
             this.panel_TextBoxes.Controls.Add(this.button_Clear);
             this.panel_TextBoxes.Controls.Add(this.button_Solve);
-            this.panel_TextBoxes.Controls.Add(this.textBox1);
+            this.panel_TextBoxes.Controls.Add(this.textBox_Circumradius);
             this.panel_TextBoxes.Controls.Add(this.label_Circumradius);
             this.panel_TextBoxes.Controls.Add(this.textBox_Angle_b);
             this.panel_TextBoxes.Controls.Add(this.label_Angle_b);
@@ -416,6 +426,58 @@
             this.panel_TextBoxes.Size = new System.Drawing.Size(502, 761);
             this.panel_TextBoxes.TabIndex = 1;
             // 
+            // textBox_Perimeter
+            // 
+            this.textBox_Perimeter.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox_Perimeter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Perimeter.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_Perimeter.Location = new System.Drawing.Point(168, 378);
+            this.textBox_Perimeter.Name = "textBox_Perimeter";
+            this.textBox_Perimeter.Size = new System.Drawing.Size(292, 33);
+            this.textBox_Perimeter.TabIndex = 2;
+            this.textBox_Perimeter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_Perimeter.TextChanged += new System.EventHandler(this.textBox_Diagonal_TextChanged);
+            // 
+            // label_Perimeter
+            // 
+            this.label_Perimeter.AutoSize = true;
+            this.label_Perimeter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label_Perimeter.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_Perimeter.ForeColor = System.Drawing.SystemColors.Window;
+            this.label_Perimeter.Location = new System.Drawing.Point(43, 387);
+            this.label_Perimeter.Margin = new System.Windows.Forms.Padding(3);
+            this.label_Perimeter.Name = "label_Perimeter";
+            this.label_Perimeter.Size = new System.Drawing.Size(116, 18);
+            this.label_Perimeter.TabIndex = 1;
+            this.label_Perimeter.Text = "Perimeter - P";
+            this.label_Perimeter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox_Area
+            // 
+            this.textBox_Area.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox_Area.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Area.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_Area.Location = new System.Drawing.Point(168, 324);
+            this.textBox_Area.Name = "textBox_Area";
+            this.textBox_Area.Size = new System.Drawing.Size(292, 33);
+            this.textBox_Area.TabIndex = 2;
+            this.textBox_Area.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_Area.TextChanged += new System.EventHandler(this.textBox_Diagonal_TextChanged);
+            // 
+            // label_Area
+            // 
+            this.label_Area.AutoSize = true;
+            this.label_Area.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label_Area.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_Area.ForeColor = System.Drawing.SystemColors.Window;
+            this.label_Area.Location = new System.Drawing.Point(82, 332);
+            this.label_Area.Margin = new System.Windows.Forms.Padding(3);
+            this.label_Area.Name = "label_Area";
+            this.label_Area.Size = new System.Drawing.Size(75, 18);
+            this.label_Area.TabIndex = 1;
+            this.label_Area.Text = "Area - A";
+            this.label_Area.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // button_Clear
             // 
             this.button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
@@ -423,7 +485,7 @@
             this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Clear.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Clear.ForeColor = System.Drawing.SystemColors.Window;
-            this.button_Clear.Location = new System.Drawing.Point(268, 516);
+            this.button_Clear.Location = new System.Drawing.Point(279, 604);
             this.button_Clear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(181, 56);
@@ -440,7 +502,7 @@
             this.button_Solve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Solve.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Solve.ForeColor = System.Drawing.SystemColors.Window;
-            this.button_Solve.Location = new System.Drawing.Point(85, 516);
+            this.button_Solve.Location = new System.Drawing.Point(85, 604);
             this.button_Solve.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Solve.Name = "button_Solve";
             this.button_Solve.Size = new System.Drawing.Size(181, 56);
@@ -449,17 +511,17 @@
             this.button_Solve.UseVisualStyleBackColor = false;
             this.button_Solve.Click += new System.EventHandler(this.Button_Solve_Click);
             // 
-            // textBox1
+            // textBox_Circumradius
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(168, 437);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 33);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox_Circumradius.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox_Circumradius.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Circumradius.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_Circumradius.Location = new System.Drawing.Point(168, 540);
+            this.textBox_Circumradius.Name = "textBox_Circumradius";
+            this.textBox_Circumradius.Size = new System.Drawing.Size(292, 33);
+            this.textBox_Circumradius.TabIndex = 2;
+            this.textBox_Circumradius.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_Circumradius.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label_Circumradius
             // 
@@ -467,7 +529,7 @@
             this.label_Circumradius.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label_Circumradius.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Circumradius.ForeColor = System.Drawing.SystemColors.Window;
-            this.label_Circumradius.Location = new System.Drawing.Point(14, 447);
+            this.label_Circumradius.Location = new System.Drawing.Point(14, 552);
             this.label_Circumradius.Margin = new System.Windows.Forms.Padding(3);
             this.label_Circumradius.Name = "label_Circumradius";
             this.label_Circumradius.Size = new System.Drawing.Size(143, 18);
@@ -480,7 +542,7 @@
             this.textBox_Angle_b.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Angle_b.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Angle_b.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_Angle_b.Location = new System.Drawing.Point(168, 382);
+            this.textBox_Angle_b.Location = new System.Drawing.Point(168, 486);
             this.textBox_Angle_b.Name = "textBox_Angle_b";
             this.textBox_Angle_b.Size = new System.Drawing.Size(292, 33);
             this.textBox_Angle_b.TabIndex = 2;
@@ -493,7 +555,7 @@
             this.label_Angle_b.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label_Angle_b.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Angle_b.ForeColor = System.Drawing.SystemColors.Window;
-            this.label_Angle_b.Location = new System.Drawing.Point(74, 391);
+            this.label_Angle_b.Location = new System.Drawing.Point(74, 497);
             this.label_Angle_b.Margin = new System.Windows.Forms.Padding(3);
             this.label_Angle_b.Name = "label_Angle_b";
             this.label_Angle_b.Size = new System.Drawing.Size(83, 18);
@@ -506,7 +568,7 @@
             this.textBox_Angle_a.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Angle_a.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Angle_a.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_Angle_a.Location = new System.Drawing.Point(168, 327);
+            this.textBox_Angle_a.Location = new System.Drawing.Point(168, 432);
             this.textBox_Angle_a.Name = "textBox_Angle_a";
             this.textBox_Angle_a.Size = new System.Drawing.Size(292, 33);
             this.textBox_Angle_a.TabIndex = 2;
@@ -519,7 +581,7 @@
             this.label_Angle_a.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label_Angle_a.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Angle_a.ForeColor = System.Drawing.SystemColors.Window;
-            this.label_Angle_a.Location = new System.Drawing.Point(74, 335);
+            this.label_Angle_a.Location = new System.Drawing.Point(74, 442);
             this.label_Angle_a.Margin = new System.Windows.Forms.Padding(3);
             this.label_Angle_a.Name = "label_Angle_a";
             this.label_Angle_a.Size = new System.Drawing.Size(83, 18);
@@ -532,7 +594,7 @@
             this.textBox_Diagonal.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Diagonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Diagonal.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_Diagonal.Location = new System.Drawing.Point(168, 272);
+            this.textBox_Diagonal.Location = new System.Drawing.Point(168, 270);
             this.textBox_Diagonal.Name = "textBox_Diagonal";
             this.textBox_Diagonal.Size = new System.Drawing.Size(292, 33);
             this.textBox_Diagonal.TabIndex = 2;
@@ -545,7 +607,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(43, 279);
+            this.label1.Location = new System.Drawing.Point(43, 277);
             this.label1.Margin = new System.Windows.Forms.Padding(3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 18);
@@ -558,7 +620,7 @@
             this.textBox_Side_b.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox_Side_b.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_Side_b.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_Side_b.Location = new System.Drawing.Point(168, 217);
+            this.textBox_Side_b.Location = new System.Drawing.Point(168, 216);
             this.textBox_Side_b.Name = "textBox_Side_b";
             this.textBox_Side_b.Size = new System.Drawing.Size(292, 33);
             this.textBox_Side_b.TabIndex = 2;
@@ -571,7 +633,7 @@
             this.label_Side_b.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label_Side_b.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Side_b.ForeColor = System.Drawing.SystemColors.Window;
-            this.label_Side_b.Location = new System.Drawing.Point(85, 223);
+            this.label_Side_b.Location = new System.Drawing.Point(85, 222);
             this.label_Side_b.Margin = new System.Windows.Forms.Padding(3);
             this.label_Side_b.Name = "label_Side_b";
             this.label_Side_b.Size = new System.Drawing.Size(72, 18);
@@ -637,6 +699,7 @@
             this.panel_Info.ResumeLayout(false);
             this.panel_Info.PerformLayout();
             this.panel_Image.ResumeLayout(false);
+            this.panel_Image.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_TextBoxes.ResumeLayout(false);
             this.panel_TextBoxes.PerformLayout();
@@ -659,7 +722,7 @@
         private System.Windows.Forms.Label label_Side_b;
         private System.Windows.Forms.TextBox textBox_Diagonal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Circumradius;
         private System.Windows.Forms.Label label_Circumradius;
         private System.Windows.Forms.TextBox textBox_Angle_b;
         private System.Windows.Forms.Label label_Angle_b;
@@ -684,5 +747,9 @@
         private System.Windows.Forms.RichTextBox richTextBox_CircumscribedradiusFormula;
         private System.Windows.Forms.Label label_AngleFormulas;
         private System.Windows.Forms.RichTextBox richTextBox_AngleFormulas;
+        private System.Windows.Forms.TextBox textBox_Perimeter;
+        private System.Windows.Forms.Label label_Perimeter;
+        private System.Windows.Forms.TextBox textBox_Area;
+        private System.Windows.Forms.Label label_Area;
     }
 }
