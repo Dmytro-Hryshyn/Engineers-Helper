@@ -271,8 +271,8 @@
             this.richTextBox_InradiusFormula.Size = new System.Drawing.Size(386, 131);
             this.richTextBox_InradiusFormula.TabIndex = 2;
             this.richTextBox_InradiusFormula.Text = "Using square side:\t\t r = a / 2\nUsing square diagonal:\t r = d / 2√2\nUsing square p" +
-    "erimeter:\t r = P / 8\nUsingsquare area: \t\t r = √A / 2\nUsing circumradius: \t\t r = " +
-    "R √2";
+    "erimeter:\t r = P / 8\nUsing square area: \t\t r = √A / 2\nUsing circumradius: \t\t r =" +
+    " R √2";
             this.richTextBox_InradiusFormula.Visible = false;
             // 
             // label_InradiusFormula

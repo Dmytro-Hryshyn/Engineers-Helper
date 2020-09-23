@@ -192,7 +192,7 @@ namespace EngineersHelperTests
         {
             double actual = rectangle.GetDiagonal.ByAngleAndOppositeSide(angle, side);
             actual = Math.Round(actual, 3);
-            
+
             Assert.Equal(expected, actual);
         }
 
@@ -209,7 +209,7 @@ namespace EngineersHelperTests
         }
 
         [Theory]
-        [InlineData(53.13,50, 11.18)]
+        [InlineData(53.13, 50, 11.18)]
         [InlineData(55.3, 57.75, 11.853)]
         [InlineData(0, 10.5, 0)]
         [InlineData(5.5, 0, 0)]
@@ -224,13 +224,13 @@ namespace EngineersHelperTests
         #region GetSide Tests
 
         [Theory]
-        [InlineData(5,11.18,10)]
-        [InlineData(0,11.18,0)]
+        [InlineData(5, 11.18, 10)]
+        [InlineData(0, 11.18, 0)]
         public void GetSide_ByEnotherSideAndDiagonal_ShouldCalculateSide(double side, double diagonal, double expected)
         {
             var actual = rectangle.GetSide.BySideAndDIagonal(side, diagonal);
-            
-            Assert.Equal(expected, Math.Round(actual,3));
+
+            Assert.Equal(expected, Math.Round(actual, 3));
         }
 
         [Theory]
@@ -239,19 +239,35 @@ namespace EngineersHelperTests
         public void GetSide_ByOtherSideAndArea_ShouldCalculateSide(double side, double area, double expected)
         {
             double actual = rectangle.GetSide.BySideAndArea(side, area);
-            Assert.Equal(expected, Math.Round(expected, 3));
+            Assert.Equal(expected, Math.Round(actual, 3));
         }
-        
+
         [Theory]
         [InlineData(5, 30, 10)]
         [InlineData(0, 50, 0)]
         public void GetSide_ByOtherSideAndPerimeter_ShouldCalculateSide(double side, double perimeter, double expected)
         {
             double actual = rectangle.GetSide.BySideAndPerimeter(side, perimeter);
-            Assert.Equal(expected, Math.Round(expected, 3));
+            Assert.Equal(expected, Math.Round(actual, 3));
         }
 
-        
+        [Theory]
+        [InlineData(9.433981132, 32.00538321,5)]
+        [InlineData(6.800735254, 53.97262661, 5.5)]
+        public void GetSide_ByOppositeAngle_AndDiagonal_ShouldCalculate_OppisiteSide(double diagonal, double angle, double expected)
+        {
+            double actual = rectangle.GetSide.ByDiagonalAndOppositeAngle(diagonal, angle);
+            Assert.Equal(expected, Math.Round(actual, 3));
+        }
+
+        [Theory]
+        [InlineData(9.433981132, 32.00538321, 8)]
+        [InlineData(6.800735254, 53.97262661, 4)]
+        public void GetSide_ByAdjacentAngle_AndDiagonal_ShouldCalculate_AdjacentSide(double diagonal, double angle, double expected)
+        {
+            double actual = rectangle.GetSide.ByDiagonalAndAdjacentAngle(diagonal, angle);
+            Assert.Equal(expected, Math.Round(actual, 3));
+        }
 
 
         #endregion
