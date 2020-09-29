@@ -268,6 +268,52 @@ namespace EngineersHelperTests
             double actual = rectangle.GetSide.ByDiagonalAndAdjacentAngle(diagonal, angle);
             Assert.Equal(expected, Math.Round(actual, 3));
         }
+        #endregion
+
+        #region GetOutRadius
+        [Theory]
+        [InlineData(5, 8, 4.716990566)]
+        [InlineData(5.5, 4, 3.400367627)]
+        [InlineData(0, 4, 0)]
+        [InlineData(4, 0, 0)]
+        public void GetOutRadius_Using_twoSides_OutRadiusShouldCalculate(double sideA, double sideB, double expected)
+        {
+            var actual = rectangle.GetOutRadius.ByTwoSides(sideA, sideB);
+            Assert.Equal(Math.Round(expected,2), Math.Round(actual,2));
+        }
+
+        [Theory]
+        [InlineData(5, 26, 4.716990566)]
+        [InlineData(5.5, 19, 3.400367627)]
+        [InlineData(0, 4, 0)]
+        [InlineData(4, 0, 0)]
+        public void GetOutRadius_Using_SideAndPerimeter_OutRadiusShouldCalculate(double side, double perimeter, double expected)
+        {
+            double actual = rectangle.GetOutRadius.BySideAndPerimeter(side, perimeter);
+            Assert.Equal(Math.Round(expected, 2), Math.Round(actual, 2));
+        }
+
+        [Theory]
+        [InlineData(5, 40, 4.716990566)]
+        [InlineData(5.5, 22, 3.400367627)]
+        [InlineData(0, 4, 0)]
+        [InlineData(4, 0, 0)]
+        public void GetOutRadius_Using_SideAndArea_OutRadiusShouldCalculate(double side, double area, double expected)
+        {
+            double actual = rectangle.GetOutRadius.BySideAndArea(side, area);
+            Assert.Equal(Math.Round(expected, 2), Math.Round(actual, 2));
+        }
+
+        [Theory]
+        [InlineData(9.433981132, 4.716990566)]
+        [InlineData(6.800735254, 3.400367627)]
+        [InlineData(0, 0)]
+      
+        public void GetOutRadius_Using_Diagonal_OutRadiusShouldCalculate(double diagonal, double expected)
+        {
+            double actual = rectangle.GetOutRadius.ByDiagonal(diagonal);
+            Assert.Equal(expected, actual);
+        }
 
 
         #endregion
