@@ -110,7 +110,7 @@ namespace Engineers_Helper.Forms.Geometry
             double ourRad = textBox_OutsideRadius.Text != string.Empty ? double.Parse(textBox_OutsideRadius.Text) : 0;
             double inRad = textBox_IsideRadius.Text != string.Empty ? double.Parse(textBox_IsideRadius.Text) : 0;
             SquareSolver square = new SquareSolver(side, diagonal, perimeter, area, ourRad, inRad);
-            square.GetAllValuesOfSquare();
+            square.Solve();
             textBox_Side.Text = square.Side.ToString("0.###");
             textBox_Diagonal.Text = square.Diagonal.ToString("0.###");
             textBox_Perimeter.Text = square.Perimeter.ToString("0.###");

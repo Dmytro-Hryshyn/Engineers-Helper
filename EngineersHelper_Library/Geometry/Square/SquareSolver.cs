@@ -1,6 +1,8 @@
-﻿namespace Geometry.Square
+﻿using Geometry.Helper;
+
+namespace Geometry.Square
 {
-    public class SquareSolver : ISquare
+    public class SquareSolver : ISquare, IGeometrySolver
     {
         public double Side { get; private set; }
         public double Diagonal { get; private set; }
@@ -16,7 +18,7 @@
         bool CircumRadiusIsKnown = false;
         bool InRadiusisKnown = false;
 
-        void SetKnownSides()
+        public void SetKnownProperties()
         {
             if (Side > 0 && Diagonal == 0 && Perimeter == 0 && Area == 0 && CircumScribedRadius == 0 && InRadius == 0)
             {
@@ -50,7 +52,7 @@
         /// </summary>
         public SquareSolver()
         {
-            SetKnownSides();
+            SetKnownProperties();
         }
         /// <summary>
         /// Initialize Side property
@@ -60,7 +62,7 @@
         {
             Side = side > 0 ? Side = side : Side = 0;
 
-            SetKnownSides();
+            SetKnownProperties();
         }
 
         /// <summary>
@@ -71,7 +73,7 @@
         public SquareSolver(double side, double diagonal) : this(side)
         {
             Diagonal = diagonal > 0 ? Diagonal = diagonal : Diagonal = 0;
-            SetKnownSides();
+            SetKnownProperties();
         }
 
         /// <summary>
@@ -83,7 +85,7 @@
         public SquareSolver(double side, double diagonal, double perimeter) : this(side, diagonal)
         {
             Perimeter = perimeter > 0 ? Perimeter = perimeter : Perimeter = 0;
-            SetKnownSides();
+            SetKnownProperties();
         }
 
         /// <summary>
@@ -96,7 +98,7 @@
         public SquareSolver(double side, double diagonal, double perimeter, double area) : this(side, diagonal, perimeter)
         {
             Area = area > 0 ? Area = area : Area = 0;
-            SetKnownSides();
+            SetKnownProperties();
         }
 
         /// <summary>
@@ -110,7 +112,7 @@
         public SquareSolver(double side, double diagonal, double perimeter, double area, double circumScribedRadius) : this(side, diagonal, perimeter, area)
         {
             CircumScribedRadius = circumScribedRadius > 0 ? CircumScribedRadius = circumScribedRadius : CircumScribedRadius = 0;
-            SetKnownSides();
+            SetKnownProperties();
         }
 
         /// <summary>
@@ -125,7 +127,7 @@
         public SquareSolver(double side, double diagonal, double perimeter, double area, double circumScribedRadius, double inRadius) : this(side, diagonal, perimeter, area, circumScribedRadius)
         {
             InRadius = inRadius > 0 ? InRadius = inRadius : InRadius = 0;
-            SetKnownSides();
+            SetKnownProperties();
         }
         #endregion
 
@@ -312,7 +314,7 @@
             else InRadius = InRadius;
         }
 
-        public void GetAllValuesOfSquare()
+        public void Solve()
         {
             GetSide();
             GetDiagonal();

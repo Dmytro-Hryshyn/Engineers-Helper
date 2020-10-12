@@ -29,5 +29,19 @@ namespace Geometry
         {
             return Math.Sqrt(value);
         }
+
+        /// <summary>
+        /// Check if double == 0 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>True if value is 0</returns>
+        public static bool IsDefault(this double value)
+        {
+            if (value == 0)
+            { 
+                return true;
+            }
+            return false;
+        }
     }
 }

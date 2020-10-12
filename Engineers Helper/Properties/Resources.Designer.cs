@@ -63,6 +63,26 @@ namespace Engineers_Helper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RectangleAngleA {
+            get {
+                object obj = ResourceManager.GetObject("RectangleAngleA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RectangleAngleB {
+            get {
+                object obj = ResourceManager.GetObject("RectangleAngleB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RectangleArea {
             get {
                 object obj = ResourceManager.GetObject("RectangleArea", resourceCulture);

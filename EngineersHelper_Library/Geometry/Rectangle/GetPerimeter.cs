@@ -12,7 +12,7 @@ namespace Geometry.Rectangle
         /// </summary>
         /// <param name="sideA">Side of rectangle</param>
         /// <param name="sideB">Side of rectangle</param>
-        /// <returns></returns>
+        /// <returns>Perimeter of the rectangle</returns>
         public double BySides(double sideA, double sideB)
         {
             if (sideA > 0 && sideB > 0)
@@ -41,7 +41,7 @@ namespace Geometry.Rectangle
         /// </summary>
         /// <param name="diagonal">Diagonal of ractangle</param>
         /// <param name="side">Side of rectangle</param>
-        /// <returns>Returns perimeter of rectanle</returns>
+        /// <returns>Perimeter of rectanle</returns>
         public double ByDiagonalAndSide(double diagonal, double side)
         {
             if (diagonal > 0 && side > 0)
@@ -56,7 +56,7 @@ namespace Geometry.Rectangle
         /// </summary>
         /// <param name="outRadius">Circumscribedradius of rectangle</param>
         /// <param name="side">Side of recatangle</param>
-        /// <returns>Returns perimeter of rectangle</returns>
+        /// <returns>Perimeter of rectangle</returns>
         public double ByOutRadiusAndSide(double outRadius, double side)
         {
             if (outRadius > 0 && side > 0)

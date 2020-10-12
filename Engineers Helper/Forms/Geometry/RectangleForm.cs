@@ -26,6 +26,12 @@ namespace Engineers_Helper.Forms.Geometry
             textBox_Circumradius.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleOutRadius;
             textBox_Circumradius.MouseLeave += (s, a) => DefaultIamage();
 
+            textBox_Angle_a.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleAngleA;
+            textBox_Angle_a.MouseLeave += (s, a) => DefaultIamage();
+
+            textBox_Angle_b.MouseEnter += (s, a) => pictureBox1.Image = Properties.Resources.RectangleAngleB;
+            textBox_Angle_b.MouseLeave += (s, a) => DefaultIamage();
+
         }
 
 
