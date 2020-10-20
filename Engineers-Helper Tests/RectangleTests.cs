@@ -252,7 +252,7 @@ namespace EngineersHelperTests
         }
 
         [Theory]
-        [InlineData(9.433981132, 32.00538321,5)]
+        [InlineData(9.433981132, 32.00538321, 5)]
         [InlineData(6.800735254, 53.97262661, 5.5)]
         public void GetSide_ByOppositeAngle_AndDiagonal_ShouldCalculate_OppisiteSide(double diagonal, double angle, double expected)
         {
@@ -279,7 +279,7 @@ namespace EngineersHelperTests
         public void GetOutRadius_Using_twoSides_OutRadiusShouldCalculate(double sideA, double sideB, double expected)
         {
             var actual = rectangle.GetOutRadius.ByTwoSides(sideA, sideB);
-            Assert.Equal(Math.Round(expected,2), Math.Round(actual,2));
+            Assert.Equal(Math.Round(expected, 2), Math.Round(actual, 2));
         }
 
         [Theory]
@@ -308,7 +308,7 @@ namespace EngineersHelperTests
         [InlineData(9.433981132, 4.716990566)]
         [InlineData(6.800735254, 3.400367627)]
         [InlineData(0, 0)]
-      
+
         public void GetOutRadius_Using_Diagonal_OutRadiusShouldCalculate(double diagonal, double expected)
         {
             double actual = rectangle.GetOutRadius.ByDiagonal(diagonal);
@@ -317,5 +317,27 @@ namespace EngineersHelperTests
 
 
         #endregion
+
+        #region GetOppositeAngle
+        [Theory]
+        [InlineData(5, 9.433981132, 32.00538321)]
+        public void GetOppositeAngle_BysideAndDiagonal(double side, double diagonal, double expected)
+        {
+            double actual = rectangle.GetOppositeAngle.BySideAndDiagonal(side, diagonal);
+            Assert.Equal(expected, Math.Round(actual,8));
+        }
+        #endregion
+
+        #region GetAdjacentAngle
+        [Theory]
+        [InlineData(5, 9.433981132, 57.99461679)]
+        public void GetAdjacentAngle_BysideAndDiagonal(double side, double diagonal, double expected)
+        {
+            double actual = rectangle.GetAdjacentAngle.BySideAndDiagonal(side, diagonal);
+            Assert.Equal(expected, Math.Round(actual, 8));
+        }
+
+        #endregion
+
     }
 }

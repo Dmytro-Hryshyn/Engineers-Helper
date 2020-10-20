@@ -9,7 +9,7 @@ namespace Geometry.Rectangle
         public double Diagonal { get; set; }
         public double Perimeter { get; set; }
         public double Area { get; set; }
-        public double CicumscribedRadius { get; set; }
+        public double CircumscribedRadius { get; set; }
         public double AngleA { get; set; }
         public double AngleB { get; set; }
 
@@ -31,7 +31,7 @@ namespace Geometry.Rectangle
                 && Diagonal == 0
                 && Perimeter == 0
                 && Area == 0
-                && CicumscribedRadius == 0
+                && CircumscribedRadius == 0
                 && AngleA == 0
                 && AngleB == 0)
             {
@@ -42,7 +42,7 @@ namespace Geometry.Rectangle
                && Diagonal == 0
                && Perimeter == 0
                && Area == 0
-               && CicumscribedRadius == 0
+               && CircumscribedRadius == 0
                && AngleA == 0
                && AngleB == 0)
             {
@@ -54,7 +54,7 @@ namespace Geometry.Rectangle
                      && SideB == 0
                      && Perimeter == 0
                      && Area == 0
-                     && CicumscribedRadius == 0
+                     && CircumscribedRadius == 0
                      && AngleA == 0
                      && AngleB == 0)
             {
@@ -66,7 +66,7 @@ namespace Geometry.Rectangle
                      && SideB == 0
                      && Diagonal == 0
                      && Area == 0
-                     && CicumscribedRadius == 0
+                     && CircumscribedRadius == 0
                      && AngleA == 0
                      && AngleB == 0)
             {
@@ -78,14 +78,14 @@ namespace Geometry.Rectangle
                      && SideB.IsDefault()
                      && Diagonal.IsDefault()
                      && Perimeter.IsDefault()
-                     && CicumscribedRadius.IsDefault()
+                     && CircumscribedRadius.IsDefault()
                      && AngleA.IsDefault()
                      && AngleB.IsDefault())
             {
                 areaIsKnown = true;
             }
 
-            else if (CicumscribedRadius != 0
+            else if (CircumscribedRadius != 0
                     && SideA.IsDefault()
                     && SideB.IsDefault()
                     && Diagonal.IsDefault()
@@ -102,7 +102,7 @@ namespace Geometry.Rectangle
                     && Perimeter.IsDefault()
                     && Area.IsDefault()
                     && Diagonal.IsDefault()
-                    && CicumscribedRadius.IsDefault())
+                    && CircumscribedRadius.IsDefault())
             {
                 angle_A_IsKnown = true;
             }
@@ -113,7 +113,7 @@ namespace Geometry.Rectangle
                     && Perimeter.IsDefault()
                     && Area.IsDefault()
                     && Diagonal.IsDefault()
-                    && CicumscribedRadius.IsDefault())
+                    && CircumscribedRadius.IsDefault())
             {
                 angle_B_IsKnown = true;
             }
@@ -186,7 +186,7 @@ namespace Geometry.Rectangle
 
             else if (circumradiusIsKnown)
             {
-                Diagonal = rectangle.GetDiagonal.ByOutRadius(CicumscribedRadius);
+                Diagonal = rectangle.GetDiagonal.ByOutRadius(CircumscribedRadius);
             }
 
             else if (sideAIsKnown && angle_A_IsKnown)
@@ -208,11 +208,11 @@ namespace Geometry.Rectangle
 
             else if (sideAIsKnown && circumradiusIsKnown)
             {
-                Perimeter = rectangle.GetPerimeter.ByOutRadiusAndSide(CicumscribedRadius, SideA);
+                Perimeter = rectangle.GetPerimeter.ByOutRadiusAndSide(CircumscribedRadius, SideA);
             }
             else if (SideBIsKnown && circumradiusIsKnown)
             {
-                Perimeter = rectangle.GetPerimeter.ByOutRadiusAndSide(CicumscribedRadius, SideB);
+                Perimeter = rectangle.GetPerimeter.ByOutRadiusAndSide(CircumscribedRadius, SideB);
             }
 
             else if (diagonalIsknown && sideAIsKnown)
@@ -233,12 +233,94 @@ namespace Geometry.Rectangle
                 Perimeter = rectangle.GetPerimeter.ByAreaAndSide(Area, SideB);
             }
         }
+        void FindArea()
+        {
+            if (sideAIsKnown && SideBIsKnown)
+            {
+                Area = rectangle.GetArea.BySides(SideA, SideB);
+            }
+            else if (perimeterIsKnown && sideAIsKnown)
+            {
+                Area = rectangle.GetArea.ByPerimeterAndSide(Perimeter, SideA);
+            }
+            else if (perimeterIsKnown && SideBIsKnown)
+            {
+                Area = rectangle.GetArea.ByPerimeterAndSide(Perimeter, SideB);
+            }
+            else if (diagonalIsknown && sideAIsKnown)
+            {
+                Area = rectangle.GetArea.ByDiagonalAndSide(Diagonal, SideA);
+            }
+            else if (diagonalIsknown && SideBIsKnown)
+            {
+                Area = rectangle.GetArea.ByDiagonalAndSide(Diagonal, SideB);
+            }
+            else if (circumradiusIsKnown && sideAIsKnown)
+            {
+                Area = rectangle.GetArea.ByOutRadiusAndSide(CircumscribedRadius, SideA);
+            }
+            else if (diagonalIsknown && SideBIsKnown)
+            {
+                Area = rectangle.GetArea.ByDiagonalAndSide(Diagonal, SideB);
+            }
+
+        }
+        void FindCircumScribedRadius()
+        {
+            if (sideAIsKnown && SideBIsKnown)
+            {
+                CircumscribedRadius = rectangle.GetOutRadius.ByTwoSides(SideA, SideB);
+            }
+            else if (diagonalIsknown)
+            {
+                CircumscribedRadius = rectangle.GetOutRadius.ByDiagonal(Diagonal);
+            }
+            else if (areaIsKnown && sideAIsKnown)
+            {
+                CircumscribedRadius = rectangle.GetOutRadius.BySideAndArea(SideA, Area);
+            }
+            else if (areaIsKnown && SideBIsKnown)
+            {
+                CircumscribedRadius = rectangle.GetOutRadius.BySideAndArea(SideB, Area);
+            }
+            else if (perimeterIsKnown && sideAIsKnown)
+            {
+                CircumscribedRadius = rectangle.GetOutRadius.BySideAndPerimeter(SideA, Perimeter);
+            }
+            else if (perimeterIsKnown && SideBIsKnown)
+            {
+                CircumscribedRadius = rectangle.GetOutRadius.BySideAndPerimeter(SideB, Perimeter);
+            }
+
+
+        }
+        void FindAngleA()
+        {
+            if (sideAIsKnown && diagonalIsknown)
+            {
+                AngleA = rectangle.GetOppositeAngle.BySideAndDiagonal(SideA, Diagonal);
+            } 
+        }
+
+        void FindAngleB()
+        {
+            if (sideAIsKnown && diagonalIsknown)
+            {
+                AngleB = rectangle.GetAdjacentAngle.BySideAndDiagonal(SideA, Diagonal);
+            }
+        }
+        
+
 
         public void Solve()
         {
             FindSides();
             FindDiagonal();
             FindPerimeter();
+            FindArea();
+            FindCircumScribedRadius();
+            FindAngleA();
+            FindAngleB();
         }
     }
 }
