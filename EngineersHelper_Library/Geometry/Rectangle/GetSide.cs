@@ -85,5 +85,36 @@ namespace Geometry.Rectangle
             else
                 return 0;
         }
+
+        /// <summary>
+        /// Find adjacent side to the angle
+        /// </summary>
+        /// <param name="side">Known side of the rectangle</param>
+        /// <param name="angle">Opposite angle to known side</param>
+        /// <returns>Adjacent side to the angle</returns>
+        public double BySideAndOppositeAngle(double side, double angle)
+        {
+            if (side>0 && angle > 0 && angle <90)
+            {
+              return side / Math.Tan(angle.ToRadian());
+            }
+            return 0;
+        }
+
+        /// <summary>
+        /// Find opposite side to the angle
+        /// </summary>
+        /// <param name="side">Known side of the rectangle</param>
+        /// <param name="angle">Adjacent angle to known side</param>
+        /// <returns>Opposite side to the angle</returns>
+        public double BySideAndAdjacentAngle(double side, double angle)
+        {
+            if (side>0 && angle>=0 && angle <= 90 )
+            {
+            return side * Math.Tan(angle.ToRadian());
+            }
+            return 0;
+        }
+        
     }
 }

@@ -268,6 +268,25 @@ namespace EngineersHelperTests
             double actual = rectangle.GetSide.ByDiagonalAndAdjacentAngle(diagonal, angle);
             Assert.Equal(expected, Math.Round(actual, 3));
         }
+
+        [Theory]
+        [InlineData(5, 32.00538321, 8)]
+        [InlineData(5.5, 53.97262661, 4)]
+        public void GetSide_BySideAndOppositeAngle_shouldCalculate_adjacentSide(double side, double angle, double expected)
+        {
+            double actual = rectangle.GetSide.BySideAndOppositeAngle(side, angle);
+            Assert.Equal(expected, Math.Round(actual,1));
+        }
+
+        [Theory]
+        [InlineData(5, 57.99461679, 8)]
+        [InlineData(5.5, 36.02737339, 4)]
+        public void GetSide_BySideAndAdjacentAngle_shouldCalculate_adjacentSide(double side, double angle, double expected)
+        {
+            double actual = rectangle.GetSide.BySideAndAdjacentAngle(side, angle);
+            Assert.Equal(expected, Math.Round(actual, 1));
+        }
+
         #endregion
 
         #region GetOutRadius

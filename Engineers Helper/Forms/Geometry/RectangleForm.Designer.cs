@@ -485,7 +485,7 @@
             this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Clear.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Clear.ForeColor = System.Drawing.SystemColors.Window;
-            this.button_Clear.Location = new System.Drawing.Point(279, 604);
+            this.button_Clear.Location = new System.Drawing.Point(82, 594);
             this.button_Clear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(181, 56);
@@ -502,7 +502,7 @@
             this.button_Solve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Solve.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_Solve.ForeColor = System.Drawing.SystemColors.Window;
-            this.button_Solve.Location = new System.Drawing.Point(85, 604);
+            this.button_Solve.Location = new System.Drawing.Point(279, 594);
             this.button_Solve.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Solve.Name = "button_Solve";
             this.button_Solve.Size = new System.Drawing.Size(181, 56);

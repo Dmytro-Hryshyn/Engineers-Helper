@@ -1,4 +1,7 @@
-﻿using System.Windows.Forms;
+﻿using System.Linq;
+using System.Windows.Forms;
+using Geometry;
+using Geometry.Rectangle;
 
 namespace Engineers_Helper.Forms.Geometry
 {
@@ -83,12 +86,35 @@ namespace Engineers_Helper.Forms.Geometry
 
         private void Button_Solve_Click(object sender, System.EventArgs e)
         {
-
+            RectanleSolver solver = new RectanleSolver();
+            solver.SideA = textBox_Side_a.Text != string.Empty ? double.Parse(textBox_Side_a.Text) : 0;
+            solver.SideB = textBox_Side_b.Text != string.Empty? double.Parse(textBox_Side_b.Text):0;
+            solver.Diagonal = textBox_Diagonal.Text != string.Empty? double.Parse(textBox_Diagonal.Text):0;
+            solver.Perimeter = textBox_Perimeter.Text != string.Empty? double.Parse(textBox_Perimeter.Text):0;
+            solver.Area = textBox_Area.Text != string.Empty? double.Parse(textBox_Area.Text):0;
+            solver.CircumscribedRadius = textBox_Circumradius.Text != string.Empty ? double.Parse(textBox_Circumradius.Text) : 0;
+            solver.AngleA= textBox_Angle_a.Text != string.Empty ? double.Parse(textBox_Angle_a.Text) : 0;
+            solver.AngleB= textBox_Angle_b.Text != string.Empty ? double.Parse(textBox_Angle_b.Text) : 0;
+            solver.Solve();
+            textBox_Side_a.Text = solver.SideA.ToString("#.####");
+            textBox_Side_b.Text = solver.SideB.ToString("#.####");
+            textBox_Diagonal.Text=solver.Diagonal.ToString("#.####");
+            textBox_Perimeter.Text = solver.Perimeter.ToString("#.####");
+            textBox_Area.Text = solver.Area.ToString("#.####");
+            textBox_Circumradius.Text = solver.CircumscribedRadius.ToString("#.####");
+            textBox_Angle_a.Text = solver.AngleA.ToString("#.####");
+            textBox_Angle_b.Text = solver.AngleB.ToString("#.####");
         }
 
         private void Button_Clear_Click(object sender, System.EventArgs e)
         {
-
+            foreach (var  item in panel_TextBoxes.Controls)
+            {
+                if (item is TextBox)
+                {
+                    (item as TextBox).Text = string.Empty;
+                }
+            }
         }
 
         private void lable_Difinition_Click(object sender, System.EventArgs e)
