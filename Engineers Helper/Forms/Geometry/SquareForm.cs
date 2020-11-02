@@ -1,7 +1,5 @@
 ﻿using Geometry.Square;
 using System;
-using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -30,7 +28,7 @@ namespace Engineers_Helper.Forms.Geometry
 
           
             #endregion
-            #region Textbox lost focuse event
+            #region Textbox lost focus event
 
           
             textBox_Side.LostFocus += (s, a) => { foreach (var control in Controls.OfType<TextBox>())

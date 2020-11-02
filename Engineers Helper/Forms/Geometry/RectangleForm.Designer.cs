@@ -436,7 +436,6 @@
             this.textBox_Perimeter.Size = new System.Drawing.Size(292, 33);
             this.textBox_Perimeter.TabIndex = 2;
             this.textBox_Perimeter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Perimeter.TextChanged += new System.EventHandler(this.textBox_Diagonal_TextChanged);
             // 
             // label_Perimeter
             // 
@@ -462,7 +461,6 @@
             this.textBox_Area.Size = new System.Drawing.Size(292, 33);
             this.textBox_Area.TabIndex = 2;
             this.textBox_Area.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Area.TextChanged += new System.EventHandler(this.textBox_Diagonal_TextChanged);
             // 
             // label_Area
             // 
@@ -521,7 +519,6 @@
             this.textBox_Circumradius.Size = new System.Drawing.Size(292, 33);
             this.textBox_Circumradius.TabIndex = 2;
             this.textBox_Circumradius.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Circumradius.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label_Circumradius
             // 
@@ -547,7 +544,6 @@
             this.textBox_Angle_b.Size = new System.Drawing.Size(292, 33);
             this.textBox_Angle_b.TabIndex = 2;
             this.textBox_Angle_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Angle_b.TextChanged += new System.EventHandler(this.textBox_Angle_b_TextChanged);
             // 
             // label_Angle_b
             // 
@@ -573,7 +569,6 @@
             this.textBox_Angle_a.Size = new System.Drawing.Size(292, 33);
             this.textBox_Angle_a.TabIndex = 2;
             this.textBox_Angle_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Angle_a.TextChanged += new System.EventHandler(this.textBox_Angle_a_TextChanged);
             // 
             // label_Angle_a
             // 
@@ -599,7 +594,6 @@
             this.textBox_Diagonal.Size = new System.Drawing.Size(292, 33);
             this.textBox_Diagonal.TabIndex = 2;
             this.textBox_Diagonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Diagonal.TextChanged += new System.EventHandler(this.textBox_Diagonal_TextChanged);
             // 
             // label1
             // 
@@ -625,7 +619,6 @@
             this.textBox_Side_b.Size = new System.Drawing.Size(292, 33);
             this.textBox_Side_b.TabIndex = 2;
             this.textBox_Side_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Side_b.TextChanged += new System.EventHandler(this.textBox_Side_b_TextChanged);
             // 
             // label_Side_b
             // 
@@ -651,7 +644,6 @@
             this.textBox_Side_a.Size = new System.Drawing.Size(292, 33);
             this.textBox_Side_a.TabIndex = 2;
             this.textBox_Side_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox_Side_a.TextChanged += new System.EventHandler(this.textBox_Side_a_TextChanged);
             // 
             // label_Side_a
             // 
