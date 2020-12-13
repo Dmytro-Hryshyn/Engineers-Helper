@@ -15,14 +15,12 @@ namespace Engineers_Helper.Forms
         {
             if (textBox_FromUnit.Text != string.Empty)
             {
-
                 TemperatureConverter temperatureConverter = new TemperatureConverter(decimal.Parse(textBox_FromUnit.Text),
                                                                            comboBox_FromUnit.Text, comboBox_ToUnit.Text);
 
-                textBox_ToUnit.Text = temperatureConverter.ConvertUnit().ToString(".######");
+                textBox_ToUnit.Text = temperatureConverter.ConvertUnit().ToString("#.######");
             }
         }
-
 
         protected override void SetComboBox()
         {

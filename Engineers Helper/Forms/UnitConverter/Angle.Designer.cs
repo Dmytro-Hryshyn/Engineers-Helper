@@ -49,7 +49,6 @@
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.MinimumSize = new System.Drawing.Size(1088, 798);
             this.Name = "Angle";
-            this.Load += new System.EventHandler(this.Angle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

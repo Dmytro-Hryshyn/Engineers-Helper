@@ -5,7 +5,6 @@ using Unit.Converter;
 
 namespace Forms.UnitConverter
 {
-
     /// <summary>
     /// Derived Class have to ovveride all this methods.
     /// Calculate, SetComboBox,  DisplayError(not esential)
@@ -18,21 +17,18 @@ namespace Forms.UnitConverter
             SetComboBox();
             tableLayoutPanel_Keyboard.Visible = false;
         }
-  
 
-        protected virtual void  DisplayError(string errorMess)
+        protected virtual void DisplayError(string errorMess)
         {
-            MessageBox.Show(errorMess,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            MessageBox.Show(errorMess, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             this.Close();
 
             //sets visibiliti of Menu panel on MainForm
             Form1.ActiveForm.Controls["MenuPanel"].Visible = true;
-
         }
 
         private void comboBox_FromUnit_Click(object sender, EventArgs e)
@@ -109,8 +105,8 @@ namespace Forms.UnitConverter
                 return;
             }
 
-
-            else textBox_FromUnit.Text += ".";
+            else
+                textBox_FromUnit.Text += ".";
         }
 
         private void button_Backspace_Click(object sender, EventArgs e)
@@ -120,7 +116,8 @@ namespace Forms.UnitConverter
                 textBox_FromUnit.Text = textBox_FromUnit.Text.Remove(textBox_FromUnit.Text.Length - 2, 1);
             }
 
-            else textBox_FromUnit.Text = string.Empty;
+            else
+                textBox_FromUnit.Text = string.Empty;
         }
 
         private void button_CE_Click(object sender, EventArgs e)
@@ -148,12 +145,11 @@ namespace Forms.UnitConverter
             textBox_ToUnit.Text = string.Empty;
         }
 
-        private   void  button_Convert_Click(object sender, EventArgs e)
+        private void button_Convert_Click(object sender, EventArgs e)
         {
             Calculate();
         }
 
-      
         protected virtual void Calculate()
         {
             if (textBox_FromUnit.Text != string.Empty)
@@ -161,13 +157,14 @@ namespace Forms.UnitConverter
                 SpeedConverter speedConverter = new SpeedConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text.Replace(" ", "_"), comboBox_ToUnit.Text.Replace(" ", "_"));
                 textBox_ToUnit.Text = speedConverter.ConvertUnit().ToString(".########");
             }
-             
-            else return;
+
+            else
+                return;
         }
 
         private void textBox_FromUnit_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&(e.KeyChar != '.'))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }

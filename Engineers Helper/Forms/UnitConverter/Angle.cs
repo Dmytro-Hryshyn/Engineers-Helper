@@ -18,10 +18,8 @@ namespace Engineers_Helper.Forms.UnitConverter
             if (textBox_FromUnit.Text != string.Empty)
             {
                 AngleConverter angleConverter = new AngleConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
-                textBox_ToUnit.Text = angleConverter.ConvertUnit().ToString(".#####");
+                textBox_ToUnit.Text = angleConverter.ConvertUnit().ToString("#.#####");
             }
-
-           
 
             else return;
         }
@@ -31,11 +29,5 @@ namespace Engineers_Helper.Forms.UnitConverter
             comboBox_FromUnit.DataSource = Enum.GetValues(typeof(AngleConverter.AngleUnit));
             comboBox_ToUnit.DataSource = Enum.GetValues(typeof(AngleConverter.AngleUnit));
         }
-
-        private void Angle_Load(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }

@@ -1,6 +1,5 @@
 ﻿using Forms.UnitConverter;
 using System;
-using System.Windows.Forms;
 using Unit.Converter;
 
 namespace Engineers_Helper.Forms.UnitConverter
@@ -11,7 +10,6 @@ namespace Engineers_Helper.Forms.UnitConverter
         {
             InitializeComponent();
         }
-        
 
         protected override void SetComboBox()
         {
@@ -23,11 +21,10 @@ namespace Engineers_Helper.Forms.UnitConverter
         {
             if (textBox_FromUnit.Text != string.Empty)
             {
-               
+
                 var pressureConverter = new PressureConverter(decimal.Parse(textBox_FromUnit.Text), comboBox_FromUnit.Text, comboBox_ToUnit.Text);
                 textBox_ToUnit.Text = pressureConverter.ConvertUnit().ToString(".######");
             }
-
         }
     }
 }

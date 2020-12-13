@@ -31,7 +31,7 @@ namespace Engineers_Helper
             {
                 LengthConverter lenthConverter = new LengthConverter(decimal.Parse(textBox_FromUnit.Text),
                                                                 comboBox_FromUnit.Text.Replace(" ", "_"),
-                                                                    comboBox_ToUnit.Text.Replace(" ", "_"));
+                                                                comboBox_ToUnit.Text.Replace(" ", "_"));
                 textBox_ToUnit.Text = lenthConverter.ConvertUnit().ToString();
             }
         }
