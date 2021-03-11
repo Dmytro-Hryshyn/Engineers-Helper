@@ -11,18 +11,9 @@ namespace Engineers_Helper
     {
         public Form1()
         {
-
             InitializeComponent();
-        #if RELEASE
 
-            ReferenceMenu_Btn.Visible = false;
-            Traingle_btn.Visible = false;
-            Circle_btn.Visible = false;
-
-        #endif
-
-        #region UnitConverter menu
-
+            #region UnitConverter menu
 
             SubMenuContol unitConverterSubcontol = new SubMenuContol(UnitConverter_Menu_Btn, UnitConverter_Submenu_Panel);
             Speed_Converter_Btn.Click += (sender, EventArgs) =>
@@ -53,17 +44,12 @@ namespace Engineers_Helper
             };
             WaightAndMass_Button.Click += (s, a) =>
             {
-                 unitConverterSubcontol.OpenChildForm(new WeightAndMass(), ChildForm_Panel);
-                 MenuPanel.Visible = false;
+                unitConverterSubcontol.OpenChildForm(new WeightAndMass(), ChildForm_Panel);
+                MenuPanel.Visible = false;
             };
-        #endregion
-
-        #region  Reference menu
-
-            SubMenuContol referenceSubControl = new SubMenuContol(ReferenceMenu_Btn, ReferenceSubmenu_Panel);
             #endregion
 
-        #region Geometry2D menu
+            #region Geometry2D menu
             SubMenuContol geometrySubMenu = new SubMenuContol(Geometry2DMenu_Btn, GeometrySubMenu_Panel);
             Square_btn.Click += (s, a) =>
             {
@@ -75,7 +61,7 @@ namespace Engineers_Helper
                 geometrySubMenu.OpenChildForm(new RectangleForm(), ChildForm_Panel);
                 MenuPanel.Visible = false;
             };
-        #endregion
+            #endregion
         }
     }
 }

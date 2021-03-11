@@ -13,9 +13,8 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
-  <ItemGroup>    <ProjectReference Include="..\Engineers Helper\Engineers_Helper.csproj" />
-
-    
+  <ItemGroup>
+    <ProjectReference Include="..\EngineersHelper_Library\EngineersHelper_Library.csproj" />
   </ItemGroup>
 
   <ItemGroup>

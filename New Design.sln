@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Engineers_Helper", "Enginee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EngineersHelper_Library", "EngineersHelper_Library\EngineersHelper_Library.csproj", "{8A3ECE3E-BECA-464A-AE0D-5D87322B28F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engineers_Helper_WPF", "Engineers_Helper_WPF\Engineers_Helper_WPF.csproj", "{365911E5-A38B-4604-AF64-358D83EF81E4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{8A3ECE3E-BECA-464A-AE0D-5D87322B28F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A3ECE3E-BECA-464A-AE0D-5D87322B28F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A3ECE3E-BECA-464A-AE0D-5D87322B28F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{365911E5-A38B-4604-AF64-358D83EF81E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{365911E5-A38B-4604-AF64-358D83EF81E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{365911E5-A38B-4604-AF64-358D83EF81E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{365911E5-A38B-4604-AF64-358D83EF81E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
